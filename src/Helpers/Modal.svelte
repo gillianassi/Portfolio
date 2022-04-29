@@ -13,8 +13,8 @@ const enableHighlight = () =>{
 
 
 {#if showModal}
-<div class="backdrop" class:highlighted={isHighlighted} on:click|self>
-    <div class="modal" on:mouseenter={enableHighlight} on:mouseleave={disableHighlight}>
+<div class="backdrop " class:highlighted={isHighlighted} on:click|self>
+    <div class="modal !bg-gPurple" on:mouseenter={enableHighlight} on:mouseleave={disableHighlight}>
         <p>{message}</p>
     </div>
 </div>

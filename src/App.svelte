@@ -1,37 +1,22 @@
 <script>
-  import  Modal from './Helpers/Modal.svelte';
-  import Header from './components/Header.svelte';
-  import Footer from './components/Footer.svelte';
-  let showModal = false; 
-  let highlightModal = false;
-
-
-  const toggleModal = () => {
-  showModal = !showModal;
-}
-
+  import { Router, Link, Route } from "svelte-routing";
+  import Index from "./Routes/index.svelte";
+  // @ts-ignore
+  import About from "./Routes/about.svelte";
+  import Footer from "./components/Footer.svelte";
 </script>
 
-<Modal message="Wow, what a cool website" {showModal} isHighlighted={highlightModal} on:click={toggleModal}> 
-</Modal>
-
-<main style="background-color: #252525;" class="flex flex-col gap-4 h-screen w-screen flex items-center justify-center">
-  <Header />
-  <body class="flex flex-col gap-4 h-screen w-screen flex items-center justify-center"> 
-    <div>
-      <h1 class="font-mono" style="color: #EEE7F2;">This is Gillian Assi's cool website!</h1>
-    </div>
-    <div>
-      <button on:click={toggleModal} > showMessage </button>
-    </div>
-  </body>
-
-
-    <Footer/>
-</main>
-
-
-
+<Router>
+  <nav class="bg-gBackgroundColor">
+    <Link to="/">Home</Link>
+    <Link to="/about">About</Link>
+  </nav>
+  <main class="overflow-x-hidden">
+    <Route path="/" component="{Index}" />
+    <Route path="/about" component="{About}" />
+  </main>
+  <Footer />
+</Router>
 
 <style global>
   @tailwind utilities;
