@@ -21,12 +21,12 @@
     </div>
 </div>
 
-<div class="overflow-x-hidden max-w-screen  ">
+<div class="overflow-x-hidden relative">
 
-    <div class="flex gap-2 transition-all w-[100vw] relative hover_container items-center h-[500px] translate-x-500" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
+    <div class="flex gap-2 transition-all carouselWidth  relative hover_container items-center h-[500px] translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
         {#each images as image, index}
                 <div 
-                class="bg-gPrimaryColor origin-top h-96 w-1/4 flex justify-center items-center transition-all duration-300 relative hover:grayscale-0  -skew-x-12 hover:w-1/3"
+                class="bg-gPrimaryColor origin-top h-96 w-1/4 flex justify-center items-center transition-all duration-300 relative hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3 hover:h-[400px]"
                 class:child={hovered}
             >
         
@@ -54,6 +54,11 @@
     @apply h-4 ;
 }
 
+.carouselWidth {
+    width: calc(100vw + 100px);
+    transform: translateX(-50%);
+    left:50%;
+}
 
 .firstImage {
     background-color: red;
