@@ -29,8 +29,7 @@
     
       <Banner />
       <div class="h-screen">
-        <h1 class="font-mono text-gPrimaryColor">My cool projects!</h1>
-        <Projects />
+      <Projects />
       </div>
       <div>
         <button on:click={toggleModal} class="text-red-100 text-gPrimaryColor"> showMessage </button>
