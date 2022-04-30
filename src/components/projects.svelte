@@ -2,21 +2,26 @@
     <div>
         <ul class="flex ">
             {#each folders as folder}
-                <li on:click="{() => active = folder}" class="p-4 text-gSecondaryColor " >{folder}</li>
+                <li on:click="{() => active = folder.title}" class="p-4 text-gSecondaryColor " >{folder.title}</li>
             {/each}
         </ul>
     </div>
-    <div class="bg-white">
-        {#if active}
-            <div transition:fade>
-                {active}
-            </div>
-        {/if}
+    <div class="bg-gSecondaryColor p-10 rounded-sm shadow-md">
+      
+        
+                {#key active}
+                    {#each folders.find(f => f.title === active).projects as category, index}
+                        <article transition:scale={{delay: 100 * index}}>
+                            {category}
+                        </article>
+                    {/each}
+                {/key}
+       
     </div>
 </div>
 
 <script>
-	import { fade } from 'svelte/transition';
+	import { scale } from 'svelte/transition';
     $: active = "Games";
-    const folders = ['Games', 'Research']
+    const folders = [{title: 'Games', projects: ['Metroid', 'Zelda']}, {title: 'Research', projects:['memes', 'Engine', 'Gundam']}]
 </script>
