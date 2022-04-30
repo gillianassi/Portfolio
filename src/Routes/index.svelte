@@ -20,7 +20,7 @@
   
   <div class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor">
     <div class=" w-screen "> 
-      <div class="h-screen flex flex-col gap-4 flex items-center justify-center">
+      <div class="headerSettings flex flex-col gap-4 flex items-center justify-center">
         <Header/>
         <h1 class="font-mono text-gPrimaryColor" >This is Gillian Assi's cool website!</h1>
       </div>
@@ -38,3 +38,9 @@
   </div>
   
 
+<style>
+  
+.headerSettings {
+    height: calc(100vh * 4 / 5);
+}
+</style>

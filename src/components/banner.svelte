@@ -2,8 +2,7 @@
     $: hovered = false;
 
     const setHovered = (val) => hovered = val;
-
-    export let images = ['https://picsum.photos/id/1/1200', 'https://picsum.photos/id/233/1200', 'https://picsum.photos/id/34/1200', 'https://picsum.photos/id/12/1200' ]
+    export let featured = [{image:'/images/Tree-Umph_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/SuperMetroidFeatured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/Windwaker_Featured.jpg',  title: 'Tree-umph Game Jam'}, {image:'/images/Regression_Featured.jpg',  title: 'Tree-umph Game Jam'} ]
 </script>
 <!-- 
 <div class="overflow-x-hidden max-w-screen  ">
@@ -21,16 +20,21 @@
     </div>
 </div> 
 -->
-
+<div class="font-mono text-7xl pl-10 text-gSecondaryColor font-style: italic">
+    Featured
+</div>
 <div class="overflow-x-hidden relative">
 
-    <div class="flex gap-2 transition-all carouselWidth  relative hover_container items-center h-[500px] translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
-        {#each images as image, index}
-                <div 
-                class="bg-gPrimaryColor origin-top h-96 w-1/4 flex justify-center items-center transition-all duration-300 relative hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3 hover:h-[400px]"
-                class:child={hovered}
+    <div class="flex gap-2 transition-all carouselWidth relative hover_container items-center h-96 translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
+        {#each featured as project}
+            <div 
+            class:child={hovered}
+            class="card origin-top h-full w-1/4  flex justify-center items-center transition-all duration-300 relative overflow-hidden hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3 hover:h-[370px]"       
             >
-        
+            <div class="h-full w-full relative ">
+                <img src="{project.image}" class="skew-x-12 scale-[130%] origin-center absolute top-1/2 -translate-y-1/2" alt="{project.title}"/>
+            </div>
+           
         </div>   
         {/each}
     </div>
