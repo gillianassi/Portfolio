@@ -5,7 +5,7 @@
 
     export let images = ['https://picsum.photos/id/1/1200', 'https://picsum.photos/id/233/1200', 'https://picsum.photos/id/34/1200', 'https://picsum.photos/id/12/1200' ]
 </script>
-
+<!-- 
 <div class="overflow-x-hidden max-w-screen  ">
 
     <div class=" flex gap-2 transition-all w-[100vw] relative hover_container items-center h-[500px]" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
@@ -15,11 +15,12 @@
             class:child={hovered}
         >
       
-            <!--<img src="{image}" class="skew-x-12 h-full w-full square" alt="bepis"/>-->
+            //<img src="{image}" class="skew-x-12 h-full w-full square" alt="bepis"/>
             </div>   
         {/each}
     </div>
-</div>
+</div> 
+-->
 
 <div class="overflow-x-hidden relative">
 
