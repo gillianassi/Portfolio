@@ -1,7 +1,9 @@
+<script>
+import ThreeBanner from "./three-banner.svelte";
+
+</script>
 <header>
-    <h1> 
-        <img src="/images/testLogo.png"  alt = "test logo">
-    </h1>
+  <ThreeBanner/>
 </header>
 
 <style>
