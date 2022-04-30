@@ -2,7 +2,7 @@
     $: hovered = false;
 
     const setHovered = (val) => hovered = val;
-    export let featured = [{image:'/images/Tree-Umph_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/SuperMetroidFeatured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/Windwaker_Featured.jpg',  title: 'Tree-umph Game Jam'}, {image:'/images/Regression_Featured.jpg',  title: 'Tree-umph Game Jam'} ]
+    export let featured = [{image:'/images/Tree-Umph_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/SuperMetroid_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/Windwaker_Featured.jpg',  title: 'Tree-umph Game Jam'}, {image:'/images/Regression_Featured.jpg',  title: 'Tree-umph Game Jam'} ]
 </script>
 <!-- 
 <div class="overflow-x-hidden max-w-screen  ">

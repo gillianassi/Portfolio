@@ -3,6 +3,8 @@
     import Header from '../components/Header.svelte';
     import Footer from '../components/Footer.svelte';
     import Banner from '../components/banner.svelte';
+    import Projects from '../components/projects.svelte';
+
     let showModal = false; 
     let highlightModal = false;
   
@@ -28,6 +30,7 @@
       <Banner />
       <div class="h-screen">
         <h1 class="font-mono text-gPrimaryColor">My cool projects!</h1>
+        <Projects />
       </div>
       <div>
         <button on:click={toggleModal} class="text-red-100 text-gPrimaryColor"> showMessage </button>
