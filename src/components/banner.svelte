@@ -1,4 +1,8 @@
 <script> 
+import { fly, fade } from "svelte/transition";
+import IntersectionObserver from "svelte-intersection-observer";
+    let element;
+    let intersecting;
     $: hovered = false;
 
     const setHovered = (val) => hovered = val;
@@ -11,6 +15,7 @@
         title: 'Tree-umph Game Jam'}, 
         {image:'https://ik.imagekit.io/gillianassi/Regression_Featured_6q9Xx9efU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940304',  
         title: 'Tree-umph Game Jam'} ]
+
 </script>
 <!-- 
 <div class="overflow-x-hidden max-w-screen  ">
@@ -28,25 +33,29 @@
     </div>
 </div> 
 -->
-<div class="font-mono text-7xl pl-10 text-gSecondaryColor font-style: italic">
+<div class="font-mono text-7xl pl-10 text-gSecondaryColor font-changa">
     Featured
 </div>
 <div class="overflow-x-hidden relative">
-
-    <div class="flex gap-2 transition-all carouselWidth relative hover_container items-center h-96 translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
-        {#each featured as project}
-            <div 
-            class:child={hovered}
-            class="card origin-top h-full w-1/4  flex justify-center items-center transition-all duration-300 relative overflow-hidden hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3"       
-            >
-            <div class="h-full w-full relative ">
-                <img src="{project.image}" class="skew-x-12 scale-[130%] origin-center absolute top-1/2 -translate-y-1/2" alt="{project.title}"/>
+    <IntersectionObserver {element} bind:intersecting threshold="{0.4}" once="{false}">
+        <div bind:this={element} class="transition-all carouselWidth relative hover_container items-center h-96 translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
+            {#if intersecting === true}
+            <div transition:fade class="transition-all h-full w-full flex gap-2">
+                {#each featured as project, index}
+                <div 
+                    in:fly="{{duration: 400, delay: 100 * index, x: 50, opacity: 0}}"
+                    class:child={hovered}
+                    class="card origin-top h-full w-1/4  flex justify-center items-center transition-all duration-300 relative overflow-hidden hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3"       
+                    >
+                    <div class="h-full w-full relative ">
+                        <img src="{project.image}" class="skew-x-12 scale-[130%] origin-center absolute top-1/2 -translate-y-1/2" alt="{project.title}"/>
+                    </div>
+                </div>   
+                {/each} 
             </div>
-           
-        </div>   
-        {/each}
-    </div>
-
+            {/if}
+        </div>
+    </IntersectionObserver>
     
     
 </div>

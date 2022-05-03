@@ -20,11 +20,10 @@
   <Modal message="Wow, what a cool website" {showModal} isHighlighted={highlightModal} on:click={toggleModal}> 
   </Modal>
   
-  <div class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor">
-    <div class=" w-screen "> 
-      <div class="headerSettings flex flex-col gap-4 flex items-center justify-center">
+  <main class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor"> 
+      <div class="headerSettings flex flex-col gap-4 flex items-center justify-center h-screen">
         <Header/>
-        <h1 class="font-mono text-gPrimaryColor" >This is Gillian Assi's cool website!</h1>
+        <h1 class="font-mono text-gPrimaryColor font-change" >This is Gillian Assi's cool website!</h1>
       </div>
     
       <Banner />
@@ -34,15 +33,11 @@
       <div>
         <button on:click={toggleModal} class="text-red-100 text-gPrimaryColor"> showMessage </button>
       </div>
-    </div>
   
       <Footer/>
-  </div>
+  </main>
   
 
 <style>
   
-.headerSettings {
-    height: calc(100vh * 4 / 5);
-}
 </style>
