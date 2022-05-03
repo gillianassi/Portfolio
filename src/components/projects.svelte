@@ -22,7 +22,18 @@
 </div>
 
 <script>
+import { onMount } from 'svelte';
+
 	import { fly, fade } from 'svelte/transition';
+    import {fetch} from '../api/projects';
+
     $: active = "Games";
+    $: db = [];
     const folders = [{title: 'Games', projects: ['Metroid', 'Zelda']}, {title: 'Research', projects:['memes', 'Engine', 'Gundam']}];
+
+    onMount(async () => {
+        db = [await fetch()];
+        console.log(db)
+    })
+
 </script>
