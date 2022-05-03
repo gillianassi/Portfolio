@@ -1,4 +1,4 @@
-<header>
+<header >
     <h1> 
         <img src="/images/testLogo.png"  alt = "test logo">
     </h1>
