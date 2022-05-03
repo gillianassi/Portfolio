@@ -6,22 +6,22 @@
         {title: 'Games', 
         projects: [
             {
-            image: '/images/SuperMetroid_Featured.jpg',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
             title: 'Super Metroid Remake'
             },
             {
-            image: '/images/Windwaker_Featured.jpg',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
             title: 'Windwaker Remake'
             },
             {
-            image: '/images/Tree-Umph_Featured.jpg',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563g',
             title: 'Tree-Umpf'
             }
         ]}, 
         {title: 'Research', 
         projects:[
             {
-            image: '/images/Regression_Featured.jpg',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
             title: 'Regression'
             },
             {
@@ -29,7 +29,7 @@
             title: 'Custom Engine'
             },
             {
-            image: '/images/Tree-Umph_Featured.jpg',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563g',
             title: 'Lock free ordered List'
             }
         ]}];

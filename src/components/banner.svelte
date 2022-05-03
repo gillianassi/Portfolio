@@ -2,7 +2,15 @@
     $: hovered = false;
 
     const setHovered = (val) => hovered = val;
-    export let featured = [{image:'/images/Tree-Umph_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/SuperMetroid_Featured.jpg', title: 'Tree-umph Game Jam'}, {image: '/images/Windwaker_Featured.jpg',  title: 'Tree-umph Game Jam'}, {image:'/images/Regression_Featured.jpg',  title: 'Tree-umph Game Jam'} ]
+    export let featured = [
+        {image:'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
+         title: 'Tree-umph Game Jam'}, 
+        {image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563', 
+        title: 'Tree-umph Game Jam'}, 
+        {image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_ZqO4utNOd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940008',  
+        title: 'Tree-umph Game Jam'}, 
+        {image:'https://ik.imagekit.io/gillianassi/Regression_Featured_6q9Xx9efU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940304',  
+        title: 'Tree-umph Game Jam'} ]
 </script>
 <!-- 
 <div class="overflow-x-hidden max-w-screen  ">
