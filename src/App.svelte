@@ -1,16 +1,14 @@
 <script>
-  import { Router, Link, Route } from "svelte-routing";
+  import { Router, Route } from "svelte-routing";
   import Index from "./Routes/index.svelte";
   // @ts-ignore
   import About from "./Routes/about.svelte";
   import Footer from "./components/Footer.svelte";
+import Navigation from "./partials/navigation.svelte";
 </script>
 
 <Router>
-  <nav class="bg-gBackgroundColor">
-    <Link to="/">Home</Link>
-    <Link to="/about">About</Link>
-  </nav>
+  <Navigation />
   <main class="overflow-x-hidden">
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
