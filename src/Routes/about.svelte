@@ -1,7 +1,6 @@
     
 <script>
     import Header from '../components/Header.svelte';
-    import Footer from '../components/Footer.svelte';
 </script>
 
 <div class="bg-gBackgroundColor">
@@ -19,7 +18,6 @@
             </div>
           </div>
         </div>
-          <Footer/>
       </div>
 
 </div>
