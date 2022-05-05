@@ -26,8 +26,8 @@ In context of the game jam theme, the debris falling represents the chaos, while
 
 # Contributors and credits<br> 
 
-\- <a class="text-gPrimaryColor" href="https://www.rubenfrans.com">Ruben Frans</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/noaplinke">Noa Plinke</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/schaper360">Christiane Schaper</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/sarah_feldmann">Sarah Feldmann</a><br> \- Jonas Bruylant
+\- <a class="text-gPrimaryColor" href="https://www.rubenfrans.com" target="_blank">Ruben Frans</a><br> 
+\- <a class="text-gPrimaryColor" href="https://www.artstation.com/noaplinke" target="_blank">Noa Plinke</a><br> 
+\- <a class="text-gPrimaryColor" href="https://www.artstation.com/schaper360" target="_blank">Christiane Schaper</a><br> 
+\- <a class="text-gPrimaryColor" href="https://www.artstation.com/sarah_feldmann" target="_blank">Sarah Feldmann</a><br> \- Jonas Bruylant
 
