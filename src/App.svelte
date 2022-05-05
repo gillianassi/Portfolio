@@ -24,5 +24,9 @@
 
 <style global>
   @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500;600;700&display=swap');
+  @tailwind utilities;
+    @tailwind components;
+    @tailwind base;
+
 </style>
   
