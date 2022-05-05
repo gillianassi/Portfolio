@@ -1,4 +1,5 @@
 export default {
+  mode: 'jit',
   plugins: [],
     theme: {
     extend: {
@@ -12,8 +13,8 @@ export default {
       'changa': ['"Changa"', 'sans-serif'],
     }
   },
-  content: ["./index.html",'./src/**/*.{svelte,js,ts}'], // for unused CSS
   variants: {
     extend: {},
   },
+  purge: ["./index.html",'./src/**/*.{svelte,js,ts,html,md}']
 }

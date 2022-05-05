@@ -7,13 +7,15 @@ import markdownitTagToClass from '@toycode/markdown-it-class';
 // https://vitejs.dev/config/
 
 const styleMapping = {
-  h1: 'text-xl font-bold font-changa text-gPrimaryColor',
+  h1: ['text-2xl','font-mediem','font-changa','text-gPrimaryColor','capitalize','mb-4'],
+  h2: ['text-xl','font-bold','font-changa','text-gPrimaryColor','capitalize','mb-4'],
+  p: ['my-2', 'text-justify'],
+  img: ['my-2'],
 }
 export default defineConfig({
   plugins: [
     svelteMd({
       markdownItUses: [(md) =>  md.use(markdownitTagToClass, styleMapping)],
-
       markdownItOptions: {
           html: true,
           linkify: true,
