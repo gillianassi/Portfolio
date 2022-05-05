@@ -16,8 +16,8 @@
 
 
 {#if showModal}
-<div class="backdrop" class:highlighted={isHighlighted} on:click|self in:fade={{duration: 50}} out:fade={{duration: 100}}>
-    <div class="modal w-4/5 max-w-5xl" on:mouseenter={enableHighlight} on:mouseleave={disableHighlight} in:fly={{y: 50, delay: 100}} out:fly={{y: 50,}}>
+<div class="backdrop " class:highlighted={isHighlighted} on:click|self in:fade={{duration: 50}} out:fade={{duration: 100}}>
+    <div class="modal w-4/5 max-w-5xl " on:mouseenter={enableHighlight} on:mouseleave={disableHighlight} in:fly={{y: 50, delay: 100}} out:fly={{y: 50,}}>
       {#if bannerImage}
       <header class="max-h-[400px] overflow-hidden">
         <img src="{bannerImage}" alt="Modal header" class="w-full"/>

@@ -6,9 +6,10 @@
     import { fly, fade } from 'svelte/transition';
     import {FaGamepad, } from 'svelte-icons/fa';
     import {IoIosPaper} from 'svelte-icons/io';
-    import {DiUnitySmall} from 'svelte-icons/di';
-    import {DiVisualstudio} from 'svelte-icons/di';
-    import {FaVrCardboard} from 'svelte-icons/fa';
+    import {DiUnitySmall, DiVisualstudio, DiGithubBadge} from 'svelte-icons/di';
+    import {FaVrCardboard, FaItchIo} from 'svelte-icons/fa';
+
+    
     // Import Markdowns here:
     // project
     import MetroidMd from '../markdown/projects/metroid.md';
@@ -42,21 +43,21 @@
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440',
-            title: 'Tree-Umpf',
+            title: 'Tree-Umph',
             markdown: TreeUphMd,
-            tags: ['C#', DiUnitySmall]
+            tags: ['C#', DiUnitySmall, FaItchIo]
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/BurgerTime_Tumbnail_w7yFaqUiw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301767',
             title: 'G-Engine',
             markdown: GEngineMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio, DiGithubBadge]
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/NotForSale_Tumbnail_e1Bs29G27.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300222',
             title: 'Not For Sale',
             markdown: NotForSaleMd,
-            tags: ['C#', DiUnitySmall]
+            tags: ['C#', DiUnitySmall, FaItchIo]
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/RayTracer_Tumbnail_5VHCJc57U.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300788',
@@ -79,7 +80,7 @@
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Regression_Tumbnail_XLl3xMPjx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300876',
             title: 'Regression',
             markdown: RegressionMd,
-            tags: ['Matlab']
+            tags: ['Matlab', DiGithubBadge]
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/LockFreeLinkedList_Tumbnail_EVqB64eOC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300169',
