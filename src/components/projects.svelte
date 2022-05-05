@@ -121,7 +121,7 @@
         <div class="bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
             <div class="container mx-auto">
-                <div class=" flex flex-col lg:flex lg:flex-wrap gap-8 transition-all place-items-center sm:grid sm:grid-cols-2">
+                <div class=" flex flex-col lg:flex lg:flex-row lg:flex-wrap gap-8 transition-all place-items-center sm:grid sm:grid-cols-2">
                     {#each folders.find(f => f.title === active).projects as project, index}
                         <article in:fly={{delay: 100 * index, y: 50, opacity: 0, duration: 300}} out:fade={{duration: 0}} on:click="{toggleModal(project)}" 
                         class="aspect-video h-40 overflow-hidden relative rounded-sm shadow-md cursor-pointer project-thumbnail">
