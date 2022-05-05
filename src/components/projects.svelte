@@ -7,8 +7,19 @@
     import {FaGamepad} from 'svelte-icons/fa';
     import {IoIosPaper} from 'svelte-icons/io';
     // Import Markdowns here:
+    // projects
     import * as Test from '../markdown/projects/test.md';
     import * as MetroidMd from '../markdown/projects/metroid.md';
+    import * as GEngineMd from '../markdown/projects/GEngine.md';
+    import * as WindwakerMd from '../markdown/projects/WindWakerRemake.md';
+    import * as TreeUphMd from '../markdown/projects/TreeUmph.md';
+    import * as NotForSaleMd from '../markdown/projects/NotForSale.md';
+    import * as RasterizerMd from '../markdown/projects/Rasterizer.md';
+    import * as RayTracerMd from '../markdown/projects/RayTracer.md';
+    // research
+    import * as RegressionMd from '../markdown/Research/Regression.md';
+    import * as LockFreeMd from '../markdown/Research/LockFreeOrderedList.md';
+    import * as PlenopticImagingMd from '../markdown/Research/PlenopticImaging.md';
     
     const folders = [
         {
@@ -16,19 +27,39 @@
         icon: FaGamepad,
         projects: [
             {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid/SuperMetroidBanner_F_V0ctgIF.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651704984232',
             title: 'Super Metroid Remake',
             markdown: MetroidMd,
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
+            image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_ZqO4utNOd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940008',
             title: 'Windwaker Remake',
-            markdown: Test,
+            markdown: WindwakerMd,
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563g',
+            image: 'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
             title: 'Tree-Umpf',
-            markdown: Test,
+            markdown: TreeUphMd,
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651694259796',
+            title: 'G-Engine',
+            markdown: GEngineMd,
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/NotForSale/NotForSaleBanner_ZgQcGUNfi.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651695715223',
+            title: 'Not For Sale',
+            markdown: NotForSaleMd,
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/Projects/Bunny_ExfzTuTfG.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708769668',
+            title: 'Multithreaded Ray Tracer',
+            markdown: RayTracerMd,
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/Projects/Rasterizer_GaSN-lGXc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708566474',
+            title: 'Software/Hardware rasterizer',
+            markdown: RasterizerMd,
             }
         ]}, 
         {
@@ -36,19 +67,19 @@
         icon: IoIosPaper,
         projects:[
             {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563',
+            image: 'https://ik.imagekit.io/gillianassi/Regression/RegulisedLogisticRegression_7r6x1Qkpy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651693074086',
             title: 'Regression',
-            markdown: Test,
+            markdown: RegressionMd,
             },
             {
-            image: '/images/testLogo.png',
-            title: 'Custom Engine',
-            markdown: Test,
+            image: 'https://ik.imagekit.io/gillianassi/Research/LockFreeLinkedList/LockFreeLinkedList_yJiB4lcRw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651707946892',
+            title: 'Lock Free Ordened Linked List',
+            markdown: LockFreeMd,
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563g',
-            title: 'Lock free ordered List',
-            markdown: Test,
+            image: 'https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/PlenopticImaging_AMHpVsOfU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651707817712',
+            title: 'Plenoptic Images in VR',
+            markdown: PlenopticImagingMd,
             }
         ]}];
 

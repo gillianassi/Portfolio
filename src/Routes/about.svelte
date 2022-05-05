@@ -17,7 +17,6 @@
                 Past years, next to game implementations for <b class="text-gPrimaryColor">VR</b>, <b class="text-gPrimaryColor">Graphics</b> and <b class="text-gPrimaryColor">Engine programming</b> became the topics that intrigued me the most.  However, I will always find joy in designing game mechanics.
                 
             </div>
-            <iframe title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976" width="640" height="360" frameborder="0" allowfullscreen></iframe>
           </div>
         </div>
           <Footer/>
