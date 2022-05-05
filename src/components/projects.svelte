@@ -177,4 +177,8 @@
     .project-overlay {
         @apply opacity-0 transition-all translate-y-5;
     }
+
+    .test {
+    background-color: red;
+  }
 </style>

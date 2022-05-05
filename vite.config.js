@@ -3,15 +3,22 @@ import { svelte } from '@sveltejs/vite-plugin-svelte'
 import svelteMd from "vite-plugin-svelte-md";
 import postcss from './postcss.config.js';
 import hljs from 'highlight.js';
+import markdownitTagToClass from '@toycode/markdown-it-class';
 // https://vitejs.dev/config/
+
+const styleMapping = {
+  h1: 'text-xl font-bold font-changa text-gPrimaryColor',
+}
 export default defineConfig({
   plugins: [
     svelteMd({
+      markdownItUses: [(md) =>  md.use(markdownitTagToClass, styleMapping)],
+
       markdownItOptions: {
           html: true,
           linkify: true,
           typographer: true,
-          highlight:  function (str, lang) {
+          highlight:(str, lang) => {
             if (lang && hljs.getLanguage(lang)) {
               try {
                 return '<pre class="hljs p-4 rounded-md "><code>' +
