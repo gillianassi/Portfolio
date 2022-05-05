@@ -10,6 +10,8 @@
     const enableHighlight = () =>{
         isHighlighted = true;
     }
+
+    
 </script>
 
 
@@ -44,4 +46,7 @@
     @apply max-h-[80vh] overflow-scroll overflow-hidden bg-white mx-auto rounded-sm shadow-md;
   }
 
+  .markdown-body {
+    background-color: red;
+  }
 </style>

@@ -4,7 +4,7 @@
 <br>
 
 G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds to the principle to prefer composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
-<img class="snap-center" src="https://ik.imagekit.io/gillianassi/G-Engine/BurgerTimeGamePlay_k1t5EY_50.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651694259815"/>
+<img class="snap-center" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708378406"/>
 
 External includes:<br>
 \-	SDL<br>
@@ -32,55 +32,15 @@ I use an audio interface to provide the interface that users need to know about.
 <br>
 
 ----------------------
-
-<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>class</span> AudioInterface
-<span style='color:#800080; '>{</span>
-<span style='color:#800000; font-weight:bold; '>public</span><span style='color:#e34adc; '>:</span>
-	<span style='color:#800000; font-weight:bold; '>virtual</span> <span style='color:#808030; '>~</span>AudioInterface<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>default</span><span style='color:#800080; '>;</span>
-	<span style='color:#800000; font-weight:bold; '>virtual</span> <span style='color:#800000; font-weight:bold; '>void</span> <span style='color:#400000; '>PlaySound</span><span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> soundID<span style='color:#808030; '>)</span> <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
-	<span style='color:#800000; font-weight:bold; '>virtual</span> <span style='color:#800000; font-weight:bold; '>void</span> StopSound<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>int</span> soundID<span style='color:#808030; '>)</span> <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
-	<span style='color:#800000; font-weight:bold; '>virtual</span> <span style='color:#800000; font-weight:bold; '>void</span> StopAllSounds<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
-	<span style='color:#800000; font-weight:bold; '>virtual</span> <span style='color:#800000; font-weight:bold; '>int</span> AddSound<span style='color:#808030; '>(</span><span style='color:#800000; font-weight:bold; '>const</span> <span style='color:#666616; '>std</span><span style='color:#800080; '>::</span><span style='color:#603000; '>string</span><span style='color:#808030; '>&amp;</span> path<span style='color:#808030; '>)</span> <span style='color:#808030; '>=</span> <span style='color:#008c00; '>0</span><span style='color:#800080; '>;</span>
-<span style='color:#800080; '>}</span><span style='color:#800080; '>;</span>
-</pre>
-<!--Created using ToHtml.com on 2022-05-04 23:01:37 UTC -->
-----------------------
 <br>
 
 >A User can easily insert or change to an audio implementation of choice using the Locater class.
 <br><br>
 
-----------------------
-<pre style='color:#000000;background:#ffffff;'><span style='color:#800000; font-weight:bold; '>public</span><span style='color:#e34adc; '>:</span>
-    <span style='color:#800000; font-weight:bold; '>static</span> AudioInterface<span style='color:#808030; '>&amp;</span> getAudio<span style='color:#808030; '>(</span><span style='color:#808030; '>)</span> <span style='color:#800080; '>{</span> <span style='color:#800000; font-weight:bold; '>return</span> <span style='color:#808030; '>*</span>m_pAudioProvider<span style='color:#800080; '>;</span> <span style='color:#800080; '>}</span>
 
-    <span style='color:#800000; font-weight:bold; '>static</span> <span style='color:#800000; font-weight:bold; '>void</span> provide<span style='color:#808030; '>(</span>AudioInterface<span style='color:#808030; '>*</span> service<span style='color:#808030; '>)</span><span style='color:#800080; '>;</span>
-
-<span style='color:#800000; font-weight:bold; '>private</span><span style='color:#e34adc; '>:</span>
-    <span style='color:#800000; font-weight:bold; '>static</span> AudioInterface<span style='color:#808030; '>*</span> m_pAudioProvider<span style='color:#800080; '>;</span>
-    <span style='color:#800000; font-weight:bold; '>static</span> NullAudio m_AudioNullProvider<span style='color:#800080; '>;</span>
-</pre>
-<!--Created using ToHtml.com on 2022-05-04 23:03:59 UTC -->
 <br>
 
-----------------------
-<pre style='color:#000000;background:#ffffff;'>NullAudio Locator<span style='color:#800080; '>::</span>m_AudioNullProvider<span style='color:#800080; '>;</span>
-AudioInterface<span style='color:#808030; '>*</span> Locator<span style='color:#800080; '>::</span>m_pAudioProvider<span style='color:#800080; '>{</span> <span style='color:#808030; '>&amp;</span>m_AudioNullProvider <span style='color:#800080; '>}</span><span style='color:#800080; '>;</span>
 
-<span style='color:#800000; font-weight:bold; '>void</span> Locator<span style='color:#800080; '>::</span>provide<span style='color:#808030; '>(</span>AudioInterface<span style='color:#808030; '>*</span> service<span style='color:#808030; '>)</span>
-<span style='color:#800080; '>{</span>
-    <span style='color:#800000; font-weight:bold; '>if</span> <span style='color:#808030; '>(</span>service <span style='color:#808030; '>=</span><span style='color:#808030; '>=</span> <span style='color:#800000; font-weight:bold; '>nullptr</span><span style='color:#808030; '>)</span>
-    <span style='color:#800080; '>{</span>
-        <span style='color:#696969; '>// return adress as an insurrance that this will never be nullptr</span>
-        m_pAudioProvider <span style='color:#808030; '>=</span> <span style='color:#808030; '>&amp;</span>m_AudioNullProvider<span style='color:#800080; '>;</span>
-    <span style='color:#800080; '>}</span>
-    <span style='color:#800000; font-weight:bold; '>else</span>
-    <span style='color:#800080; '>{</span>
-        m_pAudioProvider <span style='color:#808030; '>=</span> service<span style='color:#800080; '>;</span>
-    <span style='color:#800080; '>}</span>
-<span style='color:#800080; '>}</span>
-</pre>
-<!--Created using ToHtml.com on 2022-05-04 23:04:55 UTC -->
 ----------------------
 <br>
 

@@ -81,44 +81,4 @@ import IntersectionObserver from "svelte-intersection-observer";
     transform: translateX(-50%);
     left:50%;
 }
-
-.firstImage {
-    background-color: red;
-    clip-path: polygon(0 0, 100% 0%, calc(100% - 83px) 100%, 0% 100%);
-}
-.firstImage:hover {
-    background-color: red;
-    clip-path: polygon(0 0, 100% 0%, calc(100% - 86px) 100%, 0% 100%);
-}
-
-.lastImage {
-    background-color: blue;
-    clip-path: polygon(83px 0, 100% 0%, 100% 100%, 0% 100%);
-
-    position: relative;
-}
-
-.lastImage:hover {
-    background-color: blue;
-    clip-path: polygon(86px 0, 100% 0%, 100%  100%, 0% 100%);
-    
-}
-
-.lastImage2 {
-    background-color: blue;
-    clip-path: polygon(0% 0, 100% 0%, 100% 100%, 0% 100%);
-    
-    transform: skew(-12deg, 0deg);
-    position: relative;
-}
-
-.lastImage2:hover {
-    background-color: blue;
-    clip-path: polygon(0 0, 100% 0%, 100%  100%, 0% 100%);
-    
-}
-    
-.featured_text {
-transform: rotate(-76deg);
-}
 </style>

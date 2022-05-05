@@ -4,7 +4,10 @@
   // @ts-ignore
   import About from "./Routes/about.svelte";
   import Footer from "./components/Footer.svelte";
-import Navigation from "./partials/navigation.svelte";
+  import Navigation from "./partials/navigation.svelte";
+
+  import 'highlight.js/styles/atom-one-dark.css';
+
 </script>
 
 <Router>
@@ -25,5 +28,6 @@ import Navigation from "./partials/navigation.svelte";
   @tailwind utilities;
   @tailwind components;
   @tailwind base;
+
 </style>
   

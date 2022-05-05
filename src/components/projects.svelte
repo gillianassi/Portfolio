@@ -7,19 +7,18 @@
     import {FaGamepad} from 'svelte-icons/fa';
     import {IoIosPaper} from 'svelte-icons/io';
     // Import Markdowns here:
-    // projects
-    import * as Test from '../markdown/projects/test.md';
-    import * as MetroidMd from '../markdown/projects/metroid.md';
-    import * as GEngineMd from '../markdown/projects/GEngine.md';
-    import * as WindwakerMd from '../markdown/projects/WindWakerRemake.md';
-    import * as TreeUphMd from '../markdown/projects/TreeUmph.md';
-    import * as NotForSaleMd from '../markdown/projects/NotForSale.md';
-    import * as RasterizerMd from '../markdown/projects/Rasterizer.md';
-    import * as RayTracerMd from '../markdown/projects/RayTracer.md';
+    // project
+    import MetroidMd from '../markdown/projects/metroid.md';
+    import GEngineMd from '../markdown/projects/GEngine.md';
+    import WindwakerMd from '../markdown/projects/WindWakerRemake.md';
+    import TreeUphMd from '../markdown/projects/TreeUmph.md';
+    import NotForSaleMd from '../markdown/projects/NotForSale.md';
+    import RasterizerMd from '../markdown/projects/Rasterizer.md';
+    import RayTracerMd from '../markdown/projects/RayTracer.md';
     // research
-    import * as RegressionMd from '../markdown/Research/Regression.md';
-    import * as LockFreeMd from '../markdown/Research/LockFreeOrderedList.md';
-    import * as PlenopticImagingMd from '../markdown/Research/PlenopticImaging.md';
+    import RegressionMd from '../markdown/Research/Regression.md';
+    import LockFreeMd from '../markdown/Research/LockFreeOrderedList.md';
+    import PlenopticImagingMd from '../markdown/Research/PlenopticImaging.md';
     
     const folders = [
         {
@@ -42,7 +41,7 @@
             markdown: TreeUphMd,
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651694259796',
+            image: 'https://ik.imagekit.io/gillianassi/Projects/G-Engine/BurgerTimeGamePlay_k1t5EY_50.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708378311',
             title: 'G-Engine',
             markdown: GEngineMd,
             },
@@ -92,10 +91,10 @@
         if(showModal === false) selectedProject = project;
         showModal = !showModal;
     }
-
+    
 </script>
 
-<div class="flex flex-col items-center " id="projects">
+<div class="flex flex-col items-center mt-4" id="projects">
     <div class="w-4/5" >
         <div class="w-full bg-slate-800 rounded-t-sm over-flow">
             <ul class="flex ">
@@ -126,6 +125,6 @@
 </div>
 <Modal {showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.image}> 
     <main>
-        {@html selectedProject.markdown.html}
+        <svelte:component this={selectedProject.markdown}/>
     </main>
 </Modal>
