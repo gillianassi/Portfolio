@@ -3,7 +3,7 @@
   import Index from "./Routes/index.svelte";
   // @ts-ignore
   import About from "./Routes/about.svelte";
-  import Footer from "./components/Footer.svelte";
+  import Footer from "./partials/Footer.svelte";
   import Navigation from "./partials/navigation.svelte";
 
   import 'highlight.js/styles/atom-one-dark.css';
@@ -14,7 +14,6 @@
   <Navigation />
   
   <main class="overflow-x-hidden">
-    
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
   </main>
@@ -28,6 +27,9 @@
   @tailwind utilities;
   @tailwind components;
   @tailwind base;
+
+
+ 
 
 </style>
   

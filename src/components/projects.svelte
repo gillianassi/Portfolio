@@ -100,7 +100,9 @@
 
     const toggleModal = (project) => {
         if(showModal === false) selectedProject = project;
+      
         showModal = !showModal;
+       
     }
     
 </script>
