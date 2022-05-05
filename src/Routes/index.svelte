@@ -9,20 +9,23 @@
   
 
   <main class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor"> 
-    
-      <div class="headerSettings flex flex-col gap-4 flex items-center justify-center h-screen">
-
-        <Header/>
-        <h1 class="font-mono text-gPrimaryColor font-change" >Gillian Assi - Graphics Programmer and Engine programmer</h1>
-      </div>
-    
-      <Banner />
-      <div class="min-h-screen">
-      <Projects />
+    <div class="bg-cover bg-center  bg-[url('https://ik.imagekit.io/gillianassi/SciFi_Banner_yXDQnV0cC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651692031432')]">
+      <div class="bg-gradient-to-b from-black w-screen  h-[90vh]">
+        <div class=" headerSettings  h-[90vh]">
+          <Header/>
+        </div>
       </div>
 
+    </div>
 
-      <Footer/>
+  
+    <Banner />
+    <div class="min-h-screen">
+    <Projects />
+    </div>
+
+
+    <Footer/>
   </main>
   
 
