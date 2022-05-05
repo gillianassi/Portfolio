@@ -4,11 +4,10 @@
     import Footer from '../components/Footer.svelte';
 </script>
 
-<div class="bg-gBackgroundColor">
+<div class="bg-gBackgroundColor h-screen">
     <div class="flex flex-col gap-4 w-screen flex items-center justify-center ">
         <div class=" w-screen "> 
           <div class="headerSettings flex flex-col gap-4 flex items-center justify-center">
-            <Header/>
             <h1 class="font-mono text-gPrimaryColor" >This is Gillian Assi's cool website!</h1>
             <div class="text-gSecondaryColor text-left"> 
                 Oh, hi there! It seems like you’ve stumbled upon my About page. Now that you’re here, you might as well keep on reading.
@@ -19,8 +18,10 @@
             </div>
           </div>
         </div>
-          <Footer/>
       </div>
+      <div>
+        <Footer/>
+      </div>  
 
 </div>
 

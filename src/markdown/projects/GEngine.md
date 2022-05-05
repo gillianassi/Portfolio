@@ -29,23 +29,87 @@ Although this is not specifically implemented in the engine, Burgertime itself m
 The engine uses a service locater to provide global access services like Sound and input without coupling users to the class that implements it. Instead, the only thing a user needs to know is an interface. This way, many different implementations of providers can be created in the engine following this interface, without the user noticing any difference.
 The following code snippets will show how I implemented this for sound.
 I use an audio interface to provide the interface that users need to know about.
-<br>
+<br><br>
 
 ----------------------
+<br>
+
+```cpp
+class AudioInterface
+{
+public:
+	virtual ~AudioInterface() = default;
+	virtual void PlaySound(int soundID) = 0;
+	virtual void StopSound(int soundID) = 0;
+	virtual void StopAllSounds() = 0;
+	virtual int AddSound(const std::string& path) = 0;
+};
+```
+
+<br>
+
+-------------------------
 <br>
 
 >A User can easily insert or change to an audio implementation of choice using the Locater class.
 <br><br>
 
-
+----------------------
 <br>
 
+
+```cpp
+
+class Locator
+{
+public:
+
+    Locator() = delete;
+    ~Locator() = delete;
+    Locator(const Locator& other) = delete;
+    Locator(Locator&& other) = delete;
+    Locator& operator=(const Locator& other) = delete;
+    Locator& operator=(Locator&& other) = delete;
+
+    static AudioInterface& getAudio() { return *m_pAudioProvider; }
+
+    static void provide(AudioInterface* service);
+
+private:
+    static AudioInterface* m_pAudioProvider;
+    static NullAudio m_AudioNullProvider;
+
+};
+```
+
+<br>
 
 ----------------------
 <br>
 
 If this is not done, the Null object pattern is used to avoid that the game would crash. In this specific case, NullAudio represents the implementation of this pattern.
 Furthermore, the Decorator pattern can be used to provide a wrapper to supply additional functionality. I’ve done this by creating a logged version of the base Audio which, additionally to playing the sound, also logs all function calls. This is very usefull for debugging purposes.
+
+<br>
+
+----------------------
+<br>
+
+```cpp
+class NullAudio : public AudioInterface
+{
+public:
+	NullAudio() = default;
+	virtual ~NullAudio() = default;
+	virtual void PlaySound(int) {}
+	virtual void StopSound(int) {}
+	virtual void StopAllSounds() {}
+	virtual int AddSound(const std::string&) { return -1; }
+};
+```
+<br>
+
+----------------------
 <br>
 
 ## Pointer to implementation
