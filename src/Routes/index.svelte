@@ -9,9 +9,11 @@
   
 
   <main class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor"> 
+    
       <div class="headerSettings flex flex-col gap-4 flex items-center justify-center h-screen">
+
         <Header/>
-        <h1 class="font-mono text-gPrimaryColor font-change" >This is Gillian Assi's cool website!</h1>
+        <h1 class="font-mono text-gPrimaryColor font-change" >Gillian Assi - Graphics Programmer and Engine programmer</h1>
       </div>
     
       <Banner />

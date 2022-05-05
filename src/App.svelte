@@ -9,11 +9,15 @@ import Navigation from "./partials/navigation.svelte";
 
 <Router>
   <Navigation />
+  
   <main class="overflow-x-hidden">
+    
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
   </main>
+  
   <Footer />
+  
 </Router>
 
 <style global>
