@@ -19,8 +19,10 @@
     import NotForSaleMd from '../markdown/projects/NotForSale.md';
     import RasterizerMd from '../markdown/projects/Rasterizer.md';
     import RayTracerMd from '../markdown/projects/RayTracer.md';
+    import DirectX12Md from '../markdown/projects/DirectX12.md';
     // research
     import RegressionMd from '../markdown/Research/Regression.md';
+    import HandPoseDetectionMd from '../markdown/Research/HandPoseDetection.md';
     import LockFreeMd from '../markdown/Research/LockFreeOrderedList.md';
     import PlenopticImagingMd from '../markdown/Research/PlenopticImaging.md';
     
@@ -81,7 +83,7 @@
             {
             image: 'https://ik.imagekit.io/gillianassi/Projects/DirectX12/dx12-ultimate-100835986-orig_qXPOJ9-Ul.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1659845185753',
             title: 'Direct X 12 Introduction',
-            markdown: RasterizerMd,
+            markdown: DirectX12Md,
             tags: ['C++', DiVisualstudio],
             desc: 'Graphics Programming, DXII'
             }
@@ -96,6 +98,13 @@
             markdown: RegressionMd,
             tags: ['Matlab', DiGithubBadge],
             desc: 'Data analysis, Regression'
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/Research/HandTracking/HandTracking_aTsyPkxgc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=16598485591030',
+            title: 'Hand pose detection in VR',
+            markdown: HandPoseDetectionMd,
+            tags: [DiUnitySmall, FaVrCardboard],
+            desc: 'VR, Oculus SDK, Hand Tracking'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/LockFreeLinkedList_Tumbnail_EVqB64eOC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300169',
@@ -144,7 +153,7 @@
             {#key active}
             <div class="container mx-auto">
                 <div class="gap-8 transition-all place-items-center
-                flex flex-row flex-wrap  sm:grid-cols-2">
+                md:flex flex-row flex-wrap ">
                     {#each folders.find(f => f.title === active).projects as project, index}
                         
                     <span class="align-top max-w-[50%] " >
