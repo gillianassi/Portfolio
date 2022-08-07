@@ -5,7 +5,7 @@
     import Modal from '../Helpers/Modal.svelte';
     import { fly, fade } from 'svelte/transition';
     import {FaGamepad, } from 'svelte-icons/fa';
-    import {IoIosPaper} from 'svelte-icons/io';
+    import {IoIosPaper, IoMdCloudDownload} from 'svelte-icons/io';
     import {DiUnitySmall, DiVisualstudio, DiGithubBadge} from 'svelte-icons/di';
     import {FaVrCardboard, FaItchIo} from 'svelte-icons/fa';
 
@@ -35,7 +35,7 @@
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465',
             title: 'Super Metroid',
             markdown: MetroidMd,
-            tags: ['C++', DiVisualstudio],
+            tags: ['C++', DiVisualstudio, IoMdCloudDownload],
             desc: 'Study Game Mechanics'
             },
             {
@@ -49,7 +49,7 @@
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440',
             title: 'Tree-Umph',
             markdown: TreeUphMd,
-            tags: ['C#', DiUnitySmall, FaItchIo],
+            tags: ['C#', DiUnitySmall, FaItchIo, IoMdCloudDownload],
             desc: 'Game Jam, Group Project'
             },
             {
@@ -63,7 +63,7 @@
             image: 'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',
             title: 'Not For Sale',
             markdown: NotForSaleMd,
-            tags: ['C#', DiUnitySmall, FaItchIo],
+            tags: ['C#', DiUnitySmall, FaItchIo, IoMdCloudDownload],
             desc: 'Complete Game creation, Group Project'
             },
             {
