@@ -1,3 +1,6 @@
+<style>
+    #myFrame { width:100%; height:400px; }
+</style>
 ## The legend of Zelda: The Wind Waker Remake
 <br>
 <b>!! Work in progress !!</b> <br> 
@@ -6,7 +9,7 @@
 In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.<br>
 <br>
 
-<iframe title="vimeo-player" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+<iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
 
 <br>
 After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://www.digitalartsandentertainment.be/article/501/Graphics+Programming+2%3A+Exam+Results+2021-22">here</a>. 

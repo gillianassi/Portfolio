@@ -1,3 +1,6 @@
+<style>
+    #myFrame { width:100%; height:400px; }
+</style>
 # Not For Sale
 <br>
 <b>!! Work in progress !!</b> <br>
@@ -5,7 +8,7 @@
 Get ready for the race of your life in this fast pace local-multiplayer game Not for Sale! Jump around from objective to objective with the camera as your true nemesis.  The game camera follows the player upfront, which means that this pro-gamer can decide which path the group has to take and how fast everyone needs to go. If you can't keep up, you're out! Players that get out of the camera frame get eliminated. Be the last one to survive and triumph over your friends.<br>
 <br>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/odVMGDd4IcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe id="myFrame" src="https://www.youtube.com/embed/odVMGDd4IcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br> 
 
 
