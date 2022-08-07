@@ -2,9 +2,12 @@
 <br>
 <b>!! Work in progress !!</b> <br>
 <br>
-Get ready for the race of your life in this fast pace local-multiplayer game Not for Sale! Jump around from objective to objective with the camera as your true nemesis.  The game camera follows the player upfront, which means that this pro-gamer can decide which path the group has to take and how fast everyone needs to go. If you can't keep up, you're out! Players that get out of the camera frame get eliminated. Be the last one to survive and triumph over your friends.
-Pathfinding<br>
+Get ready for the race of your life in this fast pace local-multiplayer game Not for Sale! Jump around from objective to objective with the camera as your true nemesis.  The game camera follows the player upfront, which means that this pro-gamer can decide which path the group has to take and how fast everyone needs to go. If you can't keep up, you're out! Players that get out of the camera frame get eliminated. Be the last one to survive and triumph over your friends.<br>
 <br>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/odVMGDd4IcE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br> 
+
 
 ## Pathfinding
 During the development of this game, one of the tasks assigned to me was the pathfinding used for the camera movement. Previously, the closest person to the objective was calculated in a straight line. This however could result in counterintuitive gameplay that slowed down the pace of the game. This is why a pathfinding feature to calculate the closest person was requested.<br>

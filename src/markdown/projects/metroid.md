@@ -9,7 +9,6 @@ Feel free to play this small remake using the Zip file stored in the Mega Cloud 
 <br>
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 <br>
-<a class="text-primaryColor" href="">here</a>
 After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://digitalartsandentertainment.be/article/468/Programming+2%3A+2021+Post+Mortem">here</a>. 
 <br>
 <br>

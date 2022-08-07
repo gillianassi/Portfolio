@@ -1,6 +1,7 @@
 <script> 
-import { fly, fade } from "svelte/transition";
-import IntersectionObserver from "svelte-intersection-observer";
+    import { fly, fade } from "svelte/transition";
+
+    import IntersectionObserver from "svelte-intersection-observer";
     let element;
     let intersecting;
     $: hovered = false;
@@ -8,13 +9,13 @@ import IntersectionObserver from "svelte-intersection-observer";
     const setHovered = (val) => hovered = val;
     export let featured = [
         {image:'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
-         title: 'Tree-umph Game Jam'}, 
+         title: 'Tree-umph Game Jam' }, 
+        {image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_XXXxjWfWO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554044471',  
+        title: 'the Wind Waker Remake'}, 
+        {image:'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',  
+        title: 'Not For Sale'},
         {image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563', 
-        title: 'Tree-umph Game Jam'}, 
-        {image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_ZqO4utNOd.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940008',  
-        title: 'Tree-umph Game Jam'}, 
-        {image:'https://ik.imagekit.io/gillianassi/Regression_Featured_6q9Xx9efU.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940304',  
-        title: 'Tree-umph Game Jam'} ]
+        title: 'Super Metroid'}  ]
 
 </script>
 <!-- 

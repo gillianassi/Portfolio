@@ -31,45 +31,59 @@
         projects: [
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465',
-            title: 'Super Metroid Remake',
+            title: 'Super Metroid',
             markdown: MetroidMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio],
+            desc: 'Study Game Mechanics'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Windwaker_Highlight_NYJH5okFl.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301508',
             title: 'Windwaker Remake',
             markdown: WindwakerMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio],
+            desc: 'Graphics Programming, Overlord engine'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440',
             title: 'Tree-Umph',
             markdown: TreeUphMd,
-            tags: ['C#', DiUnitySmall, FaItchIo]
+            tags: ['C#', DiUnitySmall, FaItchIo],
+            desc: 'Game Jam, Group Project'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/BurgerTime_Tumbnail_w7yFaqUiw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301767',
             title: 'G-Engine',
             markdown: GEngineMd,
-            tags: ['C++', DiVisualstudio, DiGithubBadge]
+            tags: ['C++', DiVisualstudio, DiGithubBadge],
+            desc: 'Own C++ Game engine'
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/Tumbnails/NotForSale_Tumbnail_e1Bs29G27.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300222',
+            image: 'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',
             title: 'Not For Sale',
             markdown: NotForSaleMd,
-            tags: ['C#', DiUnitySmall, FaItchIo]
+            tags: ['C#', DiUnitySmall, FaItchIo],
+            desc: 'Complete Game creation, Group Project'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/RayTracer_Tumbnail_5VHCJc57U.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300788',
             title: 'Multithreaded Ray Tracer',
             markdown: RayTracerMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio],
+            desc: 'Graphics Programming'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Rasterizer_Tumbnail_rHaD1v1HQ.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300552',
             title: 'Software/Hardware rasterizer',
             markdown: RasterizerMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio],
+            desc: 'Graphics Programming'
+            },
+            {
+            image: 'https://ik.imagekit.io/gillianassi/Projects/DirectX12/dx12-ultimate-100835986-orig_qXPOJ9-Ul.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1659845185753',
+            title: 'Direct X 12 Introduction',
+            markdown: RasterizerMd,
+            tags: ['C++', DiVisualstudio],
+            desc: 'Graphics Programming, DXII'
             }
         ]}, 
         {
@@ -80,19 +94,22 @@
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Regression_Tumbnail_XLl3xMPjx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300876',
             title: 'Regression',
             markdown: RegressionMd,
-            tags: ['Matlab', DiGithubBadge]
+            tags: ['Matlab', DiGithubBadge],
+            desc: 'Data analysis, Regression'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/LockFreeLinkedList_Tumbnail_EVqB64eOC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300169',
             title: 'Lock Free Ordened Linked List',
             markdown: LockFreeMd,
-            tags: ['C++', DiVisualstudio]
+            tags: ['C++', DiVisualstudio],
+            desc: 'Lock-free Multithreading'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/PlenopticImaging_Tumbnail_gmMXypmBy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300347',
             title: 'Plenoptic Images in VR',
             markdown: PlenopticImagingMd,
-            tags: ['C++', FaVrCardboard]
+            tags: ['C++', FaVrCardboard],
+            desc: 'VR, Paper'
             }
         ]}];
 
@@ -126,32 +143,49 @@
         <div class="bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
             <div class="container mx-auto">
-                <div class=" flex flex-col lg:flex lg:flex-row lg:flex-wrap gap-8 transition-all place-items-center sm:grid sm:grid-cols-2">
+                <div class="gap-8 transition-all place-items-center
+                flex flex-row flex-wrap  sm:grid-cols-2">
                     {#each folders.find(f => f.title === active).projects as project, index}
+                        
+                    <span class="align-top max-w-[50%] " >
                         <article in:fly={{delay: 100 * index, y: 50, opacity: 0, duration: 300}} out:fade={{duration: 0}} on:click="{toggleModal(project)}" 
-                        class="aspect-video h-40 overflow-hidden relative rounded-sm shadow-md cursor-pointer project-thumbnail">
-                            <div class="h-full w-full z-30 relative project-overlay">
-                                <div class="p-4 h-full w-full flex flex-col justify-end gap-2 bg-gBackgroundColor/60">
-                                    <h4 class="font-changa text-gSecondaryColor flex h-auto text-xl">{project.title}</h4>
-                                    <div class="text-gBackgroundColor flex items-center gap-4 self-end">
-                                        {#each project.tags as tag}
-                                        {#if typeof tag === 'string' || tag instanceof String} 
-                                            <p class="px-2 py-1 font-changa font-medium rounded-sm text-xs bg-gSecondaryColor">{tag}</p>
-                                        {:else}
-                                        <span class="h-6 text-gSecondaryColor">
-                                            <svelte:component this={tag} />
-                                        </span>
-                                        {/if}
-                                    {/each}
+                            class="aspect-video h-40 overflow-hidden relative rounded-sm shadow-md cursor-pointer project-thumbnail">
+                                <div class="h-full w-full z-30 relative project-overlay">
+                                    <div class="p-4 h-full w-full flex flex-col justify-end gap-2 bg-gBackgroundColor/60">
+                                        <h4 class="font-changa text-gSecondaryColor h-auto text-xl">{project.title}</h4>
+                                    
                                     </div>
-                                 
                                 </div>
+                                
+                                
+                                <div class="absolute top-0 left-0 z-10">
+                                    <img src="{project.image}" alt="{project.title}" class="w-full"/>
+                                </div>
+                        </article>
+                        <div class="p-4 h-full flex flex-col gap-2 bg-gBackgroundColor/80  ">
+                            <h4 class="font-changa text-gSecondaryColor  text-s max-w-fit">
+                                {project.desc}
+                            </h4>
+
+
+                            <div class="text-gBackgrou  ndColor flex items-center gap-4 self-end">
+                                {#each project.tags as tag}
+                                    {#if typeof tag === 'string' || tag instanceof String} 
+                                        <p class="px-2 py-1 font-changa font-medium rounded-sm text-xs bg-gSecondaryColor">{tag}</p>
+                                    {:else}
+                                    <span class="h-6 text-gSecondaryColor">
+                                        <svelte:component this={tag} />
+                                    </span>
+                                    {/if}
+                                {/each}
+                                
                             </div>
                             
-                            <div class="absolute top-0 left-0 z-10">
-                                <img src="{project.image}" alt="{project.title}" class="w-full"/>
-                            </div>
-                        </article>
+                        </div>
+                        
+                         
+                    </span>
+                        
                     {/each}
                 </div>
             </div>

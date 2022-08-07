@@ -1,8 +1,15 @@
 ## The legend of Zelda: The Wind Waker Remake
 <br>
-<b>!! Work in progress !!</b> <br>
+<b>!! Work in progress !!</b> <br> 
+<b>Although the base is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
 <br>
 In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.<br>
+<br>
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" width="640" height="360" frameborder="0" allowfullscreen></iframe>
+
+<br>
+After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://www.digitalartsandentertainment.be/article/501/Graphics+Programming+2%3A+Exam+Results+2021-22">here</a>. 
 <br>
 
 ## HLSL shaders
@@ -12,6 +19,18 @@ We used High-Level Shader Language to create a multitude of shaders including:<b
 •	Sprite renderer, capable of displaying and manipulating a sprite in a 2d plane. This is visualized using a combination of a geometry and pixel shader.<br>
 •	Text renderer, capable of converting a string into font text displayed in game using a .FNT Sprite font. This is also visualized using a combination of a geometry and pixel shader.<br>
 <br>
+
+## Sea Shaders
+[More info coming soon]
+<br><br>
+
+## Cell-shader
+[More info coming soon]
+<br><br>
+
+## Single Light Dependency
+[More info coming soon]
+<br><br>
 
 ## Software skinning
 A very important feature, which the Overlord Engine lacked, was animations. To understand this, we first received some dummy geometry to visualize simple bones. I represented each bone by an empty game object. Parenting the bones to each other helped with the relative translation.<br>
@@ -28,13 +47,6 @@ Furthermore, I added functionality to read animation data from OVM files. This m
 <br><br>
 
 
-## Cell-shader
-[Work in progress]
-<br><br>
-
-## Single Light Dependency
-[Work in progress]
-<br><br>
 
 # Contributors and credits
 Wind waker analysis
