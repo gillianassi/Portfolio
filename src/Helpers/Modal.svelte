@@ -16,10 +16,13 @@
 
 
 {#if showModal}
+<header style="background-color:#000;color:#fff;">
+  <span onclick="document.getElementById('YourModalBox').style.display='none'" class="close-button topright">&times;</span>
+</header>
 <div class="backdrop " class:highlighted={isHighlighted} on:click|self in:fade={{duration: 50}} out:fade={{duration: 100}}>
     <div class="modal w-4/5 max-w-5xl" on:mouseenter={enableHighlight} on:mouseleave={disableHighlight} in:fly={{y: 50, delay: 100}} out:fly={{y: 50,}}>
       {#if bannerImage}
-      <header class="max-h-[400px] overflow-hidden ">
+      <header class="max-h-[400px]">
         <img src="{bannerImage}" alt="Modal header" class="w-full"/>
       </header>
       {/if}
@@ -43,11 +46,37 @@
     @apply flex items-center;
   }
   .modal{
-    @apply max-h-[80vh] overflow-x-hidden overflow-scroll  overflow-hidden bg-white mx-auto rounded-sm shadow-md rounded-xl;
-    
+    @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-white mx-auto rounded-sm shadow-md rounded-xl;
+
+  }
+
+
+  body.modal-open {
+    height: 100vh;
+    overflow-y: hidden;
   }
 
   .markdown-body {
     background-color: red;
   }
+
+  .close-button {
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap
+}
+
+.topright {
+  position: absolute;
+  right: 0;
+  top: 0
+}
 </style>

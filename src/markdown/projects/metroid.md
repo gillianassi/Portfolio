@@ -1,38 +1,51 @@
-<style>
-    #myFrame { 
-        width:50%; height:300px; 
-        max-height: 400px;
-        Padding: 10px;
-        float: right;
-        min-width: 320px;}
-    
-
-
-    .center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-    }
-
-    img[alt$="><"] {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 40%;
-    }
-</style>
-
 # Super Metroid Remake
 
 
-<iframe id="myFrame"  title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976"   frameborder="0" allowfullscreen></iframe>
+<div id="markdownBody">
+    <div class="grid-container grid-centered-container reversed-col-content">
+    <div>
+        <p>
+            Before I started my studies at Digital Arts and Entertainment, I had never created a fully functional game before. During the second semester of my first-year game development this became the exact task we had to complete. As I already had programming experience from my prior studies, I challenged myself by creating a remake of my favorite SNES game Super Metroid.
+            <br><br>
+        </p>
+    </div>
+    <iframe class="frame"  title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976"   frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="grid-container grid-centered-container">
+        <img src="https://ik.imagekit.io/gillianassi/Projects/SuperMetroid/SuperMetroid_ActionImage_4Y3fbqerp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660054245318" alt="Action Shot"  width="auto" />
+        <p>
+        <br>
+        Looking back at this code from 2021, although everything was functional, I clearly lacked a lot of knowledge about the C++ language. However, even if the code wasn’t perfect, the creation of this game was an unforgettable learning experience. Furthermore, I’m glad to see that my recent code has become a lot more readable and efficient since then.
+        </p>
+    </div>
 
+
+</div>
+
+
+<br><br>
+After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://digitalartsandentertainment.be/article/468/Programming+2%3A+2021+Post+Mortem">here</a>. 
+
+<br><br>
+
+### Used Technologies<br>
+
+- C++<br>
+- Visual Studios
+
+
+<br><br>
+
+## Duration
+1 semester
+
+
+<br><br>
+
+
+## Download
 
 <div style="text-align: justify;" >
-<br><br>
-Before I started my studies at Digital Arts and Entertainment, I had never created a fully functional game before. During the second semester of my first-year game development this became the exact task we had to complete. As I already had programming experience from my prior studies, I challenged myself by creating a remake of my favorite SNES game Super Metroid. <br><br>
-Looking back at this code from 2021, although everything was functional, I clearly lacked a lot of knowledge about the C++ language. However, even if the code wasn’t perfect, the creation of this game was an unforgettable learning experience. Furthermore, I’m glad to see that my recent code has become a lot more readable and efficient since then.<br><br>
 </div>
 <div style="text-align: center">
 Feel free to play this small remake using the Zip file stored in the Mega Cloud <a class="text-gPrimaryColor" href="https://mega.nz/file/p24ECK4A#I66Cjterds3a0KRLEagWyvvX6p4RtdWs4IG6_8iXYBE" target="_blank">here</a>!
@@ -43,19 +56,3 @@ Feel free to play this small remake using the Zip file stored in the Mega Cloud 
 ![image alt ><](https://ik.imagekit.io/gillianassi/DownloadIcon_JoFp15JOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659851491302)
 
 </a>
-
-
-
-<br>
-<br>
-After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://digitalartsandentertainment.be/article/468/Programming+2%3A+2021+Post+Mortem">here</a>. 
-<br>
-<br>
-
-## Used Technologies<br>
-\- C++<br>
-\- Visual Studios
-<br><br>
-
-## Duration
-1 semester

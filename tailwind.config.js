@@ -16,5 +16,12 @@ export default {
   variants: {
     extend: {},
   },
-  purge: ["./index.html",'./src/**/*.{svelte,js,ts,html,md}']
+  purge: {
+    content: ["./index.html",'./src/**/*.{svelte,js,ts,html,md}'],
+    safelist: [
+      'text-3xl',
+      'text-xl',
+      'list-disc'
+    ]
+  }
 }

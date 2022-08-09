@@ -1,0 +1,54 @@
+.frame { 
+    width:100%; height:300px; 
+    max-height: 400px;
+    Padding: 10px;
+    min-width: 320px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+img[alt$="><"] {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+/* =================== Grid =================*/
+
+
+.grid-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.reversed-col-content{
+    flex-direction:  column-reverse;
+}
+
+@media screen and (min-width: 900px){
+    .grid-container{
+        
+        display: grid;
+        gap: 1em;
+    }
+    
+    .grid-centered-container{ grid-template-columns: repeat(2, 1fr);}
+    
+    .grid-leftWeighted-container{ grid-template-columns: 60% 40%;}
+    
+    .grid-rightWeighted-container{ grid-template-columns: 40% 60%;}
+    
+    .grid-container iframe,.grid-leftWeighted-container iframe,.grid-rightWeighted-container iframe,
+    .grid-container p,.grid-leftWeighted-container p,.grid-rightWeighted-container p,
+    .grid-container div,.grid-leftWeighted-container div,.grid-rightWeighted-container div{
+        place-self: center;
+    }
+}
+
+/* ==========================================*/

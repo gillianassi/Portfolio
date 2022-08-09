@@ -223,4 +223,10 @@
     .project-overlay {
         @apply opacity-0 transition-all translate-y-5;
     }
+
+    body.modal-open {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 </style>

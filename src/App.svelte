@@ -7,13 +7,14 @@
   import Navigation from "./partials/navigation.svelte";
 
   import 'highlight.js/styles/atom-one-dark.css';
+  import "./markdown/MarkDown.css";
 
 </script>
 
 <Router>
   <Navigation />
   
-  <main class="overflow-x-hidden">
+  <main class=" overflow-x-hidden">
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
   </main>
@@ -22,11 +23,14 @@
   
 </Router>
 
+
 <style global>
   @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200;400;500;600;700&display=swap');
   @tailwind utilities;
     @tailwind components;
     @tailwind base;
+
+
 
 </style>
   
