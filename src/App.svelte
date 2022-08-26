@@ -3,6 +3,7 @@
   import Index from "./Routes/index.svelte";
   // @ts-ignore
   import About from "./Routes/about.svelte";
+  import Contact from "./Routes/contact.svelte";
   import Footer from "./partials/Footer.svelte";
   import Navigation from "./partials/navigation.svelte";
 
@@ -17,6 +18,7 @@
   <main class=" overflow-x-hidden">
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
+    <Route path="/contact" component="{Contact}" />
   </main>
   
   <Footer />

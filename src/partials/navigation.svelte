@@ -12,17 +12,17 @@
             <div class="gillian-link relative font-changa "><Link to="/">Home</Link></div>
             <div class="gillian-link relative font-changa "><Link to="/#projects">Projects</Link></div>
             <div class="gillian-link relative font-changa "><Link to="/about">About</Link></div>
-            <div class="gillian-link relative font-changa "><Link to="/">Contact</Link></div>
+            <div class="gillian-link relative font-changa "><Link to="/contact">Contact</Link></div>
         </div>
         <div class="socials flex gap-4">
-            <span>
-                <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
-            </span>
             <span>
                 <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
             </span>
             <span>
                 <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
+            </span>
+            <span>
+                <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
             </span>
         </div>
     </div>

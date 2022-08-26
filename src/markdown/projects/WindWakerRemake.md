@@ -2,25 +2,52 @@
     #myFrame { width:100%; height:400px; }
 </style>
 ## The legend of Zelda: The Wind Waker Remake
+
+<div class="text-align: center">
+    <b>!! Work in progress !!</b>
+</div>
+<div class="text-align: center">
+    <b>Although the base is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
+</div>
+
+
+<br><iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
+
 <br>
-<b>!! Work in progress !!</b> <br> 
-<b>Although the base is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
+<div id="markdownBody">
+    <div class="grid-container grid-centered-container reversed-col-content">
+    <div>
+        <p>
+        In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
+        </p>
+    </div>
+    <iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="grid-container grid-centered-container">
+        <img src="https://ik.imagekit.io/gillianassi/Projects/SuperMetroid/SuperMetroid_ActionImage_4Y3fbqerp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660054245318" alt="Action Shot"  width="auto" />
+        <p>
+        We used High-Level Shader Language to create a multitude of shaders including:<br>
+        •	Geometry shader to manipulate geometry<br>
+        •	Overlord Shader, capable of using Specular reflection, normal maps, Fresnell falloff and more.<br>
+        •	Sprite renderer, capable of displaying and manipulating a sprite in a 2d plane. This is visualized using a combination of a geometry and pixel shader.<br>
+        •	Text renderer, capable of converting a string into font text displayed in game using a .FNT Sprite font. This is also visualized using a combination of a geometry and pixel shader.<br>
+        </p>
+    </div>
+
+
+</div>
+
+
+
 <br>
-In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.<br>
+.<br>
 <br>
 
-<iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
 
 <br>
 After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://www.digitalartsandentertainment.be/article/501/Graphics+Programming+2%3A+Exam+Results+2021-22">here</a>. 
 <br>
 
-## HLSL shaders
-We used High-Level Shader Language to create a multitude of shaders including:<br>
-•	Geometry shader to manipulate geometry<br>
-•	Overlord Shader, capable of using Specular reflection, normal maps, Fresnell falloff and more.<br>
-•	Sprite renderer, capable of displaying and manipulating a sprite in a 2d plane. This is visualized using a combination of a geometry and pixel shader.<br>
-•	Text renderer, capable of converting a string into font text displayed in game using a .FNT Sprite font. This is also visualized using a combination of a geometry and pixel shader.<br>
 <br>
 
 ## Sea Shaders

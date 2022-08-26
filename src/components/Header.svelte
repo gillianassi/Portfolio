@@ -20,8 +20,19 @@
         </div>
 
         <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl pl-10 text-gSecondaryColor font-changa">
-            But still hecking loves engine and gameplay programming
-        </div>    </div>
+            
+            Electronics-ICT engineer and VR enthousiast 
+            <br><br><br><br>
+            <b>Looking for an internship during Spring 2023</b>
+        </div>    
+        <br>
+        <a href='/contact'>
+            <button class="btn btn-blue">
+                Contact
+            </button>
+        </a>
+          
+    </div>
     
 
 </header>
@@ -29,6 +40,15 @@
 <style>
     img{
         max-width: 180px;
+    }
+    .btn {
+        @apply font-bold py-3 px-5 rounded;
+    }
+  .btn-blue {
+        @apply bg-purple-600 text-purple-100;
+    }
+  .btn-blue:hover {
+        @apply bg-purple-900;
     }
 </style>
 
