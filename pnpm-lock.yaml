@@ -1,9 +1,12 @@
-lockfileVersion: 5.3
+lockfileVersion: 5.4
 
 specifiers:
   '@sveltejs/vite-plugin-svelte': ^1.0.0-next.30
+  '@toycode/markdown-it-class': ^1.2.4
   autoprefixer: ^10.4.5
+  highlight.js: ^11.5.1
   markdown-it: ^13.0.1
+  markdown-it-style: ^1.0.0
   mdsvex: ^0.10.5
   postcss: ^8.4.12
   svelte: ^3.44.0
@@ -12,20 +15,25 @@ specifiers:
   svelte-markdown: ^0.2.2
   svelte-routing: ^1.6.0
   tailwindcss: ^3.0.24
+  typescript: ^4.8.2
   vite: ^2.9.5
   vite-plugin-markdown: ^2.0.2
   vite-plugin-md-to-html: ^0.0.9
   vite-plugin-svelte-md: ^0.1.4
 
 dependencies:
+  highlight.js: 11.5.1
   markdown-it: 13.0.1
   svelte-icons: 2.1.0
   svelte-markdown: 0.2.2_svelte@3.48.0
-  svelte-routing: 1.6.0_svelte@3.48.0
+  svelte-routing: 1.6.0_rzeu6t3zqu2xw2nsnbtx3gkaoe
+  typescript: 4.8.2
 
 devDependencies:
   '@sveltejs/vite-plugin-svelte': 1.0.0-next.42_svelte@3.48.0+vite@2.9.8
+  '@toycode/markdown-it-class': 1.2.4
   autoprefixer: 10.4.7_postcss@8.4.13
+  markdown-it-style: 1.0.0
   mdsvex: 0.10.5_svelte@3.48.0
   postcss: 8.4.13
   svelte: 3.48.0
@@ -87,6 +95,10 @@ packages:
       vite: 2.9.8
     transitivePeerDependencies:
       - supports-color
+    dev: true
+
+  /@toycode/markdown-it-class/1.2.4:
+    resolution: {integrity: sha512-hA4gHBK8moObkOYdWTjhy1wYcYy0MJeM3JjSKbsXHRpRMvIKhk6Jm+t3bXsSScTdz/byWqQbs8YIwVYjHp+SlQ==}
     dev: true
 
   /@types/marked/4.0.3:
@@ -603,7 +615,6 @@ packages:
   /highlight.js/11.5.1:
     resolution: {integrity: sha512-LKzHqnxr4CrD2YsNoIf/o5nJ09j4yi/GcH5BnYz9UnVpZdS4ucMgvP61TDty5xJcFGRjnH4DpujkS9bHT3hq0Q==}
     engines: {node: '>=12.0.0'}
-    dev: true
 
   /htmlparser2/6.1.0:
     resolution: {integrity: sha512-gyyPk6rgonLFEDGoeRgQNaEUvdJ4ktTmmUh/h2t7s+M8oPpIPxgNACWa+6ESR57kXstwqPiCut0V8NRpcwgU7A==}
@@ -706,6 +717,10 @@ packages:
     dependencies:
       highlight.js: 11.5.1
       lodash.flow: 3.5.0
+    dev: true
+
+  /markdown-it-style/1.0.0:
+    resolution: {integrity: sha512-FPXnDboB+VK+R2Ofs0HoMyGTE10KYEGiTYFpdKn3Pt9YfYYnQip8+QA86Q1suMHR5skj1WXjCx7pGOxAJvHs5A==}
     dev: true
 
   /markdown-it/12.3.2:
@@ -993,13 +1008,13 @@ packages:
       svelte: 3.48.0
     dev: false
 
-  /svelte-routing/1.6.0_svelte@3.48.0:
+  /svelte-routing/1.6.0_rzeu6t3zqu2xw2nsnbtx3gkaoe:
     resolution: {integrity: sha512-+DbrSGttLA6lan7oWFz1MjyGabdn3tPRqn8Osyc471ut2UgCrzM5x1qViNMc2gahOP6fKbKK1aNtZMJEQP2vHQ==}
     peerDependencies:
       svelte: ^3.20.x
     dependencies:
       svelte: 3.48.0
-      svelte2tsx: 0.1.193_svelte@3.48.0
+      svelte2tsx: 0.1.193_rzeu6t3zqu2xw2nsnbtx3gkaoe
     transitivePeerDependencies:
       - typescript
     dev: false
@@ -1007,9 +1022,8 @@ packages:
   /svelte/3.48.0:
     resolution: {integrity: sha512-fN2YRm/bGumvjUpu6yI3BpvZnpIm9I6A7HR4oUNYd7ggYyIwSA/BX7DJ+UXXffLp6XNcUijyLvttbPVCYa/3xQ==}
     engines: {node: '>= 8'}
-    dev: true
 
-  /svelte2tsx/0.1.193_svelte@3.48.0:
+  /svelte2tsx/0.1.193_rzeu6t3zqu2xw2nsnbtx3gkaoe:
     resolution: {integrity: sha512-vzy4YQNYDnoqp2iZPnJy7kpPAY6y121L0HKrSBjU/IWW7DQ6T7RMJed2VVHFmVYm0zAGYMDl9urPc6R4DDUyhg==}
     peerDependencies:
       svelte: ^3.24
@@ -1018,6 +1032,7 @@ packages:
       dedent-js: 1.0.1
       pascal-case: 3.1.2
       svelte: 3.48.0
+      typescript: 4.8.2
     dev: false
 
   /tailwindcss/3.0.24:
@@ -1059,6 +1074,12 @@ packages:
 
   /tslib/2.4.0:
     resolution: {integrity: sha512-d6xOpEDfsi2CZVlPQzGeux8XMwLT9hssAsaPYExaQMuYskwb+x1x7J371tWlbBdWHroy99KnVB6qIkUbs5X3UQ==}
+    dev: false
+
+  /typescript/4.8.2:
+    resolution: {integrity: sha512-C0I1UsrrDHo2fYI5oaCGbSejwX4ch+9Y5jTQELvovfmFkK3HHSZJB8MSJcWLmCUBzQBchCrZ9rMRV6GuNrvGtw==}
+    engines: {node: '>=4.2.0'}
+    hasBin: true
     dev: false
 
   /uc.micro/1.0.6:
