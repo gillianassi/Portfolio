@@ -1,3 +1,7 @@
+<script>
+     import {Link} from 'svelte-routing';
+</script>
+
 <header >
     <div class="grid grid-cols-1 gap-4 place-content-center h-[30vh] w-fit">
         <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 " role="alert">
@@ -26,11 +30,11 @@
             <b>Looking for an internship during Spring 2023</b>
         </div>    
         <br>
-        <a href='/contact'>
+        <Link to="/contact">
             <button class="btn btn-blue">
                 Contact
             </button>
-        </a>
+        </Link>
           
     </div>
     

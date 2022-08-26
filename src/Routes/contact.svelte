@@ -8,13 +8,12 @@
     <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center ">
 
         <div class="flex w-full min-h-screen justify-center items-center">
-            <div class="flex flex-col space-y-6 bg-purple-100 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white
-             ">
+            <div class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white">
            
-                    <div class="flex flex-col justify-between">
+                    <div class="flex flex-col justify-between gap-4">
                         <hi class="font-bold text-4xl tracking-wide text-gPrimaryColor">Contact me</hi>
                         <div class="relative w-24 ">
-                            <img class="rounded-lg border border-gray-100 shadow-xl" src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="user image" />
+                            <img class="rounded-lg border border-gray-100 shadow-xl " src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="user image" />
                             <div class="absolute top-0 right-0 h-6 w-6 my-1 border-4 border-white rounded-full bg-green-400 z-2"></div>
                         </div>
                         <p class="text-black text-sm">
@@ -25,7 +24,7 @@
                                 <span class="h-8 text-gPrimaryColor">
                                     <svelte:component this={IoMdMail}  />
                                 </span>
-                                <a class="text-black" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
+                                <a class="text-purple-800 socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
                             </div>
                         </div>
                         <div class="socials flex gap-4 ">
