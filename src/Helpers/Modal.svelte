@@ -10,6 +10,18 @@
     const enableHighlight = () =>{
         isHighlighted = true;
     }
+    
+    $: 
+       if(showModal === true){
+
+        document.body.style.overflowY = 'hidden';
+        
+       }else {
+        document.body.style.overflowY = 'auto';
+
+       }
+    ;
+    
 
     
 </script>
@@ -17,7 +29,7 @@
 
 {#if showModal}
 <header style="background-color:#000;color:#fff;">
-  <span onclick="document.getElementById('YourModalBox').style.display='none'" class="close-button topright">&times;</span>
+  <span on:click="{() => document.getElementById('YourModalBox').style.display='none'}" class="close-button topright">&times;</span>
 </header>
 <div class="backdrop " class:highlighted={isHighlighted} on:click|self in:fade={{duration: 50}} out:fade={{duration: 100}}>
     <div class="modal w-4/5 max-w-5xl" on:mouseenter={enableHighlight} on:mouseleave={disableHighlight} in:fly={{y: 50, delay: 100}} out:fly={{y: 50,}}>
@@ -43,7 +55,7 @@
     top: 0;
     left: 0;
     z-index: 99999;
-    @apply flex items-center;
+    @apply flex items-center ;
   }
   .modal{
     @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-white mx-auto rounded-sm shadow-md rounded-xl;
@@ -51,9 +63,9 @@
   }
 
 
-  body.modal-open {
-    height: 100vh;
-    overflow-y: hidden;
+body.modal-open {
+    overflow-y: hidden !important;
+    position: fixed !important;
   }
 
   .markdown-body {

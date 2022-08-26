@@ -4,7 +4,7 @@
     import Projects from '../components/projects.svelte';
 </script>
    
-<main class="flex flex-col gap-4 w-screen flex items-center justify-center bg-gBackgroundColor"> 
+<main class="flex flex-col  w-screen flex items-center justify-center bg-gBackgroundColor"> 
   <div class="bg-cover bg-center ">
    
     <div class=" w-screen relative h-[90vh]">
