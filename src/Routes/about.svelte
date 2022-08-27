@@ -2,11 +2,11 @@
 <script>
     import Header from '../components/Header.svelte';
 </script>
-
-<div class="bg-gBackgroundColor h-[90vh]">
+<div>
+  <div class="bg-gBackgroundColor h-[90vh]">
     <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center ">
 
-      <div class="content flex flex-rox justify-center flex-wrap py-2 gap-2 m-auto max-w-screen-lg w-auto w-4/5 max-w-[90vw] bg-gSecondaryColor rounded-sm mx-10 ">
+      <div class="content flex flex-rox justify-center flex-wrap py-2 gap-2 m-auto bg-gSecondaryColor rounded-sm mx-10 ">
         <div class="item-body p-4 max-w-prose" >
           <h1 class="title text-gPrimaryColor">
             GILLIAN ASSI
@@ -25,18 +25,20 @@
       </div>
     </div>
 </div>
-<div class="bg-neutral-900 h-[100vh]">
-
+<div class="bg-neutral-900 h-flex">
+  <div class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center" >
+    Extra Info
+  </div>
   
-  <div class="grid-container text-purple-200 pt-10">
+  <div class="grid-container text-purple-200 pt-10 ">
     <div class="">
       <div id="Education" class="pt-10">
         
-        <h1 class="title pb-5">
+        <h1 class="title">
           Education
         </h1>
           
-        <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2">
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2 ">
           <table class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
             <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
               <tr class="">
@@ -69,15 +71,124 @@
         <h1 class="title">
           Learned Programming Languages
         </h1>
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2">
+          <table class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr class="">
+                <th scope="col" class="py-3 px-6">Language</th>
+                <th scope="col" class="py-3 px-6">Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>C++</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>C#</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>HLSL</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Matlab</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>SQL</td>
+                <td>Basic</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>php</td>
+                <td>Basic</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>html/CSS</td>
+                <td>Basic</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
      
       <div id="Technologies" class="pt-10">
         <h1 class="title">
           Technologies and software
         </h1>
+        <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2 pb-5">
+          <table class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+              <tr class="">
+                <th scope="col" class="py-3 px-6">Language</th>
+                <th scope="col" class="py-3 px-6">Proficiency</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Visual Studios & Visual Code</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Unreal Engine</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Unity</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Nvidia PhysX</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Oculus SDK</td>
+                <td>Basic</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Git</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Perforce</td>
+                <td>Good</td>
+              </tr>
+              
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Autodesk Inventor</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Autodesk Autocad</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Autodesk Maya</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Adobe Photoshop</td>
+                <td>Good</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Win32</td>
+                <td>Basic</td>
+              </tr>
+              <tr class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700">
+                <td>Houdini</td>
+                <td>Basic</td>
+              </tr>
+              <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+                <td>Substance Painter</td>
+                <td>Basic</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
-    <div class="bg-black min-w-full rounded-lg pl-6 pt-10">
+    <div class="bg-black min-w-full rounded-lg pl-6 pt-10 ">
       <h1 class="title ">
         Experience
       </h1>
@@ -96,6 +207,8 @@ Specific tasks:
     </div>
   </div>
 </div>
+</div>
+
 
 
 
@@ -117,7 +230,7 @@ Specific tasks:
     }
 
     .title{
-      @apply underline underline-offset-8 decoration-purple-800 text-4xl font-changa pl-6;
+      @apply underline underline-offset-8 decoration-purple-800 text-4xl font-changa pl-6 pb-5;
     }
 
     @media screen and (min-width: 900px){
@@ -125,7 +238,7 @@ Specific tasks:
     .grid-container{
         
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 60% 40%;
     }
     }
     
