@@ -27,7 +27,9 @@
             
             Electronics-ICT engineer and VR enthousiast 
             <br><br><br><br>
-            <b>Looking for an internship during Spring 2023</b>
+            <div class="bg-purple-800/50  items-center justify-center p-2 rounded-lg">
+                <b class="text-purple-100">Looking for an internship during Spring 2023</b>
+            </div>
         </div>    
         <br>
         <Link to="/contact">
