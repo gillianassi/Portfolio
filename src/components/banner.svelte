@@ -18,19 +18,30 @@
 
     const setHovered = (val) => hovered = val;
     export let featured = [
-        {image:'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
-         title: 'Tree-umph Game Jam', 
-         markdown: TreeUphMd}, 
-        {image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_XXXxjWfWO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554044471',  
-        title: 'the Wind Waker Remake',
-        markdown:WindwakerMd}, 
-        {image:'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',  
-        title: 'Not For Sale',
-        markdown: NotForSaleMd},
-        {image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563', 
-        title: 'Super Metroid',
-        markdown: MetroidMd,
-}  ]
+        {
+            image:'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
+            banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440',
+            title: 'Tree-umph Game Jam', 
+            markdown: TreeUphMd
+        }, 
+        {
+            image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_XXXxjWfWO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554044471',  
+            banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/Windwaker_Highlight_NYJH5okFl.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301508',
+            title: 'the Wind Waker Remake',
+            markdown:WindwakerMd
+        }, 
+        {
+            image:'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',  
+            banner: 'https://ik.imagekit.io/gillianassi/Projects/NotForSale/NotForSaleBanner_3ooOZQyqk.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554358362',
+            title: 'Not For Sale',
+            markdown: NotForSaleMd
+        },
+        {
+            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563', 
+            banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465',
+            title: 'Super Metroid',
+            markdown: MetroidMd,
+        }  ]
 
    
     const toggleModal = (project) => {
@@ -43,7 +54,8 @@
        showModal = !showModal;
        selectedProject = {
         image: featured[id].image,
-        markdown: featured[id].markdown
+        markdown: featured[id].markdown,
+        banner: featured[id].banner
     }
 }
 
@@ -75,7 +87,7 @@ My work</div>
             {/if}
         </div>
     </IntersectionObserver>
-    <Modal {showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.image}>
+    <Modal {showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.banner}>
         <main>
           <svelte:component this={selectedProject.markdown}/>
         </main>
