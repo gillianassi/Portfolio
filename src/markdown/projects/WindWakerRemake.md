@@ -1,92 +1,101 @@
 <style>
-    #myFrame { width:100%; height:400px; }
+    #myFrame { width:100%; height:300px; }
 </style>
-## The legend of Zelda: The Wind Waker Remake
 
-<div class="text-align: center">
-    <b>!! Work in progress !!</b>
+<script>
+    import {FaGithub} from 'svelte-icons/fa';
+</script>
+
+<div class="socials flex  " style="padding-bottom:20px;">
+     <b style="padding-right:20px; padding-top:5px">Github Page</b>
+    <span>
+        <a href="https://github.com/gillianassi/TheWindWaker_Remake" target="_blank" rel="no-referrer"><FaGithub />
+        </a>
+    </span>
 </div>
-<div class="text-align: center">
-    <b>Although the base is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
+
+# The legend of Zelda: The Wind Waker Remake
+
+<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
+    <div class="text-align: center">
+        <b>!! Work in progress !!</b>
+    </div>
+    <div class="text-align: center" >
+        <b>Although the base project is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
+    </div>
 </div>
-
-
-<br><iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
-
 <br>
+
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-    <div>
-        <p>
-        In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
-        </p>
-    </div>
-    <iframe title="vimeo-player" id="myFrame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
+        <div>
+            <h1 class="title">Description</h1>
+            <p>
+            In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
+            </p>
+        </div>
+        <iframe title="vimeo-player" class="frame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="grid-container grid-centered-container">
-        <img src="https://ik.imagekit.io/gillianassi/Projects/SuperMetroid/SuperMetroid_ActionImage_4Y3fbqerp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660054245318" alt="Action Shot"  width="auto" />
-        <p>
-        We used High-Level Shader Language to create a multitude of shaders including:<br>
-        •	Geometry shader to manipulate geometry<br>
-        •	Overlord Shader, capable of using Specular reflection, normal maps, Fresnell falloff and more.<br>
-        •	Sprite renderer, capable of displaying and manipulating a sprite in a 2d plane. This is visualized using a combination of a geometry and pixel shader.<br>
-        •	Text renderer, capable of converting a string into font text displayed in game using a .FNT Sprite font. This is also visualized using a combination of a geometry and pixel shader.<br>
-        </p>
+        <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200" alt="Action Shot"  width="auto" />
+        <div>
+            <h1 class="title">Covered Topics</h1>
+            <ul class="list-disc marker:text-purple-300 pl-10">
+                <li>Hardware skinned animations (+ animation blending)</li>
+                <li>Text rendering</li>
+                <li>Sprite rendering</li>
+                <li>Particles</li>
+                <li>Shadow mapping</li>
+                <li>High-Level Shader Language</li>
+                <li>Nvidia PhysX</li>
+            </ul>
+        </div>
     </div>
-
-
+    <div class="grid-container grid-centered-container reversed-col-content">
+        <div>
+            <h1 class="title">Water Shaders</h1>
+            <p>
+                I combined up to 5 simple shaders by layering them over each other to recreate the iconic wave effect from the windwaker game. Two other shaders using the same logic created the shadow underneath the bridge and the foamy edges around pillars and stones.
+            </p>
+        </div>
+         <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SeaShader_7O43miNvM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661693031830" alt="Action Shot"  width="auto" />
+    </div>
+    <div class="grid-container grid-centered-container">
+        <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/CellShader?ik-sdk-version=javascript-1.4.3&updatedAt=1661694632152" alt="Action Shot"  width="500px" />
+        <div>
+            <h1 class="title">Cell Shading</h1>
+            <p>
+                I used a toon shader to get the typical cell shaded effect on Link. For his eyes, I adjusted the way materials are rendered in the Overlord Engine to give them a render order. By rendering the eyes last, I am Links eyes are drawn above his hair (but still behind materials like rupies and fences),
+            </p>
+        </div>
+    </div>
+    <div class="grid-container grid-centered-container reversed-col-content">
+        <div>
+            <h1 class="title">Blended Animations</h1>
+            <p>
+                Afterwards prior knowledge about the software skinning was implemented inside of a vertex shader to implement animations on complete mesh. using animation data from OVM files. <br>
+                Furthermore, I added functionality to blend between different animations. Both animations will influence the mesh over a transition time to create a smooth transition. 
+            </p>
+        </div>
+         <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/BlendedAnimation_YAnsej-sX.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661722199346" alt="Action Shot"  width="500" />
+    </div>
 </div>
-
-
-
-<br>
-.<br>
-<br>
-
-
-<br>
-After grading, my project got featured on the official DAE website along with some other students. This link can be found <a class="text-gPrimaryColor" href="https://www.digitalartsandentertainment.be/article/501/Graphics+Programming+2%3A+Exam+Results+2021-22">here</a>. 
-<br>
-
-<br>
-
-## Sea Shaders
-[More info coming soon]
-<br><br>
-
-## Cell-shader
-[More info coming soon]
-<br><br>
-
-## Single Light Dependency
-[More info coming soon]
-<br><br>
-
-## Software skinning
-A very important feature, which the Overlord Engine lacked, was animations. To understand this, we first received some dummy geometry to visualize simple bones. I represented each bone by an empty game object. Parenting the bones to each other helped with the relative translation.<br>
-<img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SoftwareSkinningBasic_FQzYTSL9i.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1651708357961" alt="Software skinning"  width="auto" />
-
-Afterwards, I implemented a simple version of software skinning to make a simple cube mesh move corresponding to a linked bone. However, this would break the mesh into separate parts. To avoid this blend weights were added to share vertices over multiple bones. This means that vertices could be affected by the movement of more than one bone, deforming the mesh to a preferable position using interpolation.<br>
-<br>
-<img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SoftwareSkinningBlendweights___rvalbaC.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1651708357972" alt="Software Skinning with blend weights"  width="auto" />
-
-## Hardware skinning
-Afterwards prior knowledge about the software skinning was implemented inside of a vertex shader to implement animations on complete mesh. Because I used float4 values to represent the blend weights, up to 4 bones can be weighted per vertex.<br>
-Furthermore, I added functionality to read animation data from OVM files. This made it possible to easily import models and use their animations inside of the Overlord Engine Game.
-<img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/HardewareSkinning_skifMB5l-.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1651708357976" alt="HardwareSkinning"  width="auto" />
-<br><br>
 
 
 
 # Contributors and credits
-Wind waker analysis
-Jasper (https://www.youtube.com/channel/UC5bN6XKHDCFt_wYAJmsP_Mg) for his inept analysis of shaders and lighting of Wind Waker.
+## Wind waker analysis
+ <a class="text-gPrimaryColor underline font-bold" href="https://www.youtube.com/channel/UC5bN6XKHDCFt_wYAJmsP_Mg" target="_blank" rel="no-referrer">Jasper</a> for his inept analysis of shaders and lighting of Wind Waker.
 <br><br>
 
-# Assets
-Lexou (https://www.models-resource.com/gamecube/legendofzeldathewindwaker/model/417/) for the outset island meshes
-Mystie (https://www.models-resource.com/gamecube/legendofzeldathewindwaker/model/7795/) for the rigged link model
-<br><br>
+## Assets
+<div>
+    <a class="text-gPrimaryColor underline font-bold" href="https://www.models-resource.com/gamecube/legendofzeldathewindwaker/model/417/" target="_blank" rel="no-referrer">Lexou</a> for the ripped outset island meshes and textures.
+</div>
+<div>
+    <a class="text-gPrimaryColor underline font-bold" href="https://www.models-resource.com/gamecube/legendofzeldathewindwaker/model/7795/" target="_blank" rel="no-referrer">Mystie</a> for the rigged link model.
+</div>
+<br>
 
 # Duration
 1 semester

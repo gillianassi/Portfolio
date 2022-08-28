@@ -1,6 +1,20 @@
 <style>
     #myFrame { width:100%; height:400px; }
 </style>
+
+<script>
+    import {FaItchIo} from 'svelte-icons/fa';
+</script>
+
+
+<div class="socials flex  " style="padding-bottom:20px;">
+     <b style="padding-right:20px; padding-top:5px">Icth.io Page</b>
+    <span>
+        <a href="https://gillianassi.itch.io/tinytitans" target="_blank" rel="no-referrer"><FaItchIo />
+        </a>
+    </span>
+</div>
+
 # Tree-Umph
 
 Three-Umph was a game jam entry project for the DAE CreaWeek Game Jam 2022, which had ‘Peace and Chaos” as theme. This game was created in the timespan of three days with an amazing team of 6 people. I, obviously, contributed as a programmer<br> <br> 

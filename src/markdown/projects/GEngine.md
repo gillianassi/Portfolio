@@ -1,3 +1,17 @@
+
+<script>
+    import {FaItchIo, FaGithub} from 'svelte-icons/fa';
+</script>
+
+
+<div class="socials flex  " style="padding-bottom:20px;">
+     <b style="padding-right:20px; padding-top:5px">Github Page</b>
+    <span>
+        <a href="https://github.com/gillianassi/G-Engine" target="_blank" rel="no-referrer"><FaGithub />
+        </a>
+    </span>
+</div>
+
 # G-Engine a 2D Game Engine
 <br>
 <b>!! Work in progress !!</b> <br>

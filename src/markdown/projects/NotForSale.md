@@ -1,3 +1,17 @@
+
+<script>
+    import {FaItchIo} from 'svelte-icons/fa';
+</script>
+
+
+<div class="socials flex  " style="padding-bottom:20px;">
+     <b style="padding-right:20px; padding-top:5px">Icth.io Page</b>
+    <span>
+        <a href="https://stef-bracke.itch.io/notforsale" target="_blank" rel="no-referrer"><FaItchIo />
+        </a>
+    </span>
+</div>
+
 <style>
     #myFrame { width:100%; height:400px; }
 </style>
