@@ -6,7 +6,7 @@
 
  ## What type of list am I using and why?
  
- I decided to go for an ordered linked list for the fllowing reasons: <br>
+ I decided to go for an ordered linked list for the following reasons: <br>
  1) I was able to find documentation surrounding this subject <br>
  2) while inserting and deleting values in an ordered linked list using multiple threads, 
     especially the pNext of the left node needs to be atomically changed. <br>
@@ -15,7 +15,7 @@
  ## What will be the Problem if I simply use CAS? [ ABA problem ]
  
  If you delete and insert at the same time in the same location, you might make an invalid list,
- where a node is insertedand has no other node pointing at them!!(dangeling node)
+ where a node is inserted and has no other node pointing at them!!(dangling node)
  Which means it can never be found again
  <br>
  
@@ -40,10 +40,10 @@
  
  ## Why use pointer tags in this situation?
  
- We want to mark a node for delete (logically delete), while using CAS to keep it lock free.
- if we would use a seperate variable, new ABA problems could be introduced
- By using CAS, a thread will try to change the value of pNext to the tagged version in a lock free manner
- This means we will have a dubble CAS to ensure this linked list is thread safe and lock free.
+ We want to mark a node for delete (logically delete), while using CAS to keep it lock-free.
+ if we would use a separate variable, new ABA problems could be introduced
+ By using CAS, a thread will try to change the value of pNext to the tagged version in a lock-free manner
+ This means we will have a doubble CAS to ensure this linked list is thread-safe and lock-free.
  <br> <br>
  
  ## What options do I have to clean up the marked node?
@@ -53,8 +53,8 @@
 
  Harris's linked list: [Timestamp 18:00]
  "logically" delete nodes instead of actually deleting them
- WHILE TRAVERSING the list, continiously fix the linked list by physically deleting those logically deleted nodes 
- you keep on fixing untill you find a non-logically deleted next node OR nullptr by using CAS
+ WHILE TRAVERSING the list, continuously fix the linked list by physically deleting those logically deleted nodes 
+ you keep on fixing until you find a non-logically deleted next node OR nullptr by using CAS
 
  Harris-Michael strategy: [Timestamp 23:00]
  same strategy, but only fix the node you're interested in, even if it points to a logically deleted node
@@ -66,7 +66,7 @@
  this is to traverse fast
  this can be used for a fast look-up
 
- I will be using the  Harris's Linked list version
+ I will be using the Harris's Linked list version
  <br> <br>
 
  # Contributors and credits

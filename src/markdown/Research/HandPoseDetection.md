@@ -14,7 +14,7 @@
         <div>
             <h1 class="title">Description</h1>
             <p>
-                I want to learn more about the oculus SDK and their way of handeling hand tracking. In this project, I will try to define and use different hand poses to activate actions using the oculus SDK in Unity
+                I want to learn more about the oculus SDK and their way of handling hand tracking. In this project, I will try to define and use different hand poses to activate actions using the oculus SDK in Unity,
             </p>
         </div>
         <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/HandTracking/HandTracking_aTsyPkxgc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1659848559103" alt="Action Shot"  width="300" />

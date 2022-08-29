@@ -31,7 +31,7 @@
         <div>
             <h1 class="title">Description</h1>
             <p>
-            In context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
+            In the context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
             </p>
         </div>
         <iframe title="vimeo-player" class="frame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
@@ -55,7 +55,7 @@
         <div>
             <h1 class="title">Water Shaders</h1>
             <p>
-                I combined up to 5 simple shaders by layering them over each other to recreate the iconic wave effect from the windwaker game. Two other shaders using the same logic created the shadow underneath the bridge and the foamy edges around pillars and stones.
+                I combined up to 5 simple shaders by layering them over each other to recreate the iconic wave effect from the Wind Waker game. Two other shaders using the same logic created the shadow underneath the bridge and the foamy edges around pillars and stones.
             </p>
         </div>
          <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SeaShader_7O43miNvM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661693031830" alt="Action Shot"  width="auto" />
@@ -73,7 +73,7 @@
         <div>
             <h1 class="title">Blended Animations</h1>
             <p>
-                Afterwards prior knowledge about the software skinning was implemented inside of a vertex shader to implement animations on complete mesh. using animation data from OVM files. <br>
+                Afterwards, prior knowledge about the software skinning was implemented inside of a vertex shader to implement animations on the complete mesh. using animation data from OVM files. <br>
                 Furthermore, I added functionality to blend between different animations. Both animations will influence the mesh over a transition time to create a smooth transition. 
             </p>
         </div>

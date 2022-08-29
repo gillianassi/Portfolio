@@ -18,8 +18,8 @@
         <b>!! Work in progress !!</b>
     </div>
     <div class="text-align: center" >
-        <b>This bachelor thesis was previously finished in 2019. However, as my skills as a programmer have grown in  the past years I wish to revisit this subject some time in the future.<br><br>
-        When I do this, I intend to calculate the final image for each eye by intepolating between multiple images instead of using fixed pictures.</b>  <br> 
+        <b>This bachelor thesis was previously finished in 2019. However, as my skills as a programmer have grown in  the past years I wish to revisit this subject sometime in the future.<br><br>
+        When I do this, I intend to calculate the final image for each eye by interpolating between multiple images instead of using fixed pictures.</b>  <br> 
     </div>
 </div>
 
@@ -28,7 +28,7 @@
         <div>
             <h1 class="title">Description</h1>
             <p>
-                In the contexrt of my bachelor thesis of Engineering Technology, I tried to create a virtual environment where pictures and holograms could be evaluated. Light maps were visualised in VR by combining images taken with a camera matrix depending on the position of the VR headset. A large part of this project was pure research as I was not yet adept in c++ programming.
+                In the context of my bachelor thesis in Engineering Technology, I tried to create a virtual environment where pictures and holograms could be evaluated. Light maps were visualised in VR by combining images taken with a camera matrix depending on the position of the VR headset. A large part of this project was pure research as I was not yet adept in c++ programming.
                 A link to my thesis created in 2018 can be found at the top of this page.
             </p>
         </div>
@@ -39,9 +39,9 @@
         <div>
             <h1 class="title">Evaluation room</h1>
             <p>
-                I Created a space in which the user could rate an image dependant on how well the holographic image was percieved. 
-                This score can vary between zero to 5 stars.
-                Aditioanally a txt file is provided in which the user could enter his setup dimensions to recreate a copy of their workspace in VR (to improve the immersion for the image evaluation).
+                I created a space in which the user could rate an image depending on how well the holographic image was perceived. 
+                This score can vary from zero to 5 stars.
+                Additionally a txt file is provided in which the user could enter his setup dimensions to recreate a copy of their workspace in VR (to improve the immersion for the image evaluation).
             </p>
         </div>
     </div>
@@ -49,7 +49,7 @@
         <div>
             <h1 class="title">Light field implementation</h1>
             <p>
-                By tracking the HMD location in virtual space (position and rotation), I calculated the most optimal image out of a lightfield to render the correct image to the corresponding eye. To take stereopsis into account, I ajusted the shown image for each eye dependant on the user's IPD. 
+                By tracking the HMD location in virtual space (position and rotation), I calculated the most optimal image out of a light field to render the correct image to the corresponding eye. To take stereopsis into account, I adjusted the shown image for each eye depending on the user's IPD. 
             </p>
         </div>
          <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/ActionShotPlenoptic2_rZPlYPhhv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661777233389" alt="Action Shot"  width="auto" />

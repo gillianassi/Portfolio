@@ -27,7 +27,7 @@
         <div>
             <h1 class="title">Description</h1>
             <p>
-            G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds to the principle to prefer composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
+            G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds the principle to prefer composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
             </p>
         </div>
         <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708378406" alt="Action Shot"  width="300" />
@@ -52,7 +52,7 @@
                 <li>Command pattern</li>
                 <li>Observer pattern</li>
                 <li>Pointer to implementation</li>
-                <li>Service Locater</li>
+                <li>Service Locator</li>
             </ul>
         </div>
          <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/Burger_Time_Uldat3P1yF.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661773296097" alt="Action Shot"  width="auto" />
@@ -62,7 +62,7 @@
         <div>
             <h1 class="title">Simple Component system</h1>
             <p>
-                Based on Unity's component hierarchy, all game objects in G-Engine are represented as entities containing components. These components are used to give the entities their preferred behavior. This system makes it easy to isolate code, resulting in a more readable structure. I do stress that the component system used in this project is just a simple version to show its uses.
+                Based on Unity's component hierarchy, all game objects in G-Engine are represented as entities containing components. These components are used to give the entities their preferred behaviour. This system makes it easy to isolate code, resulting in a more readable structure. I do stress that the component system used in this project is just a simple version to show its uses.
             </p>
         </div>
     </div>
@@ -92,8 +92,8 @@
 ## Pointer to implementation
 The Pimpl technique has been used to remove implementation details of classes such as SDL_Mixer for the BaseAudio class and Xinput  to separate dependencies between the engine and the game
 
-## Service Locater 
-The engine uses a service locater to provide global access services like Sound and input without coupling users to the class that implements it. Instead, the only thing a user needs to know is an interface. This way, many different implementations of providers can be created in the engine following this interface, without the user noticing any difference.
+## Service Locator 
+The engine uses a service locator to provide global access services like Sound and input without coupling users to the class that implements it. Instead, the only thing a user needs to know is an interface. This way, many different implementations of providers can be created in the engine following this interface, without the user noticing any difference.
 The following code snippets will show how I implemented this for sound.
 I use an audio interface to provide the interface that users need to know about.
 <br><br>
@@ -154,8 +154,8 @@ private:
 ----------------------
 <br>
 
-If this is not done, the Null object pattern is used to avoid that the game would crash. In this specific case, NullAudio represents the implementation of this pattern.
-Furthermore, the Decorator pattern can be used to provide a wrapper to supply additional functionality. I’ve done this by creating a logged version of the base Audio which, additionally to playing the sound, also logs all function calls. This is very usefull for debugging purposes.
+If this is not done, the Null object pattern is used to avoid crashes. In this specific case, NullAudio represents the implementation of this pattern.
+Furthermore, the Decorator pattern can be used to provide a wrapper to supply additional functionality. I’ve done this by creating a logged version of the base Audio which, additionally to playing the sound, also logs all function calls. This is very useful for debugging purposes.
 
 <br>
 

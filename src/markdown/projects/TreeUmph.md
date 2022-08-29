@@ -23,7 +23,7 @@
         <div>
             <h1 class="title">Description</h1>
             <p>
-            Three-Umph was a game jam entry project for the DAE CreaWeek Game Jam 2022, which had ‘Peace and Chaos” as theme. This game was created in the timespan of three days with an amazing team of 6 people. I, obviously, contributed as a programmer
+            Three-Umph was a game jam entry project for the DAE CreaWeek Game Jam 2022, which had ‘Peace and Chaos” as the theme. This game was created in the timespan of three days with an amazing team of 6 people. I, obviously, contributed as a programmer
             </p>
         </div>
         <iframe title="vimeo-player" class="frame" src="https://www.youtube.com/embed/QNvzSVvZZjk" frameborder="0" allowfullscreen></iframe>

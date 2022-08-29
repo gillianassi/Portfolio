@@ -10,7 +10,7 @@
         </div>
         <div class="flex gap-8">
             <div class="gillian-link relative font-changa "><Link to="/">Home</Link></div>
-            <div class="gillian-link relative font-changa "><Link to="/#projects">Projects</Link></div>
+            <div class="gillian-link relative font-changa "><Link to="/#MyWork">My Work</Link></div>
             <div class="gillian-link relative font-changa "><Link to="/about">About</Link></div>
             <div class="gillian-link relative font-changa "><Link to="/contact">Contact</Link></div>
         </div>

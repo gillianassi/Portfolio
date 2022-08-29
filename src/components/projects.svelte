@@ -53,7 +53,7 @@
             desc: 'Game Jam, Group Project'
             },
             {
-            image: 'https://ik.imagekit.io/gillianassi/Tumbnails/BurgerTime_Tumbnail_w7yFaqUiw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301767',
+            image: 'https://ik.imagekit.io/gillianassi/Projects/G-Engine/GEngine_iy-_sjm_p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661782460626',
             title: 'G-Engine',
             markdown: GEngineMd,
             tags: ['C++', DiVisualstudio, DiGithubBadge],

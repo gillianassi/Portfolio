@@ -10,7 +10,7 @@
                 <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
               </span>
             <p class="font-bold">Note:</p>
-            <p>This website is still under development</p>
+            <p>This website is still under development.<br> Some Images may act weird especialy for mobile.</p>
         </div>
 
     </div>
@@ -27,7 +27,7 @@
             
             Electronics-ICT engineer and VR enthousiast 
             <br><br><br><br>
-            <div class="bg-purple-800/50  items-center justify-center p-2 rounded-lg">
+            <div class="bg-purple-800/50    items-center justify-center p-2 rounded-lg">
                 <b class="text-purple-100">Looking for an internship during Spring 2023</b>
             </div>
         </div>    

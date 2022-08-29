@@ -2,9 +2,9 @@
     import { fly, fade } from "svelte/transition";
     import Modal from '../Helpers/Modal.svelte';
     // @ts-nocheck
-    import MetroidMd from '../markdown/projects/metroid.md';
+    import PlenopticMd from '../markdown/Research/PlenopticImaging.md';
     import WindwakerMd from '../markdown/projects/WindWakerRemake.md';
-    import TreeUphMd from '../markdown/projects/TreeUmph.md';
+    import GEngineMd from '../markdown/projects/GEngine.md';
     import NotForSaleMd from '../markdown/projects/NotForSale.md';
 
 
@@ -19,10 +19,10 @@
     const setHovered = (val) => hovered = val;
     export let featured = [
         {
-            image:'https://ik.imagekit.io/gillianassi/Tree-Umph_Featured_CO_w78-xj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940668',
-            banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440',
-            title: 'Tree-umph Game Jam', 
-            markdown: TreeUphMd
+            image:'https://ik.imagekit.io/gillianassi/Projects/G-Engine/GEngine_iy-_sjm_p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661782460626',
+            banner: 'https://ik.imagekit.io/gillianassi/Projects/G-Engine/GEngine_iy-_sjm_p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661782460626',
+            title: 'G-Engine', 
+            markdown: GEngineMd
         }, 
         {
             image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_XXXxjWfWO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554044471',  
@@ -37,10 +37,10 @@
             markdown: NotForSaleMd
         },
         {
-            image: 'https://ik.imagekit.io/gillianassi/SuperMetroid_Featured_LYXt21X6u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651599940563', 
-            banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465',
+            image: 'https://ik.imagekit.io/gillianassi/PlenopticFeatured_xPRRHqGhb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661781731145', 
+            banner: 'https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/ActionShotPlenoptic_lk4HpShtB.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661777233397',
             title: 'Super Metroid',
-            markdown: MetroidMd,
+            markdown: PlenopticMd,
         }  ]
 
    
@@ -64,7 +64,7 @@
    
 </script>
 
-<div class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center" >
+<div class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center" id="MyWork" >
 My work</div>
 <div class="overflow-x-hidden relative">
     <IntersectionObserver {element} bind:intersecting threshold="{0.4}" once="{false}">
