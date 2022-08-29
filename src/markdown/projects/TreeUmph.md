@@ -17,34 +17,56 @@
 
 # Tree-Umph
 
-Three-Umph was a game jam entry project for the DAE CreaWeek Game Jam 2022, which had ‘Peace and Chaos” as theme. This game was created in the timespan of three days with an amazing team of 6 people. I, obviously, contributed as a programmer<br> <br> 
 
-<iframe id="myFrame" src="https://www.youtube.com/embed/QNvzSVvZZjk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br> 
-Climb as a cute creature to the top of an enormous tree to reclaim your eggs. However, be wary of all the debris falling from the tree. Luckily, you can slow down time to open up a path. Compete against others for a faster time and enjoy this speed running adventure.
-In context of the game jam theme, the debris falling represents the chaos, while your slow-motion ability depicts the peace.
-<br> 
-<br>
-
-# My Contribution
-\-	Implementation of the circular movement<br>
-\-	Sound<br>
-\-	Polish finetuning<br>
-\-	Implementation of assets<br>
-\-	Basic Tail physics<br>
+<div id="markdownBody">
+    <div class="grid-container grid-centered-container reversed-col-content">
+        <div>
+            <h1 class="title">Description</h1>
+            <p>
+            Three-Umph was a game jam entry project for the DAE CreaWeek Game Jam 2022, which had ‘Peace and Chaos” as theme. This game was created in the timespan of three days with an amazing team of 6 people. I, obviously, contributed as a programmer
+            </p>
+        </div>
+        <iframe title="vimeo-player" class="frame" src="https://www.youtube.com/embed/QNvzSVvZZjk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="grid-container grid-centered-container">
+        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/TreeUmpf/GameShot_x1pb44BP6b.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661772372549" alt="Action Shot"  width="auto" />
+        <div>
+            <h1 class="title">My Contribution</h1>
+            <div>
+                <ul class="list-disc marker:text-purple-300 pl-10">
+                    <li>Implementation of the circular movement</li>
+                    <li>Sound</li>
+                    <li>Polish finetuning</li>
+                    <li>Implementation of assets</li>
+                    <li>Basic Tail physics</li>
+                    <li>Project Management</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
 <br>
 
 # Used Technologies
-\-	Unity<br>
-\-	C#<br>
-\-	Unity VFX Graph<br>
-\-	Perforce<br>
+<div>
+    <ul class="list-disc marker:text-purple-300 pl-10">
+        <li>C#</li>
+        <li>Unity</li>
+        <li>Unity VFX Graph</li>
+        <li>Perforce</li>
+    </ul>
+</div>
+
 <br>
 
 # Contributors and credits<br> 
-
-\- <a class="text-gPrimaryColor" href="https://www.rubenfrans.com" target="_blank">Ruben Frans</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/noaplinke" target="_blank">Noa Plinke</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/schaper360" target="_blank">Christiane Schaper</a><br> 
-\- <a class="text-gPrimaryColor" href="https://www.artstation.com/sarah_feldmann" target="_blank">Sarah Feldmann</a><br> \- Jonas Bruylant
+<div>
+    <ul class="list-disc marker:text-purple-300 pl-10">
+        <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.rubenfrans.com">Ruben Frans</a></li>
+        <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.artstation.com/noaplinke">Noa Plinke</a></li>
+        <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.artstation.com/schaper360">Christiane Schaper</a></li>
+        <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.artstation.com/sarah_feldmann">Sarah Feldmann</a></li>
+        <li>Jonas Bruylant</li>
+    </ul>
+</div>
 

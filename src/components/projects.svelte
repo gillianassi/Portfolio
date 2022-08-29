@@ -93,11 +93,19 @@
         icon: IoIosPaper,
         projects:[
             {
-            image: 'https://ik.imagekit.io/gillianassi/Tumbnails/Regression_Tumbnail_XLl3xMPjx.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300876',
+            image: 'https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112',
             title: 'Regression',
             markdown: RegressionMd,
             tags: ['Matlab', DiGithubBadge],
             desc: 'Data analysis, Regression'
+            },
+            
+            {
+            image: 'https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/ActionShotPlenoptic_lk4HpShtB.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661777233397',
+            title: 'VR for subjective evaluations of plenoptic images',
+            markdown: PlenopticImagingMd,
+            tags: ['C++', FaVrCardboard],
+            desc: 'VR, Bachelor Thesis'
             },
             {
             image: 'https://ik.imagekit.io/gillianassi/Research/HandTracking/HandTracking_aTsyPkxgc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=16598485591030',
@@ -112,13 +120,6 @@
             markdown: LockFreeMd,
             tags: ['C++', DiVisualstudio],
             desc: 'Lock-free Multithreading'
-            },
-            {
-            image: 'https://ik.imagekit.io/gillianassi/Tumbnails/PlenopticImaging_Tumbnail_gmMXypmBy.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300347',
-            title: 'Plenoptic Images in VR',
-            markdown: PlenopticImagingMd,
-            tags: ['C++', FaVrCardboard],
-            desc: 'VR, Paper'
             }
         ]}];
 

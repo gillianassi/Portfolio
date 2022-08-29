@@ -9,7 +9,7 @@
 <div class="socials flex  " style="padding-bottom:20px;">
      <b style="padding-right:20px; padding-top:5px">Github Page</b>
     <span>
-        <a href="https://github.com/gillianassi/TheWindWaker_Remake" target="_blank" rel="no-referrer"><FaGithub />
+        <a  href="https://github.com/gillianassi/TheWindWaker_Remake" target="_blank" rel="no-referrer"><FaGithub />
         </a>
     </span>
 </div>
@@ -37,7 +37,7 @@
         <iframe title="vimeo-player" class="frame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="grid-container grid-centered-container">
-        <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200" alt="Action Shot"  width="auto" />
+        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200" alt="Action Shot"  width="auto" />
         <div>
             <h1 class="title">Covered Topics</h1>
             <ul class="list-disc marker:text-purple-300 pl-10">
@@ -58,10 +58,10 @@
                 I combined up to 5 simple shaders by layering them over each other to recreate the iconic wave effect from the windwaker game. Two other shaders using the same logic created the shadow underneath the bridge and the foamy edges around pillars and stones.
             </p>
         </div>
-         <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SeaShader_7O43miNvM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661693031830" alt="Action Shot"  width="auto" />
+         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/SeaShader_7O43miNvM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661693031830" alt="Action Shot"  width="auto" />
     </div>
     <div class="grid-container grid-centered-container">
-        <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/CellShader?ik-sdk-version=javascript-1.4.3&updatedAt=1661694632152" alt="Action Shot"  width="500px" />
+        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/CellShader?ik-sdk-version=javascript-1.4.3&updatedAt=1661694632152" alt="Action Shot"  width="500px" />
         <div>
             <h1 class="title">Cell Shading</h1>
             <p>
@@ -77,14 +77,30 @@
                 Furthermore, I added functionality to blend between different animations. Both animations will influence the mesh over a transition time to create a smooth transition. 
             </p>
         </div>
-         <img src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/BlendedAnimation_YAnsej-sX.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661722199346" alt="Action Shot"  width="500" />
+        <div >
+         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/BlendedAnimation_YAnsej-sX.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661722199346" alt="Action Shot"  width="500" />
+         </div>
     </div>
 </div>
 
 
+# Used Technologies<br>
+<div>
+    <ul class="list-disc marker:text-purple-300 pl-10">
+        <li>C++</li>
+        <li>hlsl</li>
+        <li>Nvidia PhysX</li>
+        <li>Visual Studios</li>
+    </ul>
+</div> 
+<br>
+
 
 # Contributors and credits
 ## Wind waker analysis
+<div>
+
+</div>
  <a class="text-gPrimaryColor underline font-bold" href="https://www.youtube.com/channel/UC5bN6XKHDCFt_wYAJmsP_Mg" target="_blank" rel="no-referrer">Jasper</a> for his inept analysis of shaders and lighting of Wind Waker.
 <br><br>
 
