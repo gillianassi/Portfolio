@@ -139,25 +139,25 @@
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>C++</td>
-                  <td>Good</td>
+                  <td>Advanced</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>C#</td>
-                  <td>Good</td>
+                  <td>Advanced</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>HLSL</td>
-                  <td>Good</td>
+                  <td>Intermadiate</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Matlab</td>
-                  <td>Good</td>
+                  <td>Intermadiate</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
@@ -203,25 +203,25 @@
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>Visual Studios & Visual Code</td>
-                  <td>Good</td>
+                  <td>Advanced</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Unreal Engine</td>
-                  <td>Good</td>
+                  <td>Advanced</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>Unity</td>
-                  <td>Good</td>
+                  <td>Advanced</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Nvidia PhysX</td>
-                  <td>Good</td>
+                  <td>Intermediate</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
@@ -233,38 +233,38 @@
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Git</td>
-                  <td>Good</td>
+                  <td>Experienced</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>Perforce</td>
-                  <td>Good</td>
+                  <td>Experienced</td>
                 </tr>
 
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>Autodesk Inventor</td>
-                  <td>Good</td>
+                  <td>Intermediate</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Autodesk Autocad</td>
-                  <td>Good</td>
+                  <td>Intermediate</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
                 >
                   <td>Autodesk Maya</td>
-                  <td>Good</td>
+                  <td>Intermediate</td>
                 </tr>
                 <tr
                   class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
                 >
                   <td>Adobe Photoshop</td>
-                  <td>Good</td>
+                  <td>Intermediate</td>
                 </tr>
                 <tr
                   class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"

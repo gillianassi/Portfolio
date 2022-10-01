@@ -14,7 +14,11 @@ export default {
     }
   },
   variants: {
-    extend: {},
+    extend: {
+      display: ['group-focus'],
+      opacity: ['group-focus'],
+      inset: ['group-focus']
+    },
   },
   purge: {
     content: ["./index.html",'./src/**/*.{svelte,js,ts,html,md}'],

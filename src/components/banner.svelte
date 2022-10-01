@@ -25,9 +25,9 @@
             markdown: GEngineMd
         }, 
         {
-            image: 'https://ik.imagekit.io/gillianassi/Windwaker_Featured_XXXxjWfWO.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1657554044471',  
+            image: 'https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/CellShader?ik-sdk-version=javascript-1.4.3&updatedAt=1661694632152',  
             banner: 'https://ik.imagekit.io/gillianassi/Tumbnails/Windwaker_Highlight_NYJH5okFl.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301508',
-            title: 'the Wind Waker Remake',
+            title: 'The Wind Waker Remake',
             markdown:WindwakerMd
         }, 
         {
@@ -39,7 +39,7 @@
         {
             image: 'https://ik.imagekit.io/gillianassi/PlenopticFeatured_xPRRHqGhb.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661781731145', 
             banner: 'https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/ActionShotPlenoptic_lk4HpShtB.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661777233397',
-            title: 'Super Metroid',
+            title: 'Plenoptic Imaging',
             markdown: PlenopticMd,
         }  ]
 
@@ -65,23 +65,35 @@
 </script>
 
 <div class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center" id="MyWork" >
-My work</div>
+Featured Work</div>
 <div class="overflow-x-hidden relative">
     <IntersectionObserver {element} bind:intersecting threshold="{0.4}" once="{false}">
         <div bind:this={element} class="transition-all carouselWidth relative hover_container items-center h-96 translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
             {#if intersecting === true}
             <div transition:fade class="transition-all h-full w-full flex gap-2">
                 {#each featured as project, index}
-                <div 
-                    in:fly="{{duration: 400, delay: 100 * index, x: 50, opacity: 0}}"
-                    class:child={hovered}
-                    class="card origin-top h-full w-1/4  flex justify-center items-center transition-all duration-300 relative overflow-hidden hover:grayscale-0  rounded-md -skew-x-12 hover:w-1/3 cursor-pointer"   
-                    on:click="{() => clickFeatured(index)}"    
-                    >
-                    <div class="h-full w-full relative ">
-                        <img src="{project.image}" class="skew-x-12 scale-[130%] origin-center absolute top-1/2 -translate-y-1/2" alt="{project.title}"/>
-                    </div>
-                </div>   
+                    <div 
+                        in:fly="{{duration: 400, delay: 100 * index, x: 50, opacity: 0}}"
+                        class:child={hovered}
+                        class="   w-1/4  flex transition-all duration-300 overflow-hidden hover:grayscale-0  
+                                rounded-xl -skew-x-12 hover:w-1/3 cursor-pointer project-thumbnail"   
+                        on:click="{() => clickFeatured(index)}"    
+                        >
+                        
+                        <div class="relative">
+                            <img src="{project.image}" class="scale-[140%] skew-x-12 object-cover h-full" alt="{project.title}"/>
+                            
+                            <div class="absolute bottom-0 left-0 right-0  project-overlay">
+                                <div class="p-4 h-full w-full flex flex-col text-center gap-2 bg-gBackgroundColor/60">
+                                    <h4 class="font-changa text-gSecondaryColor h-auto text-xl">{project.title}</h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>  
+                    
+                
                 {/each} 
             </div>
             {/if}
@@ -97,6 +109,21 @@ My work</div>
 
 <style>
     
+    .project-thumbnail::after {
+        content: '';
+        bottom: 0px;
+        @apply h-0 w-full absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor z-50;
+    }
+    .project-thumbnail:hover.project-thumbnail::after {
+        @apply h-1;
+    }
+    .project-thumbnail:hover .project-overlay {
+        @apply opacity-100 translate-y-0;
+    }
+    .project-overlay {
+        @apply opacity-0 transition-all translate-y-5;
+    }
+
 .child:not(:hover) {
     @apply grayscale;
 
@@ -105,7 +132,7 @@ My work</div>
     content: '';
     bottom: 5px;
     transform-origin: bottom;
-    @apply h-0 w-full absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor;
+    @apply h-0 absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor;
 }
 .card:hover::after {
     @apply h-4 ;

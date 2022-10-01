@@ -33,7 +33,7 @@
         projects: [
             {
             image: 'https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465',
-            title: 'Super Metroid',
+            title: 'Super Metroid Remake',
             markdown: MetroidMd,
             tags: ['C++', DiVisualstudio, IoMdCloudDownload],
             desc: 'Study Game Mechanics'
@@ -150,28 +150,35 @@
             </ul>
         </div>
     
-        <div class="bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
+        <div class=" bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
-            <div class="container mx-auto">
+            <div class="container mx-auto ">
                 <div class="gap-8 transition-all place-items-center
                 md:flex flex-row flex-wrap ">
                     {#each folders.find(f => f.title === active).projects as project, index}
                         
-                    <span class="align-top max-w-[50%] " >
-                        <article in:fly={{delay: 100 * index, y: 50, opacity: 0, duration: 300}} out:fade={{duration: 0}} on:click="{toggleModal(project)}" 
-                            class="aspect-video h-40 overflow-hidden relative rounded-sm shadow-md cursor-pointer project-thumbnail">
-                                <div class="h-full w-full z-30 relative project-overlay">
-                                    <div class="p-4 h-full w-full flex flex-col justify-end gap-2 bg-gBackgroundColor/60">
+                    <span class="align-top w-72 lg:pr-0 pr-6 " >
+                        <div class="">
+                            <article in:fly={{delay: 100 * index, y: 50, opacity: 0, duration: 300}} out:fade={{duration: 0}} on:click="{toggleModal(project)}" 
+                            class="w-fit  overflow-hidden relative rounded-sm shadow-md cursor-pointer project-thumbnail">
+                                
+                             <div class="relative">
+
+                                 <div class="object-cover  top-0 left-0 z-10">
+                                     <img src="{project.image}" alt="{project.title}" class="w-fit"/>
+                                 </div>
+                                 
+                                 <div class="absolute bottom-0 left-0 right-0  project-overlay">
+                                    <div class="p-4 h-full w-full flex flex-col text-center gap-2 bg-gBackgroundColor/60">
                                         <h4 class="font-changa text-gSecondaryColor h-auto text-xl">{project.title}</h4>
-                                    
+                                        
                                     </div>
                                 </div>
-                                
-                                
-                                <div class="absolute top-0 left-0 z-10">
-                                    <img src="{project.image}" alt="{project.title}" class="w-full"/>
-                                </div>
+                             </div>
+
                         </article>
+                        </div>
+                        
                         <div class="p-4 h-full flex flex-col gap-2 bg-gBackgroundColor/80  ">
                             <h4 class="font-changa text-gSecondaryColor  text-s max-w-fit">
                                 {project.desc}
