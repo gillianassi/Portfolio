@@ -3,18 +3,23 @@
 </script>
 
 <div>
-  <div class="bg-gBackgroundColor md:h-[90vh]">
+  <div class="bg-gBackgroundColor ">
     <div
       class="flex flex-col h-full gap-4 w-screen flex items-center justify-center "
     >
-      <div class="flex w-full min-h-screen justify-center items-center">
+      <div class="flex w-full min-h-screen justify-center items-center p-5 pt-20 ">
         <div
           class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white
                       md:flex-row md:space-x-6 ms:space-y-0"
         >
+        
+          <div class="profileImage">
+            <img src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" 
+            alt="Profile" class="rounded-lg shadow-xl"/>
+          </div>
           <div class="item-body p-4 max-w-prose text-black">
-            <h1 class="title text-gPrimaryColor">GILLIAN ASSI</h1>
-            <div class="text-justify p-3 w-prose">
+            <h1 class="name ">GILLIAN ASSI</h1>
+            <div class="md:text-justify p-3 w-prose">
               <p class="pb-2">
                 Oh, hi there! It seems like you’ve stumbled upon my About page.<br
                 />
@@ -39,7 +44,11 @@
                 joy in engine programming and designing game mechanics.
               </p>
             </div>
-            <div class="pt-5 pl-10">
+            <div class="relative flex py-5 items-center">
+              <div class="flex-grow border-t border-purple-400"></div>
+              <div class="flex-grow border-t border-purple-400"></div>
+          </div>
+            <div class="pt-5 pl-10 ">
               <a href="https://drive.google.com/file/d/1uWvIqh3ZUkYAi5jaOaQLkjx9hSg3vQYw/view?usp=sharing"  target="_blank" >
                 <button class="inline-block self-end bg-gPrimaryColor text-white font-bold rounded-lg 
                   px-6 py-2 uppercase text-m">
@@ -47,10 +56,6 @@
                 </button>
               </a>
             </div>
-          </div>
-          <div class="profileImage">
-            <img src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" 
-            alt="Profile" class="rounded-lg shadow-xl"/>
           </div>
         </div>
       </div>
@@ -329,7 +334,7 @@
 <style>
   .profileImage { 
     width:50%; height:auto; 
-    max-height: 300px;
+    max-height: 430px;
     Padding: 5px;
     min-width: 50px;
 }
@@ -347,6 +352,11 @@
     display: inline-grid;
     grid-template-columns: 80% 20%;
     @apply grid-rows-3;
+  }
+
+
+  .name {
+    @apply underline underline-offset-8 decoration-purple-400 text-4xl font-changa pl-6 pb-5 text-gPrimaryColor;
   }
 
   .title {
@@ -368,4 +378,8 @@
       grid-template-columns: 50% 50%;
     }
   }
+
+  .reversed-col-content{
+    flex-direction:  column-reverse;
+}
 </style>

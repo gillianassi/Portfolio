@@ -13,7 +13,6 @@
             <div class="grid">
                 <ul class="flex flex-col gap-2 justify-self-end text-sm text-right">
                     <Link to="/">Home</Link>
-                    <Link to="/#projects">Projects</Link>
                     <Link to="/about">About</Link>
                     <Link to="/contact">contact</Link>
                 </ul>

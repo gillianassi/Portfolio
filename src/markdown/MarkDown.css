@@ -37,6 +37,7 @@ img[alt$="><"] {
 .grid-container{
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .reversed-col-content{

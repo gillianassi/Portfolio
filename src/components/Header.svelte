@@ -3,14 +3,14 @@
 </script>
 
 <header >
-    <div class="grid place-content-center h-[30vh] w-fit ">
-        <div class="bg-orange-100 border-l-4 border-orange-500 text-orange-700 p-4 rounded-r-2xl" role="alert">
-            <span class="align-right relative flex h-3 w-3 absolute right-0 ">
+    <div class="grid place-content-center h-[30vh] w-fit  md:opacity-0 pt-10">
+        <div class="bg-gSecondaryColor border-l-4 border-purple-500 text-gBackgroundColor p-4 rounded-r-2xl" role="alert">
+            <span class="float-right relative flex h-3 w-3">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 "></span>
-                <span class="relative inline-flex rounded-full h-3 w-3 bg-orange-500"></span>
+                <span class="relative inline-flex rounded-full h-3 w-3 bg-purple-500"></span>
               </span>
             <p class="font-bold">Note:</p>
-            <p>Website is not optimized for mobile.</p>
+            <p>Website is not optimally displayed on mobile.</p>
         </div>
 
     </div>

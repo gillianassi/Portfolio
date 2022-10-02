@@ -4,46 +4,57 @@
     import {FaItchIo, FaGithub, FaLinkedin} from 'svelte-icons/fa';
 </script>
 
-<div class="bg-gBackgroundColor h-[100vh]">
-    <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center ">
+<div class="bg-gBackgroundColor">
+    <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center  p-5 pt-10 ">
 
-        <div class="flex w-full min-h-screen justify-center items-center">
-            <div class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white
+        <div class="flex w-full min-h-screen justify-center items-center ">
+            <div class="bg-purple-100 p-8 rounded-xl shadow-lg flex flex-col items-center gap-4" >
+                
+                <hi class="font-bold text-4xl tracking-wide text-gPrimaryColor ">Contact me</hi>
+                <div class="flex flex-col items-center space-y-6  w-full max-w-4xl  text-white
                         md:flex-row md:space-x-6 ms:space-y-0">
-                    <div class="flex flex-col justify-between gap-8">
-                        <hi class="font-bold text-4xl tracking-wide text-gPrimaryColor">Contact me</hi>
-                        <div class="relative w-24 ">
-                            <img class="rounded-lg border border-gray-100 shadow-xl " src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="user image" />
-                            <div class="absolute top-0 right-0 h-6 w-6 my-1 border-4 border-white rounded-full bg-green-400 z-2"></div>
-                        </div>
-                        <div class="text-black text-sm">
-                            <p>
-                                Feel free to contact me with any questions, feedback, or job offers. <br> 
-                            </p> 
-                            <b>
-                                Looking for an internship during Spring 2023.
-                            </b>
-                        </div>
-                        
-                        <div>
-                            <div class="socials inline-flex items-center gap-4 self-end">
-                                <span class="">
-                                    
-                                    <a class="socials" href="mailto:assigillian@gmail.com"><IoMdMail/></a>
-                                </span>
-                                <a class="text-purple-800 socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
+                    
+                        <div class="flex flex-col justify-between gap-8 ">
+                        <div class="flex flex-col items-center">
+                            <div class="relative profileImage">
+                                <img class="rounded-lg border border-gray-100 shadow-xl " src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="user image" />
+                                <div class="absolute top-0 right-0 h-6 w-6 my-1 border-4 border-white rounded-full bg-green-400 z-2"></div>
                             </div>
                         </div>
-                        <div class="socials flex gap-4 ">
-                            <span>
-                                <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
-                            </span>
-                            <span>
-                                <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
-                            </span>
-                            <span>
-                                <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
-                            </span>
+                        
+                       
+                        
+                        
+                        <div class="flex flex-col items-center gap-4">
+                            <div class="text-black text-sm md:text-lg">
+                                <p>
+                                    Feel free to contact me with any questions, feedback, or job offers. <br> 
+                                </p> 
+                                <br/>
+                                <b>
+                                    Looking for a game development internship during Spring 2023.
+                                </b>
+                            </div>
+                            <div>
+                                <div class="socials inline-flex items-center gap-4 self-end">
+                                    <span class="">
+                                        
+                                        <a class="socials" href="mailto:assigillian@gmail.com"><IoMdMail/></a>
+                                    </span>
+                                    <a class="text-purple-800 socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="socials flex gap-4 ">
+                                <span>
+                                    <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
+                                </span>
+                                <span>
+                                    <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
+                                </span>
+                                <span>
+                                    <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
+                                </span>
+                            </div>
                         </div>
                     </div>
                         
@@ -78,6 +89,8 @@
                     </div>
                 </div>
             </div>
+            </div>
+            
         </div>
 
       
@@ -89,6 +102,12 @@
 
 <style>
   
+  .profileImage { 
+    width:40%; height:auto; 
+    max-height: 430px;
+    Padding: 5px;
+    min-width: 50px;
+}
     .headerSettings {
         height: calc(100vh * 4 / 5);
     }

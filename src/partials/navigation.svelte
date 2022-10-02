@@ -2,10 +2,10 @@
     import {Link} from 'svelte-routing';
     import {FaItchIo, FaGithub, FaLinkedin} from 'svelte-icons/fa';
 
-
+  
 </script>
 <!-- Navbar goes here -->
-<nav class="nav-gradient    flex flex-wrap justify-between items-center mx-auto " style="z-index: 99999;">
+<nav id="test" class="navbar nav-gradient nav-filled  flex flex-wrap justify-between items-center mx-auto " style="z-index: 99999;">
         <div class="max-w-screen-lg w-full flex justify-between gap-8  items-center">
             <div class="flex space-x-10">
                 <!-- Website Logo -->
@@ -58,12 +58,45 @@
         </ul>
     </div>
     <script>
-				const btn = document.querySelector("button.mobile-menu-button");
-				const menu = document.querySelector(".mobile-menu");
+        const btn = document.querySelector("button.mobile-menu-button");
+        const menu = document.querySelector(".mobile-menu");
+        const nav =  document.querySelector(".navbar");
+        
+        // handle mobile nav clicks
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+                
+        // Attaching the event listener function to window's resize event
+        window.addEventListener("resize", HandleNavigationBar);
+        // do it the first time
+        if (window.innerWidth >= 768){
+            nav.classList.remove('nav-filled'); 
+        }
+        else{
+            nav.classList.remove('nav-gradient'); 
+        }
+                
+        window.onscroll = () => {
+            if (window.innerWidth >= 768){
+            const nav =  document.querySelector(".navbar");
+            if(this.scrollY <= 100) 
+                nav.classList.add('nav-gradient'), nav.classList.remove('nav-filled'); 
+            else 
+            nav.classList.add('nav-filled'), nav.classList.remove('nav-gradient');
+            }
+        };
 
-				btn.addEventListener("click", () => {
-					menu.classList.toggle("hidden");
-				});
+                
+        function HandleNavigationBar() {
+            if (window.innerWidth >= 768){
+                nav.classList.add('nav-gradient'), nav.classList.remove('nav-filled'); 
+            }
+            else{
+                nav.classList.add('nav-filled'), nav.classList.remove('nav-gradient');
+            }
+        };
+                
 			</script>
 </nav>
 
@@ -77,7 +110,8 @@
     }
 
     .nav-filled {
-        @apply bg-black px-2  py-2.5 fixed w-full z-20 top-0 left-0 border-b border-gray-200 ;
+        background-image: linear-gradient(#252525, rgba(0, 0, 0, 0.9));
+        @apply   w-full justify-center text-gSecondaryColor gap-8 p-4 fixed border-b border-gray-200 ;
     }
 
     .nav-title {
