@@ -2,6 +2,7 @@
     import Header from '../components/Header.svelte';
     import Banner from '../components/banner.svelte';
     import Projects from '../components/projects.svelte';
+  
 </script>
    
 <main class="flex flex-col  w-screen flex items-center justify-center bg-gBackgroundColor"> 

@@ -9,6 +9,7 @@
 
   import 'highlight.js/styles/atom-one-dark.css';
   import "./markdown/MarkDown.css";
+  import Project from "./Routes/project.svelte";
 
 </script>
 
@@ -19,6 +20,7 @@
     <Route path="/" component="{Index}" />
     <Route path="/about" component="{About}" />
     <Route path="/contact" component="{Contact}" />
+    <Route path="/project/:id" component="{Project}" />
   </main>
   
   <Footer />
