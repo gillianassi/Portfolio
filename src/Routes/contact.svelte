@@ -10,7 +10,7 @@
         <div class="flex w-full min-h-screen justify-center items-center ">
             <div class="bg-purple-100 p-8 rounded-xl shadow-lg flex flex-col items-center gap-4" >
                 
-                <hi class="font-bold text-4xl tracking-wide text-gPrimaryColor ">Contact me</hi>
+                <hi class="underline underline-offset-8 decoration-purple-400 text-4xl font-changa pl-6 pb-5 text-gPrimaryColor ">Contact me</hi>
                 <div class="flex flex-col items-center space-y-6  w-full max-w-4xl  text-white
                         md:flex-row md:space-x-6 ms:space-y-0">
                     

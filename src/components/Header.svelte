@@ -16,7 +16,7 @@
 </script>
 
 <header class="h-screen relative">
-    <div class="grid place-content-center h-[30vh] w-fit  md:opacity-0 pt-10 md:hidden" >
+    <div class="absolute grid place-content-center h-[30vh] w-fit  md:opacity-0 pt-10 md:hidden" >
         <div class="bg-gSecondaryColor border-l-4 border-purple-500 text-gBackgroundColor p-4 rounded-r-2xl" role="alert">
             <span class="float-right relative flex h-3 w-3">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 "></span>
@@ -49,8 +49,8 @@
             </Link>
         </div>
     </div>
-    <div class="absolute bottom-[20px] left-1/2 h-12">
-        <button class="h-full text-white/70 transition hover:text-purple-100/90 motion-safe:animate-bounce delay-100" on:click="{scrollToProjects}">
+    <div class="relative flex flex-col items-center bottom-[80px] md:bottom-[100px] lg:bottom-[120px]  h-28  md:h-36 lg:h-44">
+        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-bounce delay-50" on:click="{scrollToProjects}">
             <FaCaretDown class="h-full"/>
         </button>
     </div>

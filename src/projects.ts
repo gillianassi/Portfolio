@@ -51,7 +51,7 @@ export const projects = [
         title: "Tree-Umph",
         markdown: TreeUphMd,
         tags: ["C#", DiUnitySmall, FaItchIo, IoMdCloudDownload],
-        desc: "Game Jam, Group Project",
+        desc: "Group Project, Game Jam",
         featured: false,
       },
       {
@@ -75,7 +75,7 @@ export const projects = [
         title: "Not For Sale",
         markdown: NotForSaleMd,
         tags: ["C#", DiUnitySmall, FaItchIo, IoMdCloudDownload],
-        desc: "Complete Game creation, Group Project",
+        desc: "Group Project, Complete Game creation",
         featured: true,
       },
       {
