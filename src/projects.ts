@@ -8,6 +8,7 @@ import { FaVrCardboard, FaItchIo } from "svelte-icons/fa";
 import MetroidMd from "./markdown/projects/metroid.md";
 import GEngineMd from "./markdown/projects/GEngine.md";
 import WindwakerMd from "./markdown/projects/WindWakerRemake.md";
+import DreamBrightMd from "./markdown/projects/DreamBright.md";
 import TreeUphMd from "./markdown/projects/TreeUmph.md";
 import NotForSaleMd from "./markdown/projects/NotForSale.md";
 import RasterizerMd from "./markdown/projects/Rasterizer.md";
@@ -15,7 +16,7 @@ import RayTracerMd from "./markdown/projects/RayTracer.md";
 import DirectX12Md from "./markdown/projects/DirectX12.md";
 // research
 import RegressionMd from "./markdown/Research/Regression.md";
-import HandPoseDetectionMd from "./markdown/Research/HandPoseDetection.md";
+import HandPoseDetectionMd from "./markdown/Research/GestureRecognition.md";
 import LockFreeMd from "./markdown/Research/LockFreeOrderedList.md";
 import PlenopticImagingMd from "./markdown/Research/PlenopticImaging.md";
 
@@ -24,6 +25,18 @@ export const projects = [
     title: "Projects",
     icon: FaGamepad,
     projects: [
+      {
+        image:
+          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+        banner:
+          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+
+        title: "Windwaker Remake",
+        markdown: WindwakerMd,
+        tags: ["C++", DiVisualstudio],
+        desc: "Graphics Programming, Overlord engine",
+        featured: true,
+      },
       {
         image:
           "https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465",
@@ -35,14 +48,14 @@ export const projects = [
       },
       {
         image:
-          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+          "https://ik.imagekit.io/gillianassi/Projects/Dream_Bright/BannerCut_xAkqjfw5f.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674942801171",
         banner:
-          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+          "https://ik.imagekit.io/gillianassi/Projects/Dream_Bright/Banner_nlqzg2G0P.png?ik-sdk-version=javascript-1.4.3&updatedAt=1674940747096",
 
-        title: "Windwaker Remake",
-        markdown: WindwakerMd,
-        tags: ["C++", DiVisualstudio],
-        desc: "Graphics Programming, Overlord engine",
+        title: "Dream Bright",
+        markdown: DreamBrightMd,
+        tags: ["Unreal Engine 5", "C++", DiVisualstudio],
+        desc: "Group Project, Complete Game creation",
         featured: true,
       },
       {
@@ -76,7 +89,7 @@ export const projects = [
         markdown: NotForSaleMd,
         tags: ["C#", DiUnitySmall, FaItchIo, IoMdCloudDownload],
         desc: "Group Project, Complete Game creation",
-        featured: true,
+        featured: false,
       },
       {
         image:
@@ -111,6 +124,18 @@ export const projects = [
     title: "Research",
     icon: IoIosPaper,
     projects: [
+      
+      {
+        banner:
+          "https://ik.imagekit.io/gillianassi/Research/GestureRecognition/DemoVideo_-_frame_at_1m4s_EDx1lu4Oj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674939739407",
+        image:
+          "https://ik.imagekit.io/gillianassi/Research/GestureRecognition/ThunderStorm_ifTk2teU4R.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674939739543",
+        title: "Complex Gesture Recognition",
+        markdown: HandPoseDetectionMd,
+        tags: [DiUnitySmall, FaVrCardboard],
+        desc: "VR, Oculus SDK, Hand Tracking, Paper",
+        featured: true,
+      },
       {
         image:
           "https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112",
@@ -131,15 +156,6 @@ export const projects = [
         markdown: PlenopticImagingMd,
         tags: ["C++", FaVrCardboard],
         desc: "VR, Bachelor Thesis",
-        featured: true,
-      },
-      {
-        image:
-          "https://ik.imagekit.io/gillianassi/Research/HandTracking/HandTracking_aTsyPkxgc.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=16598485591030",
-        title: "Hand pose detection in VR",
-        markdown: HandPoseDetectionMd,
-        tags: [DiUnitySmall, FaVrCardboard],
-        desc: "VR, Oculus SDK, Hand Tracking",
         featured: false,
       },
       {

@@ -38,9 +38,9 @@
             <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl  text-gSecondaryColor font-changa">
                 Graduated Electronics-ICT engineer and VR enthousiast 
                 <br><br>
-                <div class="bg-purple-50/90 items-center justify-center rounded-lg p-4">
+                <!-- <div class="bg-purple-50/90 items-center justify-center rounded-lg p-4">
                     <b class="text-purple-500 ">Looking for a game development internship during Spring 2023
-                </div>
+                </div> -->
             </div>    
             <Link to="/contact">
                 <button class="btn btn-color">

@@ -31,9 +31,6 @@
                                     Feel free to contact me with any questions, feedback, or job offers. <br> 
                                 </p> 
                                 <br/>
-                                <b>
-                                    Looking for a game development internship during Spring 2023.
-                                </b>
                             </div>
                             <div>
                                 <div class="socials inline-flex items-center gap-4 self-end">
