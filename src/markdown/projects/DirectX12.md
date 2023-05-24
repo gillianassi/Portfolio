@@ -1,14 +1,5 @@
 # Direct X 12 Introduction
 
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
-    <div class="text-align: center">
-        <b>!! Work in progress !!</b>
-    </div>
-    <div class="text-align: center" >
-        <b>I am still researching Direct X 12 and have not a lot to show yet</b>  <br> 
-    </div>
-</div>
-
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
         <div>
@@ -22,3 +13,12 @@
     </div>
 </div>
 <br>
+
+<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
+    <div class="text-align: center">
+        <b>!! Work in progress !!</b>
+    </div>
+    <div class="text-align: center" >
+        <b>I am still researching Direct X 12 and have not a lot to show yet</b>  <br> 
+    </div>
+</div>

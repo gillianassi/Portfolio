@@ -42,10 +42,10 @@
 </script>
 
 <section id="MyWork" >
-    <h2  class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center">Featured Work</h2>
+    <h2  class="font-mono lg:text-7xl sm:text-6xl text-5xl py-5 text-gSecondaryColor font-changa w-full text-center">Featured Work</h2>
     <div class="overflow-x-hidden relative">
         <IntersectionObserver {element} bind:intersecting threshold="{0.4}" once="{false}">
-            <div bind:this={element} class="transition-all carouselWidth relative hover_container items-center h-96 translate-x-500 justify-around mx-10" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
+            <div bind:this={element} class="transition-all carouselWidth relative hover_container items-center lg:h-96 sm:h-72 h-40 justify-around" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
                 {#if intersecting === true}
                 <div transition:fade class="transition-all h-full w-full flex gap-2">
                     {#each featured as project, index}
@@ -78,7 +78,7 @@
         </IntersectionObserver>
     </div>
 </section>
- <Modal {showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.banner}>
+ <Modal bind:toggle={showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.banner}>
     <main>
         <svelte:component this={selectedProject.markdown}/>
     </main>

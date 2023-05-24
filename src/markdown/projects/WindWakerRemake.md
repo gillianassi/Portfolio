@@ -16,16 +16,6 @@
 
 # The legend of Zelda: The Wind Waker Remake
 
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
-    <div class="text-align: center">
-        <b>!! Work in progress !!</b>
-    </div>
-    <div class="text-align: center" >
-        <b>Although the base project is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
-    </div>
-</div>
-<br>
-
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
         <div>
@@ -114,4 +104,13 @@
 <br>
 
 # Duration
+<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; padding:40px ">
+    <div class="text-align: center">
+        <b>!! Work in progress !!</b>
+    </div>
+    <div class="text-align: justify" >
+        <b>Although the base project is finished, I intend to polish Outset Island completely to have one fully functional level similar to the original game.</b>  <br> 
+    </div>
+</div>
+<br>
 1 semester

@@ -7,6 +7,7 @@ import { FaVrCardboard, FaItchIo } from "svelte-icons/fa";
 // project
 import MetroidMd from "./markdown/projects/metroid.md";
 import GEngineMd from "./markdown/projects/GEngine.md";
+import DiffusePathTracerMd from "./markdown/projects/DiffusePathTracer.md";
 import WindwakerMd from "./markdown/projects/WindWakerRemake.md";
 import DreamBrightMd from "./markdown/projects/DreamBright.md";
 import TreeUphMd from "./markdown/projects/TreeUmph.md";
@@ -31,7 +32,7 @@ export const projects = [
         banner:
           "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
 
-        title: "Windwaker Remake",
+        title: "Windwaker Graphics Remake",
         markdown: WindwakerMd,
         tags: ["C++", DiVisualstudio],
         desc: "Graphics Programming, Overlord engine",
@@ -69,6 +70,18 @@ export const projects = [
       },
       {
         image:
+          "https://ik.imagekit.io/gillianassi/Tumbnails/ioi_white_on_black_eaMHZ0dtV.jpg?updatedAt=1684930110508",
+        banner:
+          "https://ik.imagekit.io/gillianassi/Tumbnails/ioi_white_on_black_eaMHZ0dtV.jpg?updatedAt=1684930110508",
+
+        title: "Diffuse Path Tracer",
+        markdown: DiffusePathTracerMd,
+        tags: ["C++", DiVisualstudio],
+        desc: "Own C++ Game engine",
+        featured: true,
+      },
+      {
+        image:
           "https://ik.imagekit.io/gillianassi/Projects/G-Engine/GEngine_iy-_sjm_p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661782460626",
         banner:
           "https://ik.imagekit.io/gillianassi/Projects/G-Engine/GEngine_iy-_sjm_p.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661782460626",
@@ -77,7 +90,7 @@ export const projects = [
         markdown: GEngineMd,
         tags: ["C++", DiVisualstudio, DiGithubBadge],
         desc: "Own C++ Game engine",
-        featured: true,
+        featured: false,
       },
       {
         image:

@@ -17,15 +17,6 @@
 </div>
 
 
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
-    <div class="text-align: center">
-        <b>!! More information coming soon !!</b>
-    </div>
-    <div class="text-align: center" >
-        <b>This project has offically been completed. However, we're still adding some features for Steam release</b>  <br> 
-    </div>
-</div>
-
 # Not For Sale
 
 
@@ -92,3 +83,12 @@ This project is created by students of Howest University of applied sciences at 
     <li>Polish (2 weeks)</li>
 </ul>
 
+
+<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
+    <div class="text-align: center">
+        <b>!! More information coming soon !!</b>
+    </div>
+    <div class="text-align: center" >
+        <b>This project has offically been completed. However, we're still adding some features for Steam release</b>  <br> 
+    </div>
+</div>

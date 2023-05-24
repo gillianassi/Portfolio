@@ -50,8 +50,8 @@
             </div>
     </div>
     <!-- mobile menu -->
-    <div class="hidden mobile-menu  w-full ">
-        <ul class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+    <div class="hidden mobile-menu  w-full">
+        <ul class="mobile-menu-selection flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
             <li class="active block"><Link to="/"><div class="gillian-link block  w-full relative font-changa px-2 py-4">Home</div></Link></li>
             <li><Link to="/about"><div class="gillian-link relative font-changa px-2 py-4">About</div></Link></li>
             <li><Link to="/contact"><div class="gillian-link relative font-changa px-2 py-4">Contact</div></Link></li>
@@ -64,8 +64,22 @@
         
         // handle mobile nav clicks
         btn.addEventListener("click", () => {
+            setTimeout(function(){
+
             menu.classList.toggle("hidden");
+            }, 100); 
         });
+
+        menu.addEventListener("click", () => {
+            
+            
+            setTimeout(function(){
+
+                menu.classList.toggle("hidden");
+            }, 180); 
+            
+        });
+        
                 
         // Attaching the event listener function to window's resize event
         window.addEventListener("resize", HandleNavigationBar);

@@ -13,14 +13,6 @@
 </div>
 
 # G-Engine a 2D Game Engine
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
-    <div class="text-align: center">
-        <b>!! Work in progress !!</b>
-    </div>
-    <div class="text-align: center" >
-        <b>Although the base the engine is functional. I plan to create a skill-tree creator tool using the engine which will save the created trees onto binary files.</b>  <br> 
-    </div>
-</div>
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
@@ -202,4 +194,12 @@ public:
 <br>
 
 # Duration
+<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
+    <div class="text-align: center">
+        <b>!! Work in progress !!</b>
+    </div>
+    <div class="text-align: center" >
+        <b>Although the base the engine is functional. I plan to create a skill-tree creator tool using the engine which will save the created trees onto binary files.</b>  <br> 
+    </div>
+</div>
 Over the timespan of 1 semester (research included)

@@ -16,7 +16,7 @@
 </script>
 
 <header class="h-screen relative">
-    <div class="absolute grid place-content-center h-[30vh] w-fit  md:opacity-0 pt-10 md:hidden" >
+    <!-- <div class="absolute grid place-content-center h-[30vh] w-fit  md:opacity-0 pt-10 md:hidden" >
         <div class="bg-gSecondaryColor border-l-4 border-purple-500 text-gBackgroundColor p-4 rounded-r-2xl" role="alert">
             <span class="float-right relative flex h-3 w-3">
                 <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-purple-400 opacity-75 "></span>
@@ -26,7 +26,7 @@
             <p>Website is not optimally displayed on mobile.</p>
         </div>
 
-    </div>
+    </div> -->
     
     <div class="flex flex-col items-center  h-full">
         <div class="bg-gray-800/50 flex flex-col gap-4 pb-5 flex items-center justify-center align-middle rounded-2xl w-full h-full ">
@@ -36,7 +36,7 @@
             </div>
     
             <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl  text-gSecondaryColor font-changa">
-                Graduated Electronics-ICT engineer and VR enthousiast 
+                Graduated Electronics-ICT engineer and VR enthusiast 
                 <br><br>
                 <!-- <div class="bg-purple-50/90 items-center justify-center rounded-lg p-4">
                     <b class="text-purple-500 ">Looking for a game development internship during Spring 2023

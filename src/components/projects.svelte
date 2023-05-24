@@ -7,6 +7,8 @@
     import { onMount } from 'svelte';
     
     import {projects as folders} from '../projects.ts';
+    
+    
 
     $: active = "Projects";
     $: showModal = false; 
@@ -15,6 +17,7 @@
     const url = new URL(window.location);
 
     const toggleModal = (project) => {
+        
         if(showModal === false) {
             selectedProject = project;
             updateProjectParam(project.title);
@@ -120,7 +123,7 @@
         </div>
     </div>
 </div>
-<Modal {showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.banner ?? selectedProject.image}> 
+<Modal  bind:toggle={showModal} isHighlighted={highlightModal} on:click={toggleModal} bannerImage={selectedProject.banner ?? selectedProject.image}> 
     <main>
         <svelte:component this={selectedProject.markdown}/>
     </main>

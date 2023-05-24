@@ -7,9 +7,9 @@
     <div
       class="flex flex-col h-full gap-4 w-screen flex items-center justify-center "
     >
-      <div class="flex w-full min-h-screen justify-center items-center p-5 pt-20 ">
+      <div class="flex w-full min-h-screen justify-center items-center sm:p-5 p-2 pt-20 ">
         <div
-          class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-8 rounded-xl shadow-lg text-white
+          class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-2 rounded-xl shadow-lg text-white
                       md:flex-row md:space-x-6 ms:space-y-0"
         >
         
@@ -19,7 +19,7 @@
           </div>
           <div class="item-body p-4 max-w-prose text-black">
             <h1 class="name ">GILLIAN ASSI</h1>
-            <div class="md:text-justify p-3 w-prose">
+            <div class="md:text-justify text-center md:p-3 w-prose">
               <p class="pb-2">
                 Oh, hi there! It seems like you’ve stumbled upon my About page.<br
                 />
@@ -36,10 +36,10 @@
                 and <b class="text-gPrimaryColor">Game Developer</b>.
               </p>
               <p>
-                Past years, game implementations for <b
-                  class="text-gPrimaryColor">VR development</b
+                During my education, game implementations for <b
+                  class="text-gPrimaryColor">Graphics Programming</b
                 >
-                and <b class="text-gPrimaryColor">Graphics Programming</b> became
+                and <b class="text-gPrimaryColor">VR development</b> became
                 topics that intrigued me the most. However, I am always able to find
                 joy in engine programming and designing game mechanics.
               </p>
@@ -76,10 +76,10 @@
 
           <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2 ">
             <table
-              class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400"
+              class="table-auto w-full text-sm text-left text-gray-400"
             >
               <thead
-                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                class="text-xs uppercase bg-gray-50 bg-gray-700 text-gray-400"
               >
                 <tr class="">
                   <th scope="col" class="py-3 px-6">Degree</th>
@@ -89,7 +89,7 @@
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td
                     >Bachelor degree <b class="text-gPrimaryColor"
@@ -97,10 +97,10 @@
                     ></td
                   >
                   <td>Game Development</td>
-                  <td>2020 - now</td>
+                  <td>2020 - 2023</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td
                     >Master of <b class="text-gPrimaryColor"
@@ -111,7 +111,7 @@
                   <td>2019 – 2020</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td
                     >Bachelor of <b class="text-gPrimaryColor"
@@ -129,58 +129,67 @@
           <h1 class="title">Learned Programming Languages</h1>
           <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2">
             <table
-              class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400"
+              class="table-auto w-full text-sm text-left text-gray-400"
             >
               <thead
-                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                class="text-xs  uppercase bg-gray-50 bg-gray-700 text-gray-400"
               >
                 <tr class="">
                   <th scope="col" class="py-3 px-6">Language</th>
                   <th scope="col" class="py-3 px-6">Proficiency</th>
+                  <th scope="col" class="py-3 px-6">Experience</th>
+
                 </tr>
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>C++</td>
                   <td>Advanced</td>
+                  <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>C#</td>
                   <td>Advanced</td>
+                  <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>HLSL</td>
-                  <td>Intermadiate</td>
+                  <td>Experienced</td>
+                  <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Matlab</td>
                   <td>Intermadiate</td>
+                  <td>2 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>SQL</td>
                   <td>Basic</td>
+                  <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>php</td>
                   <td>Basic</td>
+                  <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>html/CSS</td>
                   <td>Basic</td>
+                  <td>2 years</td>
                 </tr>
               </tbody>
             </table>
@@ -193,101 +202,115 @@
             class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2 pb-5"
           >
             <table
-              class="table-auto w-full text-sm text-left text-gray-500 dark:text-gray-400"
+              class="table-auto w-full text-sm text-left  text-gray-400"
             >
               <thead
-                class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
+                class="text-xs  uppercase bg-gray-50 bg-gray-700 text-gray-400"
               >
                 <tr class="">
                   <th scope="col" class="py-3 px-6">Language</th>
                   <th scope="col" class="py-3 px-6">Proficiency</th>
+                  <th scope="col" class="py-3 px-6">Experience</th>
                 </tr>
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Visual Studios & Visual Code</td>
                   <td>Advanced</td>
+                  <td>7 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Unreal Engine</td>
                   <td>Advanced</td>
+                  <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Unity</td>
                   <td>Advanced</td>
+                  <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
-                >
-                  <td>Nvidia PhysX</td>
-                  <td>Intermediate</td>
-                </tr>
-                <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Oculus SDK</td>
-                  <td>Basic</td>
+                  <td><div>Experienced</div></td>
+                  <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Git</td>
                   <td>Experienced</td>
+                  <td></td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Perforce</td>
                   <td>Experienced</td>
+                  <td></td>
                 </tr>
-
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                >
+                  <td>Nvidia PhysX</td>
+                  <td>Intermediate</td>
+                  <td>1 year</td>
+                </tr>
+                <tr
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Autodesk Inventor</td>
                   <td>Intermediate</td>
+                  <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Autodesk Autocad</td>
                   <td>Intermediate</td>
+                  <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Autodesk Maya</td>
                   <td>Intermediate</td>
+                  <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Adobe Photoshop</td>
                   <td>Intermediate</td>
+                  <td></td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Win32</td>
                   <td>Basic</td>
+                  <td></td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b dark:bg-gray-800 dark:border-gray-700"
+                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
                 >
                   <td>Houdini</td>
                   <td>Basic</td>
+                  <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-white border-b dark:bg-gray-900 dark:border-gray-700"
+                  class="bg-white border-b bg-gray-900 border-gray-700"
                 >
                   <td>Substance Painter</td>
                   <td>Basic</td>
+                  <td></td>
                 </tr>
               </tbody>
             </table>
@@ -297,7 +320,34 @@
       <div class="bg-black min-w-full rounded-lg pl-6 pt-10 pb-5">
         <h1 class="title ">Experience</h1>
         <div class="pl-6 bg-zinc-900 rounded-lg">
-          <h1 class="Subtitle">Intern electronics Engineer (R&D)</h1>
+          <h1 class="Subtitle">Render Programmer Intern</h1>
+          <h2 class="text-xl font-changa  pb-2">IO Interactive - 4 months</h2>
+          <div class="grid-container-centered">
+            <div class="text-sm pl-2">
+              <p class="">Specific tasks:</p>
+              <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
+                <li>Work on the Glacier 2 render code</li>
+                <li>Creation of a diffuse pathtracer</li>
+                <li>Participate in peer reviews of designs and code.</li>
+                <li>Develop and maintain render features driving the current and future titles of IOI.</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-sm pl-2">
+                <p class="">Used Technologies:</p>
+                <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
+                  <li>C++</li>
+                  <li>VS Code</li>
+                  <li>Perforce</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="pl-6 bg-zinc-900 rounded-lg">
+          <h1 class="Subtitle">Electronics Engineer Intern (R&D)</h1>
+          <h2 class="text-xl font-changa  pb-2">Shayp - 4 months</h2>
           <div class="grid-container-centered">
             <div class="text-sm pl-2">
               <p class="">Specific tasks:</p>
@@ -364,7 +414,7 @@
   }
 
   .Subtitle {
-    @apply text-3xl font-changa pb-2;
+    @apply text-3xl font-changa;
   }
 
   @media screen and (min-width: 900px) {
