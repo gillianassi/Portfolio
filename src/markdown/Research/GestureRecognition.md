@@ -5,12 +5,12 @@
 
 
 <div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Paper</b>
+     <b style="spadding-right:5px; padding-top:5px">Paper</b>
     <span>
         <a  href="https://drive.google.com/file/d/1JCU4RP88PnkKnj7y5wkTJ2elSr9m10xZ/view?usp=sharing" target="_blank" rel="no-referrer"><IoIosPaper />
         </a>
     </span>
-     <b style="padding-right:20px; padding-top:5px">&nbsp&nbsp&nbsp GitHub Page</b>
+     <b style="padding-left:5px; padding-right:5px; padding-top:5px">&nbsp&nbsp&nbsp GitHub Page</b>
     <span>
         <a href="https://github.com/gillianassi/GestureRecognition" target="_blank" rel="no-referrer"><FaGithub />
         </a>

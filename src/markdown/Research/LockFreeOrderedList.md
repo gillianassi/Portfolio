@@ -6,10 +6,7 @@
 
  ## What type of list am I using and why?
  
- I decided to go for an ordered linked list for the following reasons: <br>
- 1) I was able to find documentation surrounding this subject <br>
- 2) while inserting and deleting values in an ordered linked list using multiple threads, 
-    especially the pNext of the left node needs to be atomically changed. <br>
+ While inserting and deleting values in an ordered linked list using multiple threads, especially the pNext of the left node needs to be atomically changed. <br>
  <br>
  
  ## What will be the Problem if I simply use CAS? [ ABA problem ]

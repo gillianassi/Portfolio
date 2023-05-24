@@ -8,7 +8,7 @@
 
 
 <div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Icth.io Page</b>
+     <b style="padding-right:20px; padding-top:5px">Icth.io</b>
     <span>
         <a href="https://gillianassi.itch.io/tinytitans" target="_blank" rel="no-referrer"><FaItchIo />
         </a>

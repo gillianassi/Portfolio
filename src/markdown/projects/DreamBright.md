@@ -1,6 +1,6 @@
 
 <script>
-    import {FaItchIo} from 'svelte-icons/fa';
+    import {FaItchIo, FaSteam} from 'svelte-icons/fa';
 </script>
 
 <style>
@@ -8,10 +8,15 @@
 </style>
 
 
-<div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Icth.io Page</b>
+<div class="socials flex  " style="padding-bottom:5px;">
+    <b style="padding-right:5px; padding-top:5px">Steam</b>
     <span>
-        <a href="https://gillianassi.itch.io/dream-bright" target="_blank" rel="no-referrer"><FaItchIo />
+        <a href="https://store.steampowered.com/app/2280200/Dream_Bright/" target="_blank" rel="no-referrer"><FaSteam />
+        </a>
+    </span>
+    <b style="padding-left:5px; padding-right:5px; padding-top:5px">Itch.io</b>
+    <span>
+        <a href="https://gillianassi.itch.io/dream-bright" target="_blank" rel="no-referrer"><FaItchIo/>
         </a>
     </span>
 </div>

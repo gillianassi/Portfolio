@@ -1,4 +1,4 @@
-import { FaGamepad } from "svelte-icons/fa";
+import { FaGamepad, FaSteam, FaAndroid } from "svelte-icons/fa";
 import { IoIosPaper, IoMdCloudDownload } from "svelte-icons/io";
 import { DiUnitySmall, DiVisualstudio, DiGithubBadge } from "svelte-icons/di";
 import { FaVrCardboard, FaItchIo } from "svelte-icons/fa";
@@ -18,7 +18,7 @@ import DirectX12Md from "./markdown/projects/DirectX12.md";
 // research
 import RegressionMd from "./markdown/Research/Regression.md";
 import HandPoseDetectionMd from "./markdown/Research/GestureRecognition.md";
-import LockFreeMd from "./markdown/Research/LockFreeOrderedList.md";
+import KeccakSpongeMD from "./markdown/Research/KeccakSponge.md";
 import PlenopticImagingMd from "./markdown/Research/PlenopticImaging.md";
 
 export const projects = [
@@ -34,18 +34,9 @@ export const projects = [
 
         title: "Windwaker Graphics Remake",
         markdown: WindwakerMd,
-        tags: ["C++", DiVisualstudio],
-        desc: "Graphics Programming, Overlord engine",
+        tags: ["C++", "Overlord", DiVisualstudio],
+        desc: "Graphics Programming, Graphics Recreation",
         featured: true,
-      },
-      {
-        image:
-          "https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465",
-        title: "Super Metroid Remake",
-        markdown: MetroidMd,
-        tags: ["C++", DiVisualstudio, IoMdCloudDownload],
-        desc: "Study Game Mechanics",
-        featured: false,
       },
       {
         image:
@@ -55,7 +46,7 @@ export const projects = [
 
         title: "Dream Bright",
         markdown: DreamBrightMd,
-        tags: ["Unreal Engine 5", "C++", DiVisualstudio],
+        tags: [FaSteam, "UE5", "C++", DiVisualstudio, FaItchIo],
         desc: "Group Project, Complete Game creation",
         featured: true,
       },
@@ -64,7 +55,7 @@ export const projects = [
           "https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440",
         title: "Tree-Umph",
         markdown: TreeUphMd,
-        tags: ["C#", DiUnitySmall, FaItchIo, IoMdCloudDownload],
+        tags: ["C#", DiUnitySmall, FaItchIo],
         desc: "Group Project, Game Jam",
         featured: false,
       },
@@ -76,8 +67,8 @@ export const projects = [
 
         title: "Diffuse Path Tracer",
         markdown: DiffusePathTracerMd,
-        tags: ["C++", DiVisualstudio],
-        desc: "Own C++ Game engine",
+        tags: ["C++", "Glacier2", DiVisualstudio],
+        desc: "Graphics Programming, Diffuse Path Tracer",
         featured: true,
       },
       {
@@ -106,11 +97,20 @@ export const projects = [
       },
       {
         image:
+          "https://ik.imagekit.io/gillianassi/Tumbnails/SuperMetroid_Tumbnail_G5bJHpi5r.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301465",
+        title: "Super Metroid Remake",
+        markdown: MetroidMd,
+        tags: ["C++", DiVisualstudio, IoMdCloudDownload],
+        desc: "Study Game Mechanics",
+        featured: false,
+      },
+      {
+        image:
           "https://ik.imagekit.io/gillianassi/Tumbnails/RayTracer_Tumbnail_5VHCJc57U.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300788",
         title: "Multithreaded Ray Tracer",
         markdown: RayTracerMd,
         tags: ["C++", DiVisualstudio],
-        desc: "Graphics Programming",
+        desc: "Graphics Programming, Software Ray Tracing",
         featured: false,
       },
       {
@@ -119,7 +119,7 @@ export const projects = [
         title: "Software/Hardware rasterizer",
         markdown: RasterizerMd,
         tags: ["C++", DiVisualstudio],
-        desc: "Graphics Programming",
+        desc: "Graphics Programming, Rasterisation",
         featured: false,
       },
       {
@@ -149,16 +149,7 @@ export const projects = [
         desc: "VR, Oculus SDK, Hand Tracking, Paper",
         featured: true,
       },
-      {
-        image:
-          "https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112",
-        title: "Regression",
-        markdown: RegressionMd,
-        tags: ["Matlab", DiGithubBadge],
-        desc: "Data analysis, Regression",
-        featured: false,
-      },
-
+      
       {
         image:
           "https://ik.imagekit.io/gillianassi/Research/PlenopticImaging/ActionShotPlenoptic2_rZPlYPhhv.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661777233389",
@@ -167,19 +158,28 @@ export const projects = [
 
         title: "VR for subjective evaluations of plenoptic images",
         markdown: PlenopticImagingMd,
-        tags: ["C++", FaVrCardboard],
-        desc: "VR, Bachelor Thesis",
+        tags: ["C++", DiVisualstudio, FaVrCardboard],
+        desc: "VR, Light Fields, Bachelor Thesis",
         featured: false,
       },
       {
         image:
-          "https://ik.imagekit.io/gillianassi/Tumbnails/LockFreeLinkedList_Tumbnail_EVqB64eOC.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743300169",
-        title: "Lock Free Ordened Linked List",
-        markdown: LockFreeMd,
-        tags: ["C++", DiVisualstudio],
-        desc: "Lock-free Multithreading",
+          "https://ik.imagekit.io/gillianassi/Tumbnails/symmetric-key-encryption_ahgxuUyK0.png?updatedAt=1684967849634",
+        title: "Efficient Control of Secured WSAN Using a Keccak Sponge",
+        markdown: KeccakSpongeMD,
+        tags: ["C++", "C#", DiVisualstudio, FaAndroid],
+        desc: "Encryption, Master Thesis",
         featured: false,
       },
+      {
+        image:
+          "https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112",
+        title: "Regression",
+        markdown: RegressionMd,
+        tags: ["Matlab", DiGithubBadge],
+        desc: "Data analysis, Regression",
+        featured: false,
+      }
     ],
   },
 ];
