@@ -57,7 +57,7 @@
         
       </header>
       {/if}
-      <div class="p-8 rounded-t-xl bg-white -translate-y-4">
+      <div class="p-8 rounded-t-xl bg-gLightPrimaryColor -translate-y-4">
         <slot />
     </div>
       
@@ -70,14 +70,14 @@
     width: 100%;
     height: 100%;
     position: fixed;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     top: 0;
     left: 0;
     z-index: 99999;
     @apply flex items-center ;
   }
   .modal{
-    @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-white mx-auto rounded-sm shadow-md rounded-xl;
+    @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-gSecondaryColor mx-auto rounded-sm shadow-md rounded-xl;
 
   }
 
@@ -109,5 +109,26 @@ body.modal-open {
   position: absolute;
   right: 0;
   top: 0
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #242424;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+}
+ 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 </style>

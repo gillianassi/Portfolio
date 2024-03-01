@@ -49,8 +49,9 @@
             </Link>
         </div>
     </div>
-    <div class="relative flex flex-col items-center bottom-[80px] md:bottom-[100px] lg:bottom-[120px]  h-28  md:h-36 lg:h-44">
-        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-bounce delay-50" on:click="{scrollToProjects}">
+    <div class="relative flex flex-col items-center bottom-[80px] md:bottom-[100px] lg:bottom-[120px] h-16">
+        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-bounce 
+        delay-50 hover:[animation-play-state:paused]" on:click="{scrollToProjects}">
             <FaCaretDown class="h-full"/>
         </button>
     </div>
@@ -65,10 +66,10 @@
         @apply font-bold py-3 px-5 rounded;
     }
   .btn-color {
-        @apply bg-purple-600 text-purple-100;
+        @apply bg-gDarkPrimaryColor text-gLightPrimaryColor;
     }
   .btn-blue:hover {
-        @apply bg-purple-900;
+        @apply bg-gDarkPrimaryColor;
     }
 </style>
 

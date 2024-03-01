@@ -3,35 +3,46 @@
 </style>
 
 <script>
-    import {FaGithub} from 'svelte-icons/fa';
+    import {FaLink} from 'svelte-icons/fa';
 </script>
 
-<div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">IO Interactive</b>
-    <span>
-        <a  href="https://ioi.dk/" target="_blank" rel="no-referrer"><img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Tumbnails/ioi_white_on_black__1__RJaMdpu89.jpg?updatedAt=1684930577153" alt="IOI"  width="50" />
+<div class="flex" style="padding-bottom:20px;">
+    <div class="flex pr-5">
+        <a href="https://ioi.dk/" target="_blank" rel="no-referrer">
+            <div class="flex items-center LinkWrapper">
+                <div>
+                <b style="padding-left:5px; padding-right:10px; ">IO Interactive</b>
+                </div>
+                <div class="padding-right:20px h-6 ">
+                    <FaLink/>
+                </div >
+            </div>
         </a>
-    </span>
+    </div>
 </div>
 
 # Diffuse Path Tracer
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
             As part of my internship at IO Interactive, one of my responsibilities was the creation of a diffuse path tracer. <br>
             The end product is integrated into the existing pipeline of the Glacier 2 Engine. The final result converges to an accurate path-traced result of the scene.
             </p>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/tmp_1684174900325_miezKcbfE.jpg?updatedAt=1684931150599" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/CouchDynamic_CosineWeighted_PT-ezgif.com-video-to-gif-converter_-o-9Jn_Z0.gif?updatedAt=1708994083073" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/346134846_222369517250240_5992395504874644958_n_nJ3tZNfjP.jpg?updatedAt=1684935559186" alt="Action Shot"  width="auto" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/CompareLight_MaBkrveVx.jpg?updatedAt=1708993657577" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Covered Topics</h1>
-            <ul class="list-disc marker:text-purple-300 pl-10">
+            <ul class="list-disc marker:text-gPrimaryColor pl-10">
                 <li>Monte Carlo: Importance sampling</li>
                 <li>Multi-Bounce Rays using Russian Roulette</li>
                 <li>Light Sampling</li>
@@ -43,17 +54,43 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Functionality</h1>
             <p>
                 The path tracer shoots multi-bounce rays using importance sampling for each bounce. To determine the bounce probability of the rays, Russian roulette is used. The throughput for every ray is updated every bounce to attain a faster convergence where possible. The image shown to the user uses a compute shader to accumulate all of the Path traced images.
             </p>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/349271434_1413620042734604_6643657597192114373_n_lvFXQUeXV.jpg?updatedAt=1684935559222" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+             <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/UniformSampling_WqJIjaF6z.gif?updatedAt=1708992810697" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/Capture_yvSf6xoIC.PNG?updatedAt=1684932501129" alt="Action Shot"  width="auto" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/Piano_RTAO_zprC03pSS.png?updatedAt=1708992807730" alt="Action Shot"  width="auto" />
+         </div>
+        <div class="w-full">
+            <h1 class="title">Ray Traced Ambient Occlusion</h1>
+            <p>
+            One of the first thins I tackeled in this project was understanding Ray Traced Ambient Occulusion and what methods can be used to get this. This was an extremely usefull intermediate step that let me create the foundation of the diffuse path tracer. This also helped with getting a visual understanding of the math involved.
+            </p>
+        </div>
+    </div>
+    <div class="grid-container grid-centered-container reversed-col-content">
+        <div class="w-full">
+            <h1 class="title">Uniform VS Cosine-Weighted</h1>
+            <p>
+                The biggest performance improvemnt I implemented was seen when I changed the sampling technique from Uniform Sampling to Cosine-Weighted. While Uniform, as it name sugests, samples uniformly in random directions on the hemisphere; cosine-weighted sampling has a preference in the direction of the normal. This tiny difference made the accumulation speed skyrocket and minimized the occurrence of fireflies.
+            </p>
+        </div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/Untitled_XaJcrWsQt.jpg?updatedAt=1708996960034" alt="Action Shot"  width="auto" />
+        </div>
+    </div>
+    <div class="grid-container grid-centered-container">
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/Trolly_Samples_Angle0_78hI01gbmV.png?updatedAt=1708992808597" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Debug Tools</h1>
             <p>
             Additionally, I was in charge of creating various debugging tools for the path tracer to improve the development progress of the path tracer. Some examples of such debug tools are a Sample Distribution visualiser (see image) and a light grid visualiser.
@@ -66,7 +103,7 @@
 
 # Used Technologies<br>
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>Glacier 2 Engine</li>
         <li>C++</li>
         <li>hlsl</li>
@@ -84,12 +121,4 @@ This project is created within the Glacier 2 Engine, the in-house engine of IO I
 
 
 # Duration
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; padding:40px ">
-    <div class="text-align: center">
-        <b>!! Work in progress !!</b>
-    </div>
-    <div class="text-align: justify" >
-        <b>This is a work in progress. Changes may occur as long as my internship at IO Interactive lasts. <br>This is why the currently used images are limited in quality.<br> 
-    </div>
-</div>
 3 months

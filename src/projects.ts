@@ -9,6 +9,7 @@ import MetroidMd from "./markdown/projects/metroid.md";
 import GEngineMd from "./markdown/projects/GEngine.md";
 import DiffusePathTracerMd from "./markdown/projects/DiffusePathTracer.md";
 import WindwakerMd from "./markdown/projects/WindWakerRemake.md";
+import MetroAwakeningMd from "./markdown/projects/MetroAwakening.md";
 import DreamBrightMd from "./markdown/projects/DreamBright.md";
 import TreeUphMd from "./markdown/projects/TreeUmph.md";
 import NotForSaleMd from "./markdown/projects/NotForSale.md";
@@ -28,14 +29,14 @@ export const projects = [
     projects: [
       {
         image:
-          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+          "https://ik.imagekit.io/gillianassi/Tumbnails/ioi_MFmwPZP-H.jpg?updatedAt=1708988753719",
         banner:
-          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+          "https://ik.imagekit.io/gillianassi/Projects/Diffuse_PathTracer/Piano_PT_ALeD8lbrl.png?updatedAt=1708990451142",
 
-        title: "Windwaker Graphics Remake",
-        markdown: WindwakerMd,
-        tags: ["C++", "Overlord", DiVisualstudio],
-        desc: "Graphics Programming, Graphics Recreation",
+        title: "Diffuse Path Tracer",
+        markdown: DiffusePathTracerMd,
+        tags: ["C++", "Glacier2", DiVisualstudio],
+        desc: "Graphics Programming, Diffuse Path Tracer",
         featured: true,
       },
       {
@@ -52,24 +53,36 @@ export const projects = [
       },
       {
         image:
+          "https://ik.imagekit.io/gillianassi/Tumbnails/MetroAwakening_Fhz3J0HW2.jpg?updatedAt=1708980713798",
+        banner:
+          "https://ik.imagekit.io/gillianassi/Projects/Metro%20Awakening%20VR/VG/VGMetroAwakeningBanner(2)_6MwYrrpCx.png?updatedAt=1709248229049",
+
+        title: "Metro Awakening",
+        markdown: MetroAwakeningMd,
+        tags: ["C++", "UE5", DiVisualstudio],
+        desc: "Graphics Programming",
+        featured: true,
+      },
+      {
+        image:
+          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+        banner:
+          "https://ik.imagekit.io/gillianassi/Projects/WindWakerRemake/LinkPose_wWmkuMK0T.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661690185200",
+
+        title: "Windwaker Graphics Remake",
+        markdown: WindwakerMd,
+        tags: ["C++", "Overlord", DiVisualstudio],
+        desc: "Graphics Programming, Graphics Recreation",
+        featured: true,
+      },
+      {
+        image:
           "https://ik.imagekit.io/gillianassi/Tumbnails/Tree-Umph_Tumbnail_B2Pwf5FwR.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651743301440",
         title: "Tree-Umph",
         markdown: TreeUphMd,
         tags: ["C#", DiUnitySmall, FaItchIo],
         desc: "Group Project, Game Jam",
         featured: false,
-      },
-      {
-        image:
-          "https://ik.imagekit.io/gillianassi/Tumbnails/ioi_white_on_black_eaMHZ0dtV.jpg?updatedAt=1684930110508",
-        banner:
-          "https://ik.imagekit.io/gillianassi/Tumbnails/ioi_white_on_black_eaMHZ0dtV.jpg?updatedAt=1684930110508",
-
-        title: "Diffuse Path Tracer",
-        markdown: DiffusePathTracerMd,
-        tags: ["C++", "Glacier2", DiVisualstudio],
-        desc: "Graphics Programming, Diffuse Path Tracer",
-        featured: true,
       },
       {
         image:
@@ -122,15 +135,6 @@ export const projects = [
         desc: "Graphics Programming, Rasterisation",
         featured: false,
       },
-      {
-        image:
-          "https://ik.imagekit.io/gillianassi/Projects/DirectX12/dx12-ultimate-100835986-orig_qXPOJ9-Ul.webp?ik-sdk-version=javascript-1.4.3&updatedAt=1659845185753",
-        title: "Direct X 12 Introduction",
-        markdown: DirectX12Md,
-        tags: ["C++", DiVisualstudio],
-        desc: "Graphics Programming, DXII",
-        featured: false,
-      },
     ],
   },
   {
@@ -147,7 +151,7 @@ export const projects = [
         markdown: HandPoseDetectionMd,
         tags: [DiUnitySmall, FaVrCardboard],
         desc: "VR, Oculus SDK, Hand Tracking, Paper",
-        featured: true,
+        featured: false,
       },
       
       {

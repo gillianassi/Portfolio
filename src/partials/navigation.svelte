@@ -14,23 +14,25 @@
                 </div>
                 
             </div>
-            <!-- Primary Navbar items -->
-            <div class="hidden md:flex items-center flex gap-16">
-                <div class="gillian-link relative font-changa "><Link to="/">Home</Link></div>
-                <div class="gillian-link relative font-changa "><Link to="/about">About</Link></div>
-                <div class="gillian-link relative font-changa "><Link to="/contact">Contact</Link></div>
-            </div>
-            <!-- Secondary Navbar items -->
-            <div class="socials flex gap-4">
-                <span>
-                    <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
-                </span>
-                <span>
-                    <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
-                </span>
-                <span>
-                    <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
-                </span>
+            <div class="flex">
+                <!-- Primary Navbar items -->
+                <div class="hidden md:flex items-center flex gap-16 pr-10">
+                    <div class="gillian-link relative font-changa "><Link to="/">Home</Link></div>
+                    <div class="gillian-link relative font-changa "><Link to="/about">About</Link></div>
+                    <div class="gillian-link relative font-changa "><Link to="/contact">Contact</Link></div>
+                </div>
+                <!-- Secondary Navbar items -->
+                <div class="socials flex items-center gap-4">
+                    <span class="w-4">
+                        <a class="align-middle" href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
+                    </span>
+                    <span class="w-4">
+                        <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
+                    </span>
+                    <span class="w-4">
+                        <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
+                    </span>
+                </div>
             </div>
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
@@ -51,19 +53,28 @@
     </div>
     <!-- mobile menu -->
     <div class="hidden mobile-menu  w-full">
-        <ul class="mobile-menu-selection flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white bg-gray-800 md:bg-gray-900 border-gray-700">
-            <li class="active block"><Link to="/"><div class="gillian-link block  w-full relative font-changa px-2 py-4">Home</div></Link></li>
-            <li><Link to="/about"><div class="gillian-link relative font-changa px-2 py-4">About</div></Link></li>
-            <li><Link to="/contact"><div class="gillian-link relative font-changa px-2 py-4">Contact</div></Link></li>
+        <ul class="mobile-menu-selection flex flex-col p-4 mt-4 bg-zinc-50 rounded-lg border border-zinc-100 md:flex-row md:space-x-8 
+            md:mt-0 md:text-sm md:font-medium md:border-0 bg-zinc-800 md:bg-zinc-900 border-zinc-700 ">
+            <li class="active block"><Link to="/">
+                <div class="gillian-link block relative font-changa px-2 py-4 text-2xl ">
+                    <p class="text-center">Home</p>
+                </div>
+            </Link></li>
+            <li><Link to="/about"><div class="gillian-link relative font-changa px-2 py-4 text-2xl ">
+                <p class="text-center">About</p>
+            </div></Link></li>
+            <li><Link to="/contact"><div class="gillian-link relative font-changa px-2 py-4 text-2xl ">
+                <p class="text-center">Contact</p>
+            </div></Link></li>
         </ul>
     </div>
     <script>
-        const btn = document.querySelector("button.mobile-menu-button");
+        const MenuBtn = document.querySelector("button.mobile-menu-button");
         const menu = document.querySelector(".mobile-menu");
         const nav =  document.querySelector(".navbar");
         
         // handle mobile nav clicks
-        btn.addEventListener("click", () => {
+        MenuBtn.addEventListener("click", () => {
             setTimeout(function(){
 
             menu.classList.toggle("hidden");
@@ -105,6 +116,7 @@
         function HandleNavigationBar() {
             if (window.innerWidth >= 768){
                 nav.classList.add('nav-gradient'), nav.classList.remove('nav-filled'); 
+                menu.classList.add("hidden");
             }
             else{
                 nav.classList.add('nav-filled'), nav.classList.remove('nav-gradient');
@@ -136,7 +148,9 @@
     .gillian-link::after {
         content: '';
         height: 4px;
-        @apply bg-gPrimaryColor absolute block w-0 ;
+        left: 50%;
+        translate: -50%;
+        @apply bg-gPrimaryColor absolute block w-0;
         transition: 200ms ease-in-out;
     }  
 
@@ -145,7 +159,7 @@
     }
 
     .socials span{
-        height: 24px;
+        height: auto;
         @apply text-gSecondaryColor transition-all;
     }
     .socials span:hover {

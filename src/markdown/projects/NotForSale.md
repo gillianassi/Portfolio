@@ -3,13 +3,19 @@
     import {FaItchIo} from 'svelte-icons/fa';
 </script>
 
-
-<div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Icth.io</b>
-    <span>
-        <a href="https://stef-bracke.itch.io/notforsale" target="_blank" rel="no-referrer"><FaItchIo />
+<div class="flex" style="padding-bottom:20px;">
+    <div class="flex pr-5">
+        <a href="https://stef-bracke.itch.io/notforsale" target="_blank" rel="no-referrer">
+            <div class="flex items-center LinkWrapper">
+                <div>
+                <b style="padding-left:5px; padding-right:10px; ">Itch.io</b>
+                </div>
+                <div class="padding-right:20px h-6 ">
+                    <FaItchIo/>
+                </div >
+            </div>
         </a>
-    </span>
+    </div>
 </div>
 
 <style>
@@ -20,7 +26,7 @@
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
             Get ready for the race of your life in this fast pace local-multiplayer game Not for Sale! Jump around from     objective to objective with the camera as your true nemesis. 
@@ -32,11 +38,13 @@
         <iframe title="vimeo-player" class="frame" src="https://www.youtube.com/embed/odVMGDd4IcE" frameborder="0" allowfullscreen></iframe>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/Robot_1zT71mrg5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661771213998" alt="Action Shot"  width="auto" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/Robot_1zT71mrg5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661771213998" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
             <h1 class="title">My Contribution</h1>
             <div>
-                <ul class="list-disc marker:text-purple-300 pl-10">
+                <ul class="list-disc marker:text-gPrimaryColor pl-10">
                     <li>Camera path finding</li>
                     <li>In Game Camera Movement (with pathfinding)</li>
                     <li>Objective pointer</li>
@@ -48,7 +56,7 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Pathfinding</h1>
             <div>
                 <p>
@@ -56,11 +64,15 @@
                 </p>
             </div>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/PathFinding_ZKGZXEafw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708374033" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/PathFinding_ZKGZXEafw.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708374033" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/CameraWithPathfinding_gyoaWJ3dM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661769709529" alt="Action Shot"  width="500px" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/NotForSale/CameraWithPathfinding_gyoaWJ3dM.gif?ik-sdk-version=javascript-1.4.3&updatedAt=1661769709529" alt="Action Shot"  width="500px" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Camera Pathfinding</h1>
             <p>
                 Throughout the map, a multitude of nodes are placed that define all possible paths. This includes mono-directional paths. In the beginning of the game the Dijkstra algorithm is used to create a lookup table for all nodes. The lookup table is afterwards used to always calculate the closest person to the objective. I used Unity gismos for an easy setup of nodes and clear visualization of the optimal path. 
@@ -72,7 +84,7 @@
 
 # Contributors and credits
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://sennedevocht.com/">Senne devocht</a></li>
         <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.sashavigneron.com/">Sasha Vigneron</a></li>
         <li><a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.artstation.com/schaper360">Christiane Schaper</a></li>
@@ -85,7 +97,7 @@
 
 # Used Technologies
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>C#</li>
         <li>Unity</li>
         <li>Unity VFX Graph</li>
@@ -97,7 +109,7 @@
 
 # Duration
 The project was conducted over the duration of 4 phases.<br>Each week every team member was required to work 10 hours. <br>This brought us to a total of 100 hours per person over the timespan of 1 semester.<br>
-<ul class="list-disc marker:text-purple-300 pl-10 pt-4">
+<ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
     <li>Prototyping (2 Weeks)</li>
     <li>Production sprint 1 (3 weeks)</li>
     <li>Production Sprint 2 (3 weeks)</li>

@@ -57,10 +57,10 @@
 
 <div class="flex flex-col items-center mt-12" id="projects">
     <div class="w-full max-w-5xl mx-10 flex-shrink flex-wrap" >
-        <div class="w-full bg-slate-800 rounded-t-sm over-flow">
+        <div class="w-full bg-zinc-900 rounded-t-sm over-flow">
             <ul class="flex ">
                 {#each folders as {title, icon: Icon}}
-                    <li on:click="{() => active = title}" class="p-4 text-gSecondaryColor cursor-pointer rounded-t-sm items-center shadow-sm transition font-changa flex gap-4 hover:bg-slate-600 " class:bg-slate-700="{active === title}">
+                    <li on:click="{() => active = title}" class="p-4 text-gSecondaryColor cursor-pointer rounded-t-sm items-center shadow-sm transition font-changa flex gap-4 hover:bg-zinc-600 " class:bg-zinc-700="{active === title}">
                         <span class="h-4"><Icon /></span>
                         <p>{title}</p>
                     </li>
@@ -68,7 +68,7 @@
             </ul>
         </div>
     
-        <div class=" bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
+        <div class=" bg-gLightPrimaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
             <div class="container mx-auto ">
                 <div class="gap-8 transition-all place-items-center
@@ -83,7 +83,7 @@
                              <div class="relative">
 
                                  <div class="object-cover  top-0 left-0 z-10">
-                                     <img src="{project.image}" alt="{project.title}" class="w-fit"/>
+                                     <img src="{project.image}" alt="{project.title}" class="w-fit aspect-video object-cover object-center "/>
                                  </div>
                                  
                                  <div class="absolute bottom-0 left-0 right-0  project-overlay">
@@ -97,13 +97,11 @@
                         </article>
                         </div>
                         
-                        <div class="p-4 h-full flex flex-col gap-2 bg-gBackgroundColor/80  ">
+                        <div class="p-4 h-28 flex flex-col gap-2 bg-gBackgroundColor/80 justify-between ">
                             <h4 class="font-changa text-gSecondaryColor  text-s max-w-fit">
                                 {project.desc}
                             </h4>
-
-
-                            <div class="text-gBackgrou  ndColor flex items-center gap-4 self-end">
+                            <div class=" text-gBackgroundColor flex gap-4 self-end">
                                 {#each project.tags as tag}
                                     {#if typeof tag === 'string' || tag instanceof String} 
                                         <p class="px-2 py-1 font-changa font-medium rounded-sm text-xs bg-gSecondaryColor">{tag}</p>
@@ -149,5 +147,4 @@
   height: 100vh;
   overflow-y: hidden;
 }
-
 </style>

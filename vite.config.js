@@ -7,7 +7,7 @@ import markdownitTagToClass from '@toycode/markdown-it-class';
 // https://vitejs.dev/config/
 
 const styleMapping = {
-  h1: ['text-3xl','font-bold','font-changa','text-gPrimaryColor','capitalize','mb-4'],
+  h1: ['text-3xl','font-bold','font-changa','text-black','capitalize','mb-4'],
   h2: ['text-2xl','font-mediem','font-changa','text-gPrimaryColor','capitalize','mb-4'],
   h3: ['text-xl','font-mediem','font-changa','text-gPrimaryColor','capitalize','mb-4'],
   p: ['my-2', 'text-justify'],

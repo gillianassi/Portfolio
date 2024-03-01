@@ -14,7 +14,7 @@
         <Header/>
       </div>
       <div>
-        <img class="absolute  left-0 top-0 object-cover h-full  lg:w-full " alt="hero" src="https://ik.imagekit.io/gillianassi/Banner_W9VgRcd5u.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651747432747%22" />
+        <img class="absolute  left-0 top-0 object-cover h-full  lg:w-full " alt="hero" src="https://ik.imagekit.io/gillianassi/Projects/Metro%20Awakening%20VR/VG/VGMetroAwakeningCover_9q7CoZnr-.png?updatedAt=1709247266961" />
       </div>
       
     </div>
@@ -25,4 +25,29 @@
   <div class="min-h-screen">
   <Projects />
   </div>
+
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+     
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #242424;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+     
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+  </style>
 </main>
+
+

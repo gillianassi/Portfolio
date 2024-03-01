@@ -1,5 +1,18 @@
 <script>
   import Header from "../components/Header.svelte";
+  
+  import FaCaretDown from 'svelte-icons/fa/FaCaretDown.svelte'
+  function scrollToProjects() {
+        let workEl =  document.getElementById('MyWork');
+        const offset = 100;
+
+        let workElPos = workEl.getBoundingClientRect().top;
+
+        window.scrollTo({
+            behavior: 'smooth', 
+            top: workElPos + window.pageYOffset - offset
+        });
+    }
 </script>
 
 <div>
@@ -9,8 +22,8 @@
     >
       <div class="flex w-full min-h-screen justify-center items-center sm:p-5 p-2 pt-20 ">
         <div
-          class="flex flex-col items-center space-y-6 bg-purple-100 w-full max-w-4xl p-2 rounded-xl shadow-lg text-white
-                      md:flex-row md:space-x-6 ms:space-y-0"
+          class="flex flex-col items-center space-y-6 bg-gLightPrimaryColor w-full max-w-4xl p-2 rounded-xl shadow-lg text-white
+                      md:flex-row md:space-x-6 ms:space-y-0 "
         >
         
           <div class="profileImage">
@@ -45,12 +58,12 @@
               </p>
             </div>
             <div class="relative flex py-5 items-center">
-              <div class="flex-grow border-t border-purple-400"></div>
-              <div class="flex-grow border-t border-purple-400"></div>
+              <div class="flex-grow border-t border-gPrimaryColor"></div>
+              <div class="flex-grow border-t border-gPrimaryColor"></div>
           </div>
             <div class="pt-5 pl-10 ">
               <a href="https://drive.google.com/file/d/1uWvIqh3ZUkYAi5jaOaQLkjx9hSg3vQYw/view?usp=sharing"  target="_blank" >
-                <button class="inline-block self-end bg-gPrimaryColor text-white font-bold rounded-lg 
+                <button class="inline-block self-end bg-gDarkPrimaryColor text-white font-bold rounded-lg 
                   px-6 py-2 uppercase text-m">
                   Download Resume
                 </button>
@@ -61,27 +74,35 @@
       </div>
     </div>
   </div>
-
+  
+    <div class="relative flex flex-col items-center bottom-[80px] md:bottom-[100px] lg:bottom-[120px]  h-28  md:h-36 lg:h-44">
+        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-bounce delay-50" on:click="{scrollToProjects}">
+            <FaCaretDown class="h-full"/>
+        </button>
+    </div>
+  
   <div class="bg-neutral-900 h-flex">
+    <section id="Extra Info" >
     <div
       class="font-mono text-7xl py-5 text-gSecondaryColor font-changa w-full text-center"
     >
       Extra Info
     </div>
+    </section>
 
-    <div class="grid-container text-purple-200 pt-10 ">
+    <div class="grid-container text-gLightPrimaryColor pt-10  ">
       <div class="">
-        <div id="Education" class="pt-10">
+        <div id="Education" class="pt-10  ">
           <h1 class="title">Education</h1>
 
           <div class="overflow-x-auto relative shadow-md sm:rounded-lg pl-2 ">
             <table
-              class="table-auto w-full text-sm text-left text-gray-400"
+              class="table-auto w-full text-sm text-left text-gray-400 "
             >
               <thead
-                class="text-xs uppercase bg-gray-50 bg-gray-700 text-gray-400"
-              >
-                <tr class="">
+                class="text-xs uppercase  bg-gray-700 text-gray-400"
+              > 
+                <tr class=" bg-zinc-700 text-gSecondaryColor">
                   <th scope="col" class="py-3 px-6">Degree</th>
                   <th scope="col" class="py-3 px-6">Specialisation</th>
                   <th scope="col" class="py-3 px-6">Year</th>
@@ -89,10 +110,10 @@
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class="border-b bg-zinc-900 border-gray-700 "
                 >
                   <td
-                    >Bachelor degree <b class="text-gPrimaryColor"
+                    >Bachelor degree <b class="text-gPrimaryColor "
                       >Digital Arts & Entertainment</b
                     ></td
                   >
@@ -100,7 +121,7 @@
                   <td>2020 - 2023</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td
                     >Master of <b class="text-gPrimaryColor"
@@ -111,7 +132,7 @@
                   <td>2019 – 2020</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td
                     >Bachelor of <b class="text-gPrimaryColor"
@@ -132,9 +153,9 @@
               class="table-auto w-full text-sm text-left text-gray-400"
             >
               <thead
-                class="text-xs  uppercase bg-gray-50 bg-gray-700 text-gray-400"
+                class="text-xs uppercase  bg-gray-700 text-gray-400"
               >
-                <tr class="">
+                <tr class=" bg-zinc-700 text-gSecondaryColor">
                   <th scope="col" class="py-3 px-6">Language</th>
                   <th scope="col" class="py-3 px-6">Proficiency</th>
                   <th scope="col" class="py-3 px-6">Experience</th>
@@ -143,49 +164,49 @@
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>C++</td>
                   <td>Advanced</td>
-                  <td>4 years</td>
+                  <td>5 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>C#</td>
                   <td>Advanced</td>
                   <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>HLSL</td>
                   <td>Experienced</td>
                   <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class="--50 border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Matlab</td>
                   <td>Intermadiate</td>
                   <td>2 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>SQL</td>
                   <td>Basic</td>
                   <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>php</td>
                   <td>Basic</td>
                   <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>html/CSS</td>
                   <td>Basic</td>
@@ -205,9 +226,9 @@
               class="table-auto w-full text-sm text-left  text-gray-400"
             >
               <thead
-                class="text-xs  uppercase bg-gray-50 bg-gray-700 text-gray-400"
+                class="text-xs n uppercase  bg-gray-700 text-gray-400"
               >
-                <tr class="">
+                <tr class="bg-zinc-700 text-gSecondaryColor">
                   <th scope="col" class="py-3 px-6">Language</th>
                   <th scope="col" class="py-3 px-6">Proficiency</th>
                   <th scope="col" class="py-3 px-6">Experience</th>
@@ -215,98 +236,98 @@
               </thead>
               <tbody>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Visual Studios & Visual Code</td>
                   <td>Advanced</td>
-                  <td>7 years</td>
+                  <td>8 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Unreal Engine</td>
                   <td>Advanced</td>
                   <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Unity</td>
                   <td>Advanced</td>
                   <td>4 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Oculus SDK</td>
                   <td><div>Experienced</div></td>
                   <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Git</td>
                   <td>Experienced</td>
                   <td></td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Perforce</td>
                   <td>Experienced</td>
                   <td></td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Nvidia PhysX</td>
                   <td>Intermediate</td>
                   <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Autodesk Inventor</td>
                   <td>Intermediate</td>
                   <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Autodesk Autocad</td>
                   <td>Intermediate</td>
                   <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Autodesk Maya</td>
                   <td>Intermediate</td>
                   <td>3 years</td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Adobe Photoshop</td>
                   <td>Intermediate</td>
                   <td></td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Win32</td>
                   <td>Basic</td>
                   <td></td>
                 </tr>
                 <tr
-                  class="bg-gray-50 border-b bg-gray-800 border-gray-700"
+                  class=" border-b bg-sinc-800 border-gray-700"
                 >
                   <td>Houdini</td>
                   <td>Basic</td>
                   <td>1 year</td>
                 </tr>
                 <tr
-                  class="bg-white border-b bg-gray-900 border-gray-700"
+                  class=" border-b bg-sinc-900 border-gray-700"
                 >
                   <td>Substance Painter</td>
                   <td>Basic</td>
@@ -320,10 +341,38 @@
       <div class="bg-black min-w-full rounded-lg pl-6 pt-10 pb-5">
         <h1 class="title ">Experience</h1>
         <div class="pl-6 bg-zinc-900 rounded-lg">
+          <h1 class="Subtitle">Junior Render Programmer</h1>
+          <h2 class="text-xl font-changa  pb-2">Vertigo Games - Since August 2023</h2>
+          <div class="grid-container-centered">
+            <div class="text-sm pl-2 text-slate-300">
+              <p class="">Specific tasks:</p>
+              <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2 text-slate-300">
+                <li>Work on UE5 Source code</li>
+                <li>Maintain code for multi-platforms support</li>
+                <li>Optimize code and data structures.</li>
+                <li>Participate in peer reviews of designs and code</li>
+              </ul>
+            </div>
+            <div>
+              <div class="text-sm pl-2 text-slate-300">
+                <p class="">Used Technologies:</p>
+                <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
+                  <li>C++</li>
+                  <li>Visual Studios</li>
+                  <li>Unreal Engine 5</li>
+                  <li>Perforce</li>
+                  <li>Renderdoc</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="pl-6 bg-zinc-900 rounded-lg">
           <h1 class="Subtitle">Render Programmer Intern</h1>
           <h2 class="text-xl font-changa  pb-2">IO Interactive - 4 months</h2>
           <div class="grid-container-centered">
-            <div class="text-sm pl-2">
+            <div class="text-sm pl-2 text-slate-300">
               <p class="">Specific tasks:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
                 <li>Work on the Glacier 2 render code</li>
@@ -333,12 +382,14 @@
               </ul>
             </div>
             <div>
-              <div class="text-sm pl-2">
+              <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
                   <li>C++</li>
-                  <li>VS Code</li>
+                  <li>Visual Studios</li>
                   <li>Perforce</li>
+                  <li>Renderdoc</li>
+                  <li>NVIDIA NSight Graphics </li>
                 </ul>
               </div>
             </div>
@@ -349,11 +400,11 @@
           <h1 class="Subtitle">Electronics Engineer Intern (R&D)</h1>
           <h2 class="text-xl font-changa  pb-2">Shayp - 4 months</h2>
           <div class="grid-container-centered">
-            <div class="text-sm pl-2">
+            <div class="text-sm pl-2 text-slate-300">
               <p class="">Specific tasks:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
                 <li>Writing test code for IoT-devices</li>
-                <ul class="list-disc marker:text-purple-300 pl-10">
+                <ul class="list-disc marker:text-gPrimaryColor pl-10">
                   <li>Calibration techniques</li>
                   <li>Optimization</li>
                   <li>Process management</li>
@@ -364,7 +415,7 @@
               </ul>
             </div>
             <div>
-              <div class="text-sm pl-2">
+              <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
                   <li>C++</li>
@@ -379,7 +430,30 @@
       </div>
     </div>
   </div>
+  <style>
+    /* width */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+     
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #242424;
+    }
+     
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+        border-radius: 5px;
+    }
+     
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+  </style>
 </div>
+
 
 <style>
   .profileImage { 
@@ -406,11 +480,11 @@
 
 
   .name {
-    @apply underline underline-offset-8 decoration-purple-400 text-4xl font-changa pl-6 pb-5 text-gPrimaryColor;
+    @apply underline underline-offset-8 decoration-gDarkPrimaryColor text-4xl font-changa pl-6 pb-5 text-gDarkPrimaryColor;
   }
 
   .title {
-    @apply underline underline-offset-8 decoration-purple-800 text-4xl font-changa pl-6 pb-5;
+    @apply underline underline-offset-8 decoration-gDarkPrimaryColor text-4xl font-changa pl-2 pb-5 text-gPrimaryColor;
   }
 
   .Subtitle {

@@ -3,12 +3,19 @@
     import {FaGithub} from 'svelte-icons/fa';
 </script>
 
-<div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Github Page</b>
-    <span>
-        <a  href="https://github.com/gillianassi/ResearchProject_Regression" target="_blank" rel="no-referrer"><FaGithub />
+<div class="flex" style="padding-bottom:20px;">
+    <div class="flex pr-5">
+        <a href="https://github.com/gillianassi/ResearchProject_Regression" target="_blank" rel="no-referrer">
+            <div class="flex items-center LinkWrapper">
+                <div>
+                <b style="padding-left:5px; padding-right:10px; ">Github Page</b>
+                </div>
+                <div class="padding-right:20px h-6 ">
+                    <FaGithub/>
+                </div >
+            </div>
         </a>
-    </span>
+    </div>
 </div>
 
 # Supervised Learning: Regression
@@ -16,17 +23,21 @@
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
             This research was conducted to inform myself about artificial intelligence, more specifically, regression. I implemented a set of exercises with both self-generated data and existing data sets to get a better grasp of the subject. It focuses on the different types of regression algorithms, who try to predict dependent values based on known datasets. <br>Feel free to visit the <a class="text-gPrimaryColor underline font-bold" href="https://github.com/gillianassi/ResearchProject_Regression" target="_blank" rel="no-referrer">Github page</a> for a more elaborate explenation.
             </p>
         </div>
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/Linear-vs-Multiple-Regression-02-min_L9CJMuYX4.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661776191112" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/SimpleLinearRegression_8azNrUgLj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302539" alt="Action Shot"  width="auto" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/SimpleLinearRegression_8azNrUgLj.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302539" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Simple Linear Regression</h1>
             <p>
                 First, I analyzed the most commonly known form of linear regression called least squares fitting. This method aims to fit a polynomial curve to data in a way that the sum of squares of all distances from the data points to the line is minimized. When this is done on a single explanatory variable (Only one parameter), the method is called simple linear regression.
@@ -36,7 +47,7 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Gradient Descent</h1>
             <div>
                 <p>
@@ -46,11 +57,15 @@
                 </p>
             </div>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/Example1GDSLR_TE9XgftoL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710536113" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/Example1GDSLR_TE9XgftoL.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710536113" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/GradientDescent_RhBz63wz1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302569" alt="Action Shot"  width="500px" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/GradientDescent_RhBz63wz1.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302569" alt="Action Shot"  width="500px" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Gradient descent visualization</h1>
             <p>
                 By implementing the definition of the cost function, I was able to calculate all parameters and visualize them inside of a surface plot. The red line indicates the calculated parameters in the previous example. Note that this line can be found in the valley of the surface plot, where the cost function is at its lowest (which means the generated line optimally fits the data)
@@ -58,7 +73,7 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Multivariate Linear regression</h1>
             <div>
                 <p>
@@ -67,11 +82,15 @@
                 </p>
             </div>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/MultivariateRegression_zkX3UQMNl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302552" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/MultivariateRegression_zkX3UQMNl.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302552" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/NewtonsMethod_OpZynmfNa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302813" alt="Action Shot"  width="500px" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/Regression/NewtonsMethod_OpZynmfNa.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302813" alt="Action Shot"  width="500px" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Logistic regression</h1>
             <p>
                 Logistic regression is a separate branch of supervised learning that focuses on classification problems. It builds a regression model that predicts the probability that a given data set belongs to a specific category. These are binary classification problems, which means that there are only two options: 0 or 1. The value 1 is often referred to as the positive class, whereas the value 0 the negative class.
@@ -80,7 +99,7 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Regularised Logistic regression</h1>
             <div>
                 <p>
@@ -89,7 +108,9 @@
                 </p>
             </div>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/RegulisedLogisticRegression_7r6x1Qkpy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302550" alt="Action Shot"  width="auto" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Research/Regression/RegulisedLogisticRegression_7r6x1Qkpy.png?ik-sdk-version=javascript-1.4.3&updatedAt=1651710302550" alt="Action Shot"  width="auto" />
+        </div>
     </div>
 </div>
 <br>

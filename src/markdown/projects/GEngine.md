@@ -3,32 +3,42 @@
     import {FaGithub} from 'svelte-icons/fa';
 </script>
 
-
-<div class="socials flex  " style="padding-bottom:20px;">
-     <b style="padding-right:20px; padding-top:5px">Github Page</b>
-    <span>
-        <a href="https://github.com/gillianassi/G-Engine" target="_blank" rel="no-referrer"><FaGithub />
+<div class="flex" style="padding-bottom:20px;">
+    <div class="flex pr-5">
+        <a href="https://github.com/gillianassi/G-Engine" target="_blank" rel="no-referrer">
+            <div class="flex items-center LinkWrapper">
+                <div>
+                <b style="padding-left:5px; padding-right:10px; ">Github Page</b>
+                </div>
+                <div class="padding-right:20px h-6 ">
+                    <FaGithub/>
+                </div >
+            </div>
         </a>
-    </span>
+    </div>
 </div>
 
 # G-Engine a 2D Game Engine
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
             G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds the principle to prefer composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
             </p>
         </div>
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708378406" alt="Action Shot"  width="300" />
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/BurgerTimeBanner_OtFYc4aTz.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651708378406" alt="Action Shot"  width="300" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/opengl_logo_OWyUSjjBe.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661773296157" alt="Action Shot"  width="auto" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/opengl_logo_OWyUSjjBe.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661773296157" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
             <h1 class="title">External Includes</h1>
-            <ul class="list-disc marker:text-purple-300 pl-10">
+            <ul class="list-disc marker:text-gPrimaryColor pl-10">
                 <li>SDL</li>
                 <li>OpenGL</li>
                 <li>Box2D</li>
@@ -37,9 +47,9 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Covered Topics</h1>
-            <ul class="list-disc marker:text-purple-300 pl-10">
+            <ul class="list-disc marker:text-gPrimaryColor pl-10">
                 <li>Entity component system</li>
                 <li>Command pattern</li>
                 <li>Observer pattern</li>
@@ -47,11 +57,15 @@
                 <li>Service Locator</li>
             </ul>
         </div>
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/Burger_Time_Uldat3P1yF.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661773296097" alt="Action Shot"  width="auto" />
+         <div class="justify-center"> 
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/Burger_Time_Uldat3P1yF.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1661773296097" alt="Action Shot"  width="auto" />
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/Unity_Technologies_logo.svg_koQ3UZCQN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774014225" alt="Action Shot"  width="500px" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/Unity_Technologies_logo.svg_koQ3UZCQN.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774014225" alt="Action Shot"  width="500px" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Simple Component system</h1>
             <p>
                 Based on Unity's component hierarchy, all game objects in G-Engine are represented as entities containing components. These components are used to give the entities their preferred behaviour. This system makes it easy to isolate code, resulting in a more readable structure. I do stress that the component system used in this project is just a simple version to show its uses.
@@ -59,19 +73,21 @@
         </div>
     </div>
     <div class="grid-container grid-centered-container reversed-col-content">
-        <div>
+        <div class="w-full">
             <h1 class="title">Command Pattern</h1>
             <p>
                 The command pattern is used as an object-oriented replacement for callbacks. The engine has an abstract Command class which a user can easily use as an interface to create unique commands. These commands can further be passed down to the input manager provided by the engine, which will bind these action commands to input commands.
             </p>
         </div>
-        <div >
-         <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/command-en-3x_qBLP8Ymt5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774210767" alt="Action Shot"  width="500" />
+         <div class="justify-center">
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/command-en-3x_qBLP8Ymt5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774210767" alt="Action Shot"  width="500" />
          </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/observer-3x_-l1b1J1T5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774275526" alt="Action Shot"  width="500px" />
-        <div>
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Projects/G-Engine/observer-3x_-l1b1J1T5.png?ik-sdk-version=javascript-1.4.3&updatedAt=1661774275526" alt="Action Shot"  width="500px" />
+        </div>
+        <div class="w-full">
             <h1 class="title">Observer Pattern</h1>
             <p>
                 Although this is not specifically implemented in the engine, Burgertime itself makes use of the observer pattern to handle in game events.
@@ -173,7 +189,7 @@ public:
 
 # Used Technologies
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>C++</li>
         <li>Visual Studios</li>
         <li>Github</li>
@@ -185,7 +201,7 @@ public:
 # Credits
 
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>"C++ coding Standards: 101 Rules, Guidelines, and Best practices” by Andrei Alexandrescu and Herb Sutter</li>
         <li>"Game Programming Patterns” by Bob Nystrom </li>
         <li><a class="text-gPrimaryColor underline font-bold" href="https://refactoring.guru/design-patterns/command" target="_blank" rel="no-referrer">Refactoring Guru</a> for the provided drawings and amazing explenation about design patterns</li>
@@ -194,12 +210,4 @@ public:
 <br>
 
 # Duration
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
-    <div class="text-align: center">
-        <b>!! Work in progress !!</b>
-    </div>
-    <div class="text-align: center" >
-        <b>Although the base the engine is functional. I plan to create a skill-tree creator tool using the engine which will save the created trees onto binary files.</b>  <br> 
-    </div>
-</div>
 Over the timespan of 1 semester (research included)

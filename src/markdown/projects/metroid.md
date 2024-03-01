@@ -3,23 +3,25 @@
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
-    <div>
-        <p>
+        <div class="w-full">
+            <h1 class="title">Description</h1>
+            <p>
             Before I started my studies at Digital Arts and Entertainment, I had never created a fully functional game before. During the second semester of my first-year game development this became the exact task we had to complete. As I already had programming experience from my prior studies, I challenged myself by creating a remake of my favorite SNES game Super Metroid.
-            <br><br>
-        </p>
-    </div>
-    <iframe class="frame"  title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976"   frameborder="0" allowfullscreen></iframe>
+            </p>
+        </div>
+        <div class="justify-center">
+            <iframe class="frame"  title="vimeo-player" src="https://player.vimeo.com/video/572013911?h=2014089976"   frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
     <div class="grid-container grid-centered-container">
-        <img  class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/SuperMetroid/SuperMetroid_ActionImage_4Y3fbqerp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660054245318" alt="Action Shot"  width="auto" />
-        <p>
-        <br>
+        <div class="justify-center">
+            <img  class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/SuperMetroid/SuperMetroid_ActionImage_4Y3fbqerp.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1660054245318" alt="Action Shot"  width="auto" />
+        </div>
+        <div class="w-full">
+        <h1 class="title">Additional Info</h1>
         Looking back at this code from 2021, although everything was functional, I clearly lacked a lot of knowledge about the C++ language. However, even if the code wasn’t perfect, the creation of this game was an unforgettable learning experience. Furthermore, I’m glad to see that my recent code has become a lot more readable and efficient since then.
-        </p>
+        </div>
     </div>
-
-
 </div>
 
 
@@ -30,7 +32,7 @@ After grading, my project got featured on the official DAE website along with so
 
 # Used Technologies<br>
 <div>
-    <ul class="list-disc marker:text-purple-300 pl-10">
+    <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>C++</li>
         <li>Visual Studios</li>
     </ul>

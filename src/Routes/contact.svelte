@@ -8,9 +8,9 @@
     <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center  p-5 pt-10 ">
 
         <div class="flex w-full min-h-screen justify-center items-center ">
-            <div class="bg-purple-100 p-8 rounded-xl shadow-lg flex flex-col items-center gap-4" >
+            <div class="bg-gLightPrimaryColor p-8 rounded-xl shadow-lg flex flex-col items-center gap-4" >
                 
-                <hi class="underline underline-offset-8 decoration-purple-400 text-4xl font-changa pl-6 pb-5 text-gPrimaryColor ">Contact me</hi>
+                <hi class="underline underline-offset-8 decoration-gDarkPrimaryColor text-4xl font-changa pl-6 pb-5 text-gPrimaryColor ">Contact me</hi>
                 <div class="flex flex-col items-center space-y-6  w-full max-w-4xl  text-white
                         md:flex-row md:space-x-6 ms:space-y-0">
                     
@@ -38,7 +38,7 @@
                                         
                                         <a class="socials" href="mailto:assigillian@gmail.com"><IoMdMail/></a>
                                     </span>
-                                    <a class="text-purple-800 socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
+                                    <a class="text-gDarkPrimaryColor socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
                                 </div>
                             </div>
                             <div class="socials flex gap-4 ">
@@ -56,7 +56,7 @@
                     </div>
                         
                 <div>
-                    <div class="container bg-purple-200 rounded-xl shadow-lg p-8 text-gray-600  md:w-80">
+                    <div class="container bg-red-200 rounded-xl shadow-lg p-8 text-gray-600  md:w-80">
                         <form  class="flex flex-col space-y-4" action="https://formsubmit.co/assigillian@gmail.com" method="POST">
                             <div>
                                 <label for="" class="text-sm">Your Name</label>
@@ -92,13 +92,33 @@
 
       
       </div>  
-
+      <style>
+        /* width */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+         
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #242424;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+            border-radius: 5px;
+        }
+         
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+      </style>
 </div>
 
 
 
 <style>
-  
   .profileImage { 
     width:40%; height:auto; 
     max-height: 430px;
@@ -115,4 +135,5 @@
     .socials span:hover {
        @apply text-purple-800;
     }
+    
 </style>

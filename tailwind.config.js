@@ -4,9 +4,11 @@ export default {
     theme: {
     extend: {
       colors: {
-        'gPrimaryColor': "#B94EFE",
+        'gPrimaryColor': "#d13639",
+        'gDarkPrimaryColor' : "#9c2424",
+        'gLightPrimaryColor' : "#fff1f2",
         'gBackgroundColor': "#252525",
-        'gSecondaryColor': "#EEE7F2"
+        'gSecondaryColor': "#cbc5cf"
       }
     },
     fontFamily: {

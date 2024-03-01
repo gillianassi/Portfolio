@@ -17,11 +17,18 @@ img[alt$="><"] {
 }
 
 
-.socials span{
-    @apply h-10 text-gPrimaryColor transition-all;
+.LinkWrapper{
+    @apply text-black transition-all;
 }
-.socials span:hover {
-   @apply text-purple-800;
+.LinkWrapper:hover {
+   @apply text-gPrimaryColor;
+}
+
+.Refference{
+    @apply text-gPrimaryColor transition-all;
+}
+.Refference:hover {
+   @apply text-gDarkPrimaryColor;
 }
 
 
