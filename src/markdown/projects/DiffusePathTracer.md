@@ -57,7 +57,7 @@
         <div class="w-full">
             <h1 class="title">Functionality</h1>
             <p>
-                The path tracer shoots multi-bounce rays using importance sampling for each bounce. To determine the bounce probability of the rays, Russian roulette is used. The throughput for every ray is updated every bounce to attain a faster convergence where possible. The image shown to the user uses a compute shader to accumulate all of the Path traced images.
+                The path tracer shoots multi-bounce rays using importance sampling for each bounce. To determine the bounce probability of the rays, Russian roulette is used. The throughput for every ray is updated every bounce to attain a faster convergence where possible. The image shown to the user uses a compute shader to accumulate all of the path-traced images.
             </p>
         </div>
         <div class="justify-center">
@@ -71,7 +71,7 @@
         <div class="w-full">
             <h1 class="title">Ray Traced Ambient Occlusion</h1>
             <p>
-            One of the first thins I tackeled in this project was understanding Ray Traced Ambient Occulusion and what methods can be used to get this. This was an extremely usefull intermediate step that let me create the foundation of the diffuse path tracer. This also helped with getting a visual understanding of the math involved.
+            One of the first things I tackled in this project was understanding Ray Traced Ambient Occlusion and what methods can be used to get this. This was an extremely useful intermediate step that let me create the foundation of the diffuse path tracer. This also helped with getting a visual understanding of the math involved.
             </p>
         </div>
     </div>
@@ -79,7 +79,7 @@
         <div class="w-full">
             <h1 class="title">Uniform VS Cosine-Weighted</h1>
             <p>
-                The biggest performance improvemnt I implemented was seen when I changed the sampling technique from Uniform Sampling to Cosine-Weighted. While Uniform, as it name sugests, samples uniformly in random directions on the hemisphere; cosine-weighted sampling has a preference in the direction of the normal. This tiny difference made the accumulation speed skyrocket and minimized the occurrence of fireflies.
+                The biggest performance improvement I implemented was seen when I changed the sampling technique from Uniform Sampling to cosine-weighted. While Uniform, as its name suggests, samples uniformly in random directions on the hemisphere; cosine-weighted sampling has a preference in the direction of the normal. This tiny difference made the accumulation speed skyrocket and minimized the occurrence of fireflies.
             </p>
         </div>
         <div class="justify-center">
@@ -117,7 +117,7 @@
 # Contributors and credits
 ## IO Interactive
 
-This project is created within the Glacier 2 Engine, the in-house engine of IO Interactive. I am extremely grateful to the IOI render team. It was a pleasure to work with all of you, especially my supervisor <a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.linkedin.com/in/alcor/">Alessandro dal corso</a>. He taught me about both advanced graphics programming and its implementation within the AAA game industry.
+This project is created within the Glacier 2 Engine, the in-house engine of IO Interactive. I am extremely grateful to the IOI render team. It was a pleasure to work with all of you, especially my supervisor <a class="text-gPrimaryColor" target="_blank" rel="no-referrer" href="https://www.linkedin.com/in/alcor/">Alessandro Dal Corso</a>. He taught me about both advanced graphics programming and its implementation within the AAA game industry.
 
 
 # Duration

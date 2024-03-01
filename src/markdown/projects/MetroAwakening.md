@@ -66,10 +66,10 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            I currently have the honor of working as a Junior Render Programmer on the VR title Metro Awakening at <b>Vertigo Games Amsterdam</b>. 
+            I currently have the honour of working as a Junior Render Programmer on the VR title Metro Awakening at <b>Vertigo Games Amsterdam</b>. 
             </p> <br>
             <p>
-            At the time of writing this, the game is currently not yet released. A such, I am unable to disclose in-depth information about my specific contributions. 
+            At the time of writing this, the game is currently not yet released. As such, I am unable to disclose in-depth information about my specific contributions. 
             </p>
         </div>
         <iframe title="YouTube video player" class="frame" src="https://www.youtube.com/embed/Thrp3a0AltQ?si=Yio6n5XSh8Lky8YW"  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -82,9 +82,9 @@
             <h1 class="title">My General contributions</h1>
             <ul class="list-disc marker:text-gPrimaryColor pl-10">
                 <li>Researching, Creating, Improving, and maintaining render features</li>
-                <li>Adjusting UE5 code for project specific features</li>
+                <li>Adjusting UE5 code for project-specific features</li>
                 <li>Optimize code and data structures</li>
-                <li>Maintain code for multi-platforms support</li>
+                <li>Maintain code for multi-platform support</li>
             </ul>
         </div>
     </div>
@@ -94,7 +94,7 @@
              <ul class="list-disc marker:text-gPrimaryColor pl-10">
                 <li>Participate in peer reviews of designs and code</li>
                 <li>Cross-team communication and collaboration</li>
-                <li>Presenting new technologies and concept to other disciplines in the studio</li>
+                <li>Presenting new technologies and concepts to other disciplines in the studio</li>
                 <li>In-Editor (automatic) guideline checking & enforcement</li>
             </ul>
         </div>
@@ -121,4 +121,4 @@
 # Contributors and credits
 ## Vertigo Games Amsterdam
 
-The game is created within Unreal Engine 5 using custom tools and implementations of Vertigo Games. I am extremely happy to be part of the Vertigo Core Development team who continuously gives me opportunities to grow. Seeing the game evolve as a team is truly a delight!
+The game is created within Unreal Engine 5 using custom tools and implementations of Vertigo Games. I am extremely happy to be part of the Vertigo Core Development team which continuously gives me opportunities to grow. Seeing the game evolve as a team is truly a delight!

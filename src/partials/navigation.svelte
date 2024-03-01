@@ -150,18 +150,18 @@
     }  
 
     .gillian-link:hover.gillian-link::after {
-       @apply w-full;
+       @apply w-full ;
     }
 
     .name{
-        @apply font-changa font-medium text-gPrimaryColor text-2xl;
+        @apply font-changa font-medium text-gPrimaryColor text-2xl ease-in-out  duration-200;
     }
     .name:hover {
        @apply text-gDarkPrimaryColor;
     }
     .socials span{
         height: auto;
-        @apply text-gLightPrimaryColor transition-all;
+        @apply text-gLightPrimaryColor transition-all ease-in-out  duration-200;
     }
     .socials span:hover {
        @apply text-gPrimaryColor;

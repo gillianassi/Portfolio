@@ -24,7 +24,7 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-                This thesis analyses the necessary approaches to achieve secure communication between low-power wireless devices. It also looks into the possibility of using a cryptographic sponge function, called Keccak, as the main hashing algorithm. The advantages and disadvantages of Keccak based protocols are examined together with their flexibility and efficiency. Results showed the clear advantages of Keccak-based protocols and point out the possible improvements by using duplex constructions.
+                This thesis analyses the necessary approaches to achieve secure communication between low-power wireless devices. It also looks into the possibility of using a cryptographic sponge function, called Keccak, as the main hashing algorithm. The advantages and disadvantages of Keccak-based protocols are examined together with their flexibility and efficiency. Results showed the clear advantages of Keccak-based protocols and pointed out the possible improvements by using duplex constructions.
             </p>
         </div>
         <div class="justify-center">
@@ -51,7 +51,7 @@
         <div class="w-full">
             <h1 class="title">Android Application Development</h1>
             <p>
-                As part of the implenebtation of the thesis, I created a prototype application called 'SwissConnect'. This app allows an end-user to manage the data of chess clocks in a personal database (FireBase).  A registered user can use the built-in scanner to read a generated QR code of a chess clock. The information contained inside of the code is sent to the personal database. All information present inside of the database is meant to be fetched by the main computer of the registered user.
+                As part of the implementation of the thesis, I created a prototype application called 'SwissConnect'. This app allows an end-user to manage the data of chess clocks in a personal database (FireBase).  A registered user can use the built-in scanner to read a generated QR code of a chess clock. The information contained inside the code is sent to the personal database. All information present inside of the database is meant to be fetched by the main computer of the registered user.
             </p>
         </div>
          <div class="justify-center">

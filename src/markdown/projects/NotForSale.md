@@ -29,10 +29,10 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            Get ready for the race of your life in this fast pace local-multiplayer game Not for Sale! Jump around from     objective to objective with the camera as your true nemesis. 
+            Get ready for the race of your life in this fast-paced local-multiplayer game Not for Sale! Jump around from     objective to objective with the camera as your true nemesis. 
             </p> 
             <p>
-            The game camera follows the player upfront, which means that this pro-gamer can decide which path the group has to take and how fast everyone needs to go. If you can't keep up, you're out! Players that get out of the camera frame get eliminated. Be the last one to survive and triumph over your friends.
+            The game camera follows the player upfront, which means that this pro gamer can decide which path the group has to take and how fast everyone needs to go. If you can't keep up, you're out! Players that get out of the camera frame get eliminated. Be the last one to survive and triumph over your friends.
             </p>
         </div>
         <iframe title="vimeo-player" class="frame" src="https://www.youtube.com/embed/odVMGDd4IcE" frameborder="0" allowfullscreen></iframe>
@@ -75,7 +75,7 @@
         <div class="w-full">
             <h1 class="title">Camera Pathfinding</h1>
             <p>
-                Throughout the map, a multitude of nodes are placed that define all possible paths. This includes mono-directional paths. In the beginning of the game the Dijkstra algorithm is used to create a lookup table for all nodes. The lookup table is afterwards used to always calculate the closest person to the objective. I used Unity gismos for an easy setup of nodes and clear visualization of the optimal path. 
+                Throughout the map, a multitude of nodes are placed that define all possible paths. This includes mono-directional paths. At the beginning of the game, the Dijkstra algorithm is used to create a lookup table for all nodes. The lookup table is afterwards used to always calculate the closest person to the objective. I used Unity gismos for an easy setup of nodes and a clear visualization of the optimal path. 
             </p>
         </div>
     </div>

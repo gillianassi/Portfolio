@@ -8,7 +8,7 @@
         <a href="https://github.com/gillianassi/G-Engine" target="_blank" rel="no-referrer">
             <div class="flex items-center LinkWrapper">
                 <div>
-                <b style="padding-left:5px; padding-right:10px; ">Github Page</b>
+                <b style="padding-left:5px; padding-right:10px; ">GitHub Page</b>
                 </div>
                 <div class="padding-right:20px h-6 ">
                     <FaGithub/>
@@ -25,7 +25,7 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds the principle to prefer composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
+            G-Engine is the first 2D engine I tried to make from scratch using C++. The engine upholds the principle of preferring composition over inheritance. That’s why it uses a simple entity component system similar to the one Unity uses. The creation of this engine was accompanied by the remake of an old-time arcade classic “Burger Time”.
             </p>
         </div>
         <div class="justify-center">
@@ -90,7 +90,7 @@
         <div class="w-full">
             <h1 class="title">Observer Pattern</h1>
             <p>
-                Although this is not specifically implemented in the engine, Burgertime itself makes use of the observer pattern to handle in game events.
+                Although this is not specifically implemented in the engine, Burgertime itself makes use of the observer pattern to handle in-game events.
             </p>
         </div>
     </div>
@@ -126,7 +126,7 @@ public:
 -------------------------
 <br>
 
->A User can easily insert or change to an audio implementation of choice using the Locater class.
+>A User can easily insert or change to an audio implementation of choice using the Locator class.
 <br><br>
 
 ----------------------
@@ -202,9 +202,9 @@ public:
 
 <div>
     <ul class="list-disc marker:text-gPrimaryColor pl-10">
-        <li>"C++ coding Standards: 101 Rules, Guidelines, and Best practices” by Andrei Alexandrescu and Herb Sutter</li>
+        <li>"C++ coding Standards: 101 Rules, Guidelines, and Best Practices" by Andrei Alexandrescu and Herb Sutter</li>
         <li>"Game Programming Patterns” by Bob Nystrom </li>
-        <li><a class="text-gPrimaryColor underline font-bold" href="https://refactoring.guru/design-patterns/command" target="_blank" rel="no-referrer">Refactoring Guru</a> for the provided drawings and amazing explenation about design patterns</li>
+        <li><a class="text-gPrimaryColor underline font-bold" href="https://refactoring.guru/design-patterns/command" target="_blank" rel="no-referrer">Refactoring Guru</a> for the provided drawings and amazing explanation about design patterns</li>
     </ul>
 </div> 
 <br>

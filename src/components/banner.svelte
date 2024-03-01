@@ -52,7 +52,7 @@
                         <div 
                             in:fly="{{duration: 400, delay: 100 * index, x: 50, opacity: 0}}"
                             class:child={hovered}
-                            class="   w-1/4  flex transition-all duration-300 overflow-hidden hover:grayscale-0  
+                            class="   w-1/4  flex transition-all  duration-200 overflow-hidden hover:grayscale-0  
                                     rounded-xl -skew-x-12 hover:w-1/3 cursor-pointer project-thumbnail"   
                             on:click="{() => toggleModal(project)}"    
                             >
@@ -89,7 +89,7 @@
     .project-thumbnail::after {
         content: '';
         bottom: 0px;
-        @apply h-0 w-full absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor z-50;
+        @apply h-0 w-full absolute transition-all  duration-200 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor z-50;
     }
     .project-thumbnail:hover.project-thumbnail::after {
         @apply h-1;

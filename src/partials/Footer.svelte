@@ -1,4 +1,4 @@
-<footer class="py-8 bg-gSecondaryColor text-gBackgroundColor relative">
+<footer class="py-8 bg-gLightPrimaryColor text-gBackgroundColor relative">
     <div class="flex flex-col max-w-5xl w-4/5 mx-auto">
         <div class="grid grid-cols-3 pt-8">
             <div>
@@ -51,7 +51,7 @@
 
 <style>
     .PrimaryButton{
-        @apply  bg-gPrimaryColor text-white font-bold;
+        @apply  bg-gPrimaryColor text-white font-bold ease-in-out  duration-200;
     }
     .PrimaryButton:hover{
     @apply  bg-gDarkPrimaryColor text-white font-bold;
@@ -65,7 +65,7 @@
         filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
     }
     .name{
-        @apply font-changa text-lg text-gPrimaryColor;
+        @apply font-changa text-lg text-gPrimaryColor ease-in-out  duration-200;
     }
     .name:hover {
        @apply text-gDarkPrimaryColor;
@@ -73,7 +73,7 @@
 
     .socials{
         height: auto;
-        @apply text-black transition-all font-bold;
+        @apply text-black transition-all font-bold ease-in-out  duration-200;
     }
     .socials:hover {
        @apply text-gPrimaryColor;

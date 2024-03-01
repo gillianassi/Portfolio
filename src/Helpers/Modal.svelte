@@ -77,7 +77,7 @@
     @apply flex items-center ;
   }
   .modal{
-    @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-gSecondaryColor mx-auto rounded-sm shadow-md rounded-xl;
+    @apply max-h-[90vh] overflow-x-hidden overflow-scroll bg-gLightPrimaryColor mx-auto rounded-sm shadow-md rounded-xl;
 
   }
 

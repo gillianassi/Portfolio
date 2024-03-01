@@ -43,7 +43,7 @@
                 </p>
                 <p class="pb-3">
                   Creating functional applications and electronic devices has
-                  always been both a passion and hobby of mine. Thats why I became
+                  always been both a passion and a hobby of mine. That's why I became
                   an <b class="text-gPrimaryColor">electronics-ICT engineer</b>
                   and <b class="text-gPrimaryColor">Game Developer</b>.
                 </p>
@@ -62,7 +62,7 @@
               </div>
               <div class="grid md:grid-cols-2 flex">
                 <div class="md:justify-self-start justify-self-center md:pb-0 pb-4 pr-2">
-                    <button class="SecondaryButton inline-block md:self-end  rounded-lg text-m px-6 py-2" on:click="{scrollToProjects}">
+                    <button class="SecondaryButton inline-block md:self-end  rounded-lg text-m px-6 py-2 " on:click="{scrollToProjects}">
                       My Career Path
                     </button>
                 </div>
@@ -359,7 +359,7 @@
               <p class="">Specific tasks:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2 text-slate-300">
                 <li>Work on UE5 Source code</li>
-                <li>Maintain code for multi-platforms support</li>
+                <li>Maintain code for multi-platform support</li>
                 <li>Optimize code and data structures.</li>
                 <li>Participate in peer reviews of designs and code</li>
               </ul>
@@ -387,7 +387,7 @@
               <p class="">Specific tasks:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
                 <li>Work on the Glacier 2 render code</li>
-                <li>Creation of a diffuse pathtracer</li>
+                <li>Creation of a diffuse path tracer</li>
                 <li>Participate in peer reviews of designs and code.</li>
                 <li>Develop and maintain render features driving the current and future titles of IOI.</li>
               </ul>
@@ -414,14 +414,14 @@
             <div class="text-sm text-slate-300">
               <p class="">Specific tasks:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
-                <li>Writing test code for IoT-devices</li>
+                <li>Writing test code for IoT devices</li>
                 <ul class="list-disc marker:text-gPrimaryColor pl-10">
                   <li>Calibration techniques</li>
                   <li>Optimization</li>
                   <li>Process management</li>
                 </ul>
                 <li>Energy management van IoT-devices</li>
-                <li>Implementing new features for IoT-devices</li>
+                <li>Implementing new features for IoT devices</li>
                 <li>Documenting code</li>
               </ul>
             </div>
@@ -501,13 +501,14 @@
   }
 
 .PrimaryButton{
-    @apply  bg-gPrimaryColor text-white font-bold;
+    @apply  bg-gPrimaryColor text-white font-bold ease-in-out  duration-200;
 }
 .PrimaryButton:hover{
     @apply  bg-gDarkPrimaryColor text-white font-bold;
 }
 .SecondaryButton {
-    @apply border-2 border-gPrimaryColor bg-gLightPrimaryColor text-gPrimaryColor font-bold uppercase;
+    @apply border-2 border-gPrimaryColor bg-gLightPrimaryColor text-gPrimaryColor font-bold uppercase 
+    ease-in-out  duration-200;
 }
 .SecondaryButton:hover {
     @apply border-2 border-gDarkPrimaryColor bg-gPrimaryColor text-gLightPrimaryColor;

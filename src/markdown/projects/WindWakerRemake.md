@@ -11,7 +11,7 @@
         <a href="https://github.com/gillianassi/TheWindWaker_Remake" target="_blank" rel="no-referrer">
             <div class="flex items-center LinkWrapper">
                 <div>
-                <b style="padding-left:5px; padding-right:10px; ">Github Page</b>
+                <b style="padding-left:5px; padding-right:10px; ">GitHub Page</b>
                 </div>
                 <div class="padding-right:20px h-6 ">
                     <FaGithub/>
@@ -21,14 +21,14 @@
     </div>
 </div>
 
-# The legend of Zelda: The Wind Waker Remake
+# The Legend of Zelda: The Wind Waker Remake
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            In the context of the course Graphics Programming 2, I received the opportunity to recreate any game of choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
+            In the context of the course Graphics Programming 2, I received the opportunity to recreate any game of my choice. To get a head start all students received a base engine called the Overlord Engine. This engine, however, lacked a lot of graphical functionalities which I had to implement myself.
             </p>
         </div>
         <iframe title="vimeo-player" class="frame" src="https://player.vimeo.com/video/725256028?h=16ab996b9a" frameborder="0" allowfullscreen></iframe>
@@ -68,7 +68,7 @@
         <div class="w-full">
             <h1 class="title">Cell Shading</h1>
             <p>
-                I used a toon shader to get the typical cell shaded effect on Link. For his eyes, I adjusted the way materials are rendered in the Overlord Engine to give them a render order. By rendering the eyes last, I am Links eyes are drawn above his hair (but still behind materials like rupies and fences),
+                I used a toon shader to get the typical cell-shaded effect on Link. For his eyes, I adjusted the way materials are rendered in the Overlord Engine to give them a render order. By rendering the eyes last, I am Links eyes are drawn above his hair (but still behind materials like rupees and fences),
             </p>
         </div>
     </div>

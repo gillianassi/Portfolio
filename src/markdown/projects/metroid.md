@@ -25,7 +25,7 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            Before I started my studies at Digital Arts and Entertainment, I had never created a fully functional game before. During the second semester of my first-year game development this became the exact task we had to complete. As I already had programming experience from my prior studies, I challenged myself by creating a remake of my favorite SNES game Super Metroid.
+            Before I started my studies at Digital Arts and Entertainment, I had never created a fully functional game before. During the second semester of my first year of the bachelor Game Development, this became the exact task we had to complete. As I already had programming experience from my prior studies, I challenged myself by creating a remake of my favorite SNES game Super Metroid.
             </p>
         </div>
         <div class="justify-center">

@@ -78,7 +78,7 @@
                                 focus:ring-2 focus:ring-gPrimaryColor" required></textarea>
                             </div>
                             <input type="hidden" name="_autoresponse" value="This is an automatic response. You've Succesfully sent a mail to assigillian@gmail.com. I will try to reply as soon as possible!">
-                            <button class="inline-block self-end bg-gPrimaryColor text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">
+                            <button class="inline-block self-end rounded-lg px-6 py-2 PrimaryButton">
                                 Submit Message
                             </button>
                         </form>
@@ -125,10 +125,17 @@
     min-width: 50px;
 }
     .socials {
-        @apply h-6 text-gLightPrimaryColor transition-all;
+        @apply h-6 text-gLightPrimaryColor transition-all ease-in-out  duration-200;
     }
     .socials:hover {
        @apply text-gPrimaryColor;
     }
     
+    .PrimaryButton{
+    @apply  bg-gPrimaryColor text-white font-bold ease-in-out  duration-200 uppercase;
+    }
+
+    .PrimaryButton:hover{
+    @apply  bg-gDarkPrimaryColor text-white font-bold;
+    }
 </style>

@@ -25,8 +25,8 @@
         <b>!! Will be revisited in the future !!</b>
     </div>
     <div class="text-align: center" >
-        <b>This bachelor thesis was previously finished in 2019. However, as my skills as a programmer have grown in  the past years I wish to revisit this subject sometime in the future.<br><br>
-        When I do this, I intend to create a full implementation that interpolates between the image array dependant of each eye position..</b>  <br> 
+        <b>This bachelor's thesis was previously finished in 2019. However, as my skills as a programmer have grown in  the past years I wish to revisit this subject sometime in the future.<br><br>
+        When I do this, I intend to create a full implementation that interpolates between the image array depending on each eye position.</b>  <br> 
     </div>
 </div>
 
@@ -35,7 +35,7 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-                In the context of my bachelor thesis in Engineering Technology, I tried to create a virtual environment where pictures and holograms could be evaluated. Light maps were visualised in VR by combining images taken with a camera matrix depending on the position of the VR headset. A large part of this project was pure research as I was not yet adept in c++ programming.
+                In the context of my bachelor thesis in Engineering Technology, I tried to create a virtual environment where pictures and holograms could be evaluated. Light maps were visualised in VR by combining images taken with a camera matrix depending on the position of the VR headset. A large part of this project was pure research as I was not yet adept in C++ programming.
                 A link to my thesis created in 2018 can be found at the top of this page.
             </p>
         </div>
@@ -52,7 +52,7 @@
             <p>
                 I created a space in which the user could rate an image depending on how well the holographic image was perceived. 
                 This score can vary from zero to 5 stars.
-                Additionally a txt file is provided in which the user could enter his setup dimensions to recreate a copy of their workspace in VR (to improve the immersion for the image evaluation).
+                Additionally, a txt file is provided in which the user could enter his setup dimensions to recreate a copy of their workspace in VR (to improve the immersion for the image evaluation).
             </p>
         </div>
     </div>
@@ -76,7 +76,7 @@
 <div>
     <ul class="list-disc marker:text-gPrimaryColor pl-10">
         <li>C++</li>
-        <li>Occulus SDK</li>
+        <li>Oculus SDK</li>
         <li>Visual Studios</li>
     </ul>
 </div> 

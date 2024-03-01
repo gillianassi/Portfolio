@@ -60,7 +60,9 @@
         <div class="w-full bg-zinc-900 rounded-t-sm over-flow">
             <ul class="flex ">
                 {#each folders as {title, icon: Icon}}
-                    <li on:click="{() => active = title}" class="p-4 text-gSecondaryColor cursor-pointer rounded-t-sm items-center shadow-sm transition font-changa flex gap-4 hover:bg-zinc-600 " class:bg-zinc-700="{active === title}">
+                    <li on:click="{() => active = title}" class="p-4 text-gSecondaryColor cursor-pointer rounded-t-sm 
+                        items-center shadow-sm transition font-changa flex gap-4 hover:bg-zinc-600 ease-in-out duration-200" 
+                        class:bg-zinc-700="{active === title}">
                         <span class="h-4"><Icon /></span>
                         <p>{title}</p>
                     </li>
@@ -68,7 +70,7 @@
             </ul>
         </div>
     
-        <div class=" bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
+        <div class=" bg-gLightPrimaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
             <div class="container mx-auto ">
                 <div class="gap-8 transition-all place-items-center
@@ -131,7 +133,7 @@
     .project-thumbnail::after {
         content: '';
         bottom: 0px;
-        @apply h-0 w-full absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor z-50;
+        @apply h-0 w-full absolute transition-all  duration-200 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor z-50;
     }
     .project-thumbnail:hover.project-thumbnail::after {
         @apply h-1;

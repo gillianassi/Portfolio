@@ -20,7 +20,7 @@
         <a href="https://github.com/gillianassi/GestureRecognition" target="_blank" rel="no-referrer">
             <div class="flex items-center LinkWrapper">
                 <div>
-                <b style="padding-left:5px; padding-right:10px; ">Github Page</b>
+                <b style="padding-left:5px; padding-right:10px; ">GitHub Page</b>
                 </div>
                 <div class="padding-right:20px h-6 ">
                     <FaGithub/>
@@ -37,7 +37,7 @@
         <div class="w-full">
             <h1 class="title">Description</h1>
             <p>
-            This project is created in name of my Graduation Work at Digital Arts and Entertainement.
+            This project is created in the name of my Graduation Work at Digital Arts and Entertainment.
             A functional method called Camera-Based Stroke Gesture detection, based on the $P recognizer, is proposed as a component to detect coarse dynamic gestures. In conjunction with the existing Interaction SDK components, the system is capable of detecting complex gestures. The used system architecture is discussed followed by an overview of the development progress.
             </p>
         </div>
@@ -56,7 +56,7 @@
                     <li>Long Short-Term Memory</li>
                     <li>One-Shot Learning</li>
                     <li>Dissimilarity-Based Classification</li>
-                    <li>$P Recognisor</li>
+                    <li>$P Recogniser</li>
                 </ul>
             </div>
         </div>

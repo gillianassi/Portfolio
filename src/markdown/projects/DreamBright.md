@@ -98,7 +98,7 @@
 <br>
 
 # Duration
-This project is created by students of Howest University of applied sciences at the Digital Arts and Entertainment campus as part of the Group Projects course in the final year of the studies. Over a span of 11 weeks this project was realized by the above-listed students and additional musicians who were responsible for the soundtrack production.<br>
+This project was created by students of Howest University of Applied Sciences at the Digital Arts and Entertainment campus as part of the Group Projects course in the final year of the studies. Over a span of 11 weeks, this project was realized by the above-listed students and additional musicians who were responsible for the soundtrack production.<br>
 <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
     <li>Prototyping (3 Weeks)</li>
     <li>Production sprint 1 (3 weeks)</li>
