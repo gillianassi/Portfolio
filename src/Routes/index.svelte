@@ -8,9 +8,9 @@
 <main class="flex flex-col  w-screen flex items-center justify-center bg-gBackgroundColor"> 
   <div class=" bg-center">
    
-    <div class=" w-screen relative  ">
+    <div class="flex w-screen relative  ">
       
-      <div class="relative headerSettings z-20 bg-gradient-to-b from-black w-full h-full">
+      <div class="relative  z-20 bg-gradient-to-b from-black w-full h-full">
         <Header/>
       </div>
       <div>
@@ -47,6 +47,7 @@
     ::-webkit-scrollbar-thumb:hover {
         background: #555;
     }
+
   </style>
 </main>
 

@@ -81,16 +81,6 @@
 
   }
 
-
-body.modal-open {
-    overflow-y: hidden !important;
-    position: fixed !important;
-  }
-
-  .markdown-body {
-    background-color: red;
-  }
-
   .close-button {
   border: none;
   display: inline-block;

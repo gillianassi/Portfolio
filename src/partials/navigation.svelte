@@ -10,7 +10,7 @@
             <div class="flex space-x-10">
                 <!-- Website Logo -->
                 <div>
-                    <Link to="/"><h1 class="font-changa font-medium text-gPrimaryColor text-2xl">Gillian Assi</h1></Link>
+                    <Link to="/"><h1 class="name">Gillian Assi</h1></Link>
                 </div>
                 
             </div>
@@ -37,18 +37,18 @@
             <!-- Mobile menu button -->
             <div class="md:hidden flex items-center">
                 <button class="outline-none mobile-menu-button">
-                <svg class=" w-6 h-6 text-gray-500 hover:text-gPrimaryColor "
-                    x-show="!showMenu"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                >
-                    <path d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+                    <svg class=" w-6 h-6 text-gray-500 hover:text-gPrimaryColor "
+                        x-show="!showMenu"
+                        fill="none"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                    >
+                        <path d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
             </div>
     </div>
     <!-- mobile menu -->
@@ -131,19 +131,14 @@
 <style>
     .nav-gradient {
         background-image: linear-gradient(#252525, rgba(0, 0, 0, 0));
-        @apply w-full justify-center text-gSecondaryColor gap-8 p-4 fixed ;
+        @apply w-full justify-center text-gLightPrimaryColor gap-8 p-4 fixed ;
         
     }
 
     .nav-filled {
         background-image: linear-gradient(#252525, rgba(0, 0, 0, 0.9));
-        @apply   w-full justify-center text-gSecondaryColor gap-8 p-4 fixed border-b border-gray-200 ;
+        @apply   w-full justify-center text-gLightPrimaryColor gap-8 p-4 fixed border-b border-gray-200 ;
     }
-
-    .nav-title {
-        @apply block py-2 pr-4 pl-3 text-gSecondaryColor;
-    }
-
 
     .gillian-link::after {
         content: '';
@@ -158,9 +153,15 @@
        @apply w-full;
     }
 
+    .name{
+        @apply font-changa font-medium text-gPrimaryColor text-2xl;
+    }
+    .name:hover {
+       @apply text-gDarkPrimaryColor;
+    }
     .socials span{
         height: auto;
-        @apply text-gSecondaryColor transition-all;
+        @apply text-gLightPrimaryColor transition-all;
     }
     .socials span:hover {
        @apply text-gPrimaryColor;

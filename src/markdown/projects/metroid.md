@@ -1,3 +1,22 @@
+<script>
+    import {FaCloudDownloadAlt} from 'svelte-icons/fa';
+</script>
+
+<div class="flex" style="padding-bottom:20px;">
+    <div class="flex pr-5">
+        <a href="https://mega.nz/file/p24ECK4A#I66Cjterds3a0KRLEagWyvvX6p4RtdWs4IG6_8iXYBE" target="_blank" rel="no-referrer">
+            <div class="flex items-center LinkWrapper">
+                <div>
+                <b style="padding-left:5px; padding-right:10px; ">Download Demo</b>
+                </div>
+                <div class="padding-right:20px h-6 ">
+                    <FaCloudDownloadAlt/>
+                </div >
+            </div>
+        </a>
+    </div>
+</div>
+
 # Super Metroid Remake
 
 
@@ -43,21 +62,3 @@ After grading, my project got featured on the official DAE website along with so
 
 # Duration
 1 semester
-
-
-<br><br>
-
-
-# Download
-
-<div style="text-align: justify;" >
-</div>
-<div style="text-align: center">
-Feel free to play this small remake using the Zip file stored in the Mega Cloud <a class="text-gPrimaryColor" href="https://mega.nz/file/p24ECK4A#I66Cjterds3a0KRLEagWyvvX6p4RtdWs4IG6_8iXYBE" target="_blank">here</a>!
-</div>
-<br>
-<a href="https://mega.nz/file/p24ECK4A#I66Cjterds3a0KRLEagWyvvX6p4RtdWs4IG6_8iXYBE"  target="_blank" >
-
-![image alt ><](https://ik.imagekit.io/gillianassi/DownloadIcon_JoFp15JOi.png?ik-sdk-version=javascript-1.4.3&updatedAt=1659851491302)
-
-</a>

@@ -105,15 +105,6 @@
     @apply grayscale;
 
 }
-.card::after {
-    content: '';
-    bottom: 5px;
-    transform-origin: bottom;
-    @apply h-0 absolute transition-all duration-300 ease-in-out rounded-t-sm rotate-180 bg-gPrimaryColor;
-}
-.card:hover::after {
-    @apply h-4 ;
-}
 
 .carouselWidth {
     width: calc(100vw + 100px);

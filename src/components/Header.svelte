@@ -29,28 +29,23 @@
     </div> -->
     
     <div class="flex flex-col items-center  h-full">
-        <div class="bg-gray-800/50 flex flex-col gap-4 pb-5 flex items-center justify-center align-middle rounded-2xl w-full h-full ">
+        <div class="bg-gray-800/50 flex flex-col gap-4 pb-52 flex items-center justify-center align-middle rounded-2xl w-full h-full ">
           
             <div class="text-center font-mono text-6xl sm:text-7xl md:text-7xl lg:text-8xl text-gSecondaryColor font-changa">
                 Graphics Programmer
             </div>
     
             <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl  text-gSecondaryColor font-changa">
-                Graduated Electronics-ICT engineer and VR enthusiast 
+                Graduated Electronics-ICT engineer and VR developer 
                 <br><br>
                 <!-- <div class="bg-purple-50/90 items-center justify-center rounded-lg p-4">
                     <b class="text-purple-500 ">Looking for a game development internship during Spring 2023
                 </div> -->
-            </div>    
-            <Link to="/contact">
-                <button class="btn btn-color">
-                    Contact
-                </button>
-            </Link>
+            </div>
         </div>
     </div>
     <div class="relative flex flex-col items-center bottom-[80px] md:bottom-[100px] lg:bottom-[120px] h-16">
-        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-bounce 
+        <button class="h-full  text-gSecondaryColor/70 transition hover:text-gSecondaryColor/90 motion-safe:animate-[bounce_1.7s_infinite]
         delay-50 hover:[animation-play-state:paused]" on:click="{scrollToProjects}">
             <FaCaretDown class="h-full"/>
         </button>
@@ -59,18 +54,6 @@
 </header>
 
 <style>
-    img{
-        max-width: 180px;
-    }
-    .btn {
-        @apply font-bold py-3 px-5 rounded;
-    }
-  .btn-color {
-        @apply bg-gDarkPrimaryColor text-gLightPrimaryColor;
-    }
-  .btn-blue:hover {
-        @apply bg-gDarkPrimaryColor;
-    }
 </style>
 
 

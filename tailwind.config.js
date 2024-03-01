@@ -7,7 +7,7 @@ export default {
         'gPrimaryColor': "#d13639",
         'gDarkPrimaryColor' : "#9c2424",
         'gLightPrimaryColor' : "#fff1f2",
-        'gBackgroundColor': "#252525",
+        'gBackgroundColor': "#10151c",
         'gSecondaryColor': "#cbc5cf"
       }
     },

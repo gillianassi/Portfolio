@@ -68,7 +68,7 @@
             </ul>
         </div>
     
-        <div class=" bg-gLightPrimaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
+        <div class=" bg-gSecondaryColor p-10 rounded-b-sm shadow-md overflow-hidden transition-all duration-500">
             {#key active}
             <div class="container mx-auto ">
                 <div class="gap-8 transition-all place-items-center
@@ -142,9 +142,4 @@
     .project-overlay {
         @apply opacity-0 transition-all translate-y-5;
     }
-
-    body.modal-open {
-  height: 100vh;
-  overflow-y: hidden;
-}
 </style>

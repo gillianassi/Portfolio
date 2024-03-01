@@ -5,78 +5,77 @@
 </script>
 
 <div class="bg-gBackgroundColor">
-    <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center  p-5 pt-10 ">
+    <div class="flex flex-col h-full gap-4 w-screen flex items-center justify-center ">
 
         <div class="flex w-full min-h-screen justify-center items-center ">
-            <div class="bg-gLightPrimaryColor p-8 rounded-xl shadow-lg flex flex-col items-center gap-4" >
+            <div class="flex flex-col items-center gap-4" >
                 
-                <hi class="underline underline-offset-8 decoration-gDarkPrimaryColor text-4xl font-changa pl-6 pb-5 text-gPrimaryColor ">Contact me</hi>
-                <div class="flex flex-col items-center space-y-6  w-full max-w-4xl  text-white
+                <hi class="underline underline-offset-8 decoration-gLightPrimaryColor text-4xl font-changa pl-6 pb-5 text-gLightPrimaryColor ">
+                    Contact me
+                </hi>
+                <div class="flex flex-col items-center space-y-6  w-full max-w-4xl
                         md:flex-row md:space-x-6 ms:space-y-0">
                     
                         <div class="flex flex-col justify-between gap-8 ">
                         <div class="flex flex-col items-center">
                             <div class="relative profileImage">
-                                <img class="rounded-lg border border-gray-100 shadow-xl " src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="user image" />
-                                <div class="absolute top-0 right-0 h-6 w-6 my-1 border-4 border-white rounded-full bg-green-400 z-2"></div>
+                                <img class="rounded-lg border border-gray-100 shadow-xl " src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" alt="   " />
                             </div>
                         </div>
-                        
-                       
-                        
                         
                         <div class="flex flex-col items-center gap-4">
-                            <div class="text-black text-sm md:text-lg">
-                                <p>
-                                    Feel free to contact me with any questions, feedback, or job offers. <br> 
-                                </p> 
-                                <br/>
-                            </div>
                             <div>
-                                <div class="socials inline-flex items-center gap-4 self-end">
-                                    <span class="">
-                                        
-                                        <a class="socials" href="mailto:assigillian@gmail.com"><IoMdMail/></a>
-                                    </span>
-                                    <a class="text-gDarkPrimaryColor socials" href="mailto:assigillian@gmail.com">assigillian@gmail.com</a>
+                                <a class="" href="mailto:assigillian@gmail.com">
+                                    <div class="socials inline-flex items-center gap-2 self-end">
+                                        <IoMdMail/>
+                                        <p>
+                                            assigillian@gmail.com
+                                        </p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="flex gap-4 ">
+                                <div class="socials">
+                                    <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
+                                </div>
+                                <div class="socials">
+                                    <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
+                                </div>
+                                <div class="socials">
+                                    <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
                                 </div>
                             </div>
-                            <div class="socials flex gap-4 ">
-                                <span>
-                                    <a href="https://github.com/gillianassi" target="_blank" rel="no-referrer"><FaGithub /></a>
-                                </span>
-                                <span>
-                                    <a href="https://www.linkedin.com/in/gillianassi/" target="_blank" rel="no-referrer"><FaLinkedin/></a>
-                                </span>
-                                <span>
-                                    <a href="https://gillianassi.itch.io/" target="_blank" rel="no-referrer"><FaItchIo/></a>
-                                </span>
-                            </div>
                         </div>
-                    </div>
-                        
-                <div>
-                    <div class="container bg-red-200 rounded-xl shadow-lg p-8 text-gray-600  md:w-80">
-                        <form  class="flex flex-col space-y-4" action="https://formsubmit.co/assigillian@gmail.com" method="POST">
+                    </div> 
+                <div class="md:pl-0 pr-10 pl-5 ">
+                    <div class="container bg-gLightPrimaryColor rounded-xl shadow-lg p-8 text-gray-600 md:w-100">
+                        <p class="text-gray-700">
+                            Feel free to contact me with any questions, feedback, or job offers. <br> 
+                        </p> 
+                        <form  class="flex flex-col pt-2 space-y-4" action="https://formsubmit.co/assigillian@gmail.com" method="POST">
                             <div>
                                 <label for="" class="text-sm">Your Name</label>
-                                <input type="text" name="name" placeholder="Samus Aran" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
-                                focus:ring-2 focus:ring-purple-400" required> 
+                                <input type="text" name="name" placeholder="Samus Aran" 
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
+                                focus:ring-2 focus:ring-gPrimaryColor" required> 
                             </div> 
                             <div>
                                 <label for="" class="text-sm">Email Adress</label>
-                                <input type="email" name="email" placeholder="SamusAran@gmail.com" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
-                                focus:ring-2 focus:ring-purple-400" required>
+                                <input type="email" name="email" placeholder="SamusAran@gmail.com" 
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
+                                focus:ring-2 focus:ring-gPrimaryColor" required>
                             </div> 
                             <div>
                                 <label for="" class="text-sm">Subject</label>
-                                <input type="text" name="_subject" placeholder="Dream Job Oppurtunity" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
-                                focus:ring-2 focus:ring-purple-400" required>
+                                <input type="text" name="_subject" placeholder="Dream Job Oppurtunity" 
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
+                                focus:ring-2 focus:ring-gPrimaryColor" required>
                             </div>
                             <div>
                                 <label for="" class="text-sm">Message</label>
-                                <textarea  name="message"placeholder="I used to be an adventurer like you..." rows="4" class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2Q outline-none 
-                                focus:ring-2 focus:ring-purple-400" required></textarea>
+                                <textarea  name="message"placeholder="I used to be an adventurer like you..." rows="2" 
+                                class="ring-1 ring-gray-300 w-full rounded-md px-4 py-2 mt-2 outline-none 
+                                focus:ring-2 focus:ring-gPrimaryColor" required></textarea>
                             </div>
                             <input type="hidden" name="_autoresponse" value="This is an automatic response. You've Succesfully sent a mail to assigillian@gmail.com. I will try to reply as soon as possible!">
                             <button class="inline-block self-end bg-gPrimaryColor text-white font-bold rounded-lg px-6 py-2 uppercase text-sm">
@@ -122,18 +121,14 @@
   .profileImage { 
     width:40%; height:auto; 
     max-height: 430px;
-    Padding: 5px;
+    padding: 5px;
     min-width: 50px;
 }
-    .headerSettings {
-        height: calc(100vh * 4 / 5);
+    .socials {
+        @apply h-6 text-gLightPrimaryColor transition-all;
     }
-
-    .socials span{
-        @apply h-8 text-gPrimaryColor transition-all;
-    }
-    .socials span:hover {
-       @apply text-purple-800;
+    .socials:hover {
+       @apply text-gPrimaryColor;
     }
     
 </style>
