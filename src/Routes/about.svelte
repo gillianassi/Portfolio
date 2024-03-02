@@ -22,10 +22,10 @@
     >
       <div class="flex w-full min-h-screen justify-center items-center pt-20 ">
         <div
-          class="bg-gLightPrimaryColor w-screen shadow-lg">
+          class="flex bg-gLightPrimaryColor w-screen shadow-lg justify-center">
           <div class="flex flex-col w-full items-center space-y-6 p-2  shadow-lg
-          md:flex-row md:space-x-6 ms:space-y-0 ">
-            <div class="flex w-1/2 justify-center">
+          md:flex-row md:space-x-6 ms:space-y-0 max-w-[2160px]">
+            <div class="flex w-1/2 justify-center ">
               <img src="https://ik.imagekit.io/gillianassi/ProfilePicture_K4y6avmEt.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1651757031924" 
               alt="Profile" class="profileImage rounded-lg shadow-xl"/>
             </div>
@@ -85,9 +85,9 @@
     </div>
   </div>
   
-  <div class="bg-gBackgroundColor h-flex">
+  <div class="bg-gBackgroundColor h-flex flex justify-center">
     <section id="MoreInfo">
-    <div class="grid-container text-gLightPrimaryColor pt-10  ">
+    <div class="grid-container text-gLightPrimaryColor pt-10  max-w-[2160px]">
       <div class="">
         <div id="Education" class="pt-10  ">
           <h1 class="title">Education</h1>
@@ -357,7 +357,7 @@
           <div class="grid-container-centered">
             <div class="text-sm text-slate-300">
               <p class="">Specific tasks:</p>
-              <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2 text-slate-300">
+              <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2 text-slate-300">
                 <li>Work on UE5 Source code</li>
                 <li>Maintain code for multi-platform support</li>
                 <li>Optimize code and data structures.</li>
@@ -367,7 +367,7 @@
             <div>
               <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
-                <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
+                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
                   <li>C++</li>
                   <li>Visual Studios</li>
                   <li>Unreal Engine 5</li>
@@ -385,7 +385,7 @@
           <div class="grid-container-centered">
             <div class="text-sm text-slate-300">
               <p class="">Specific tasks:</p>
-              <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
+              <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2">
                 <li>Work on the Glacier 2 render code</li>
                 <li>Creation of a diffuse path tracer</li>
                 <li>Participate in peer reviews of designs and code.</li>
@@ -395,7 +395,7 @@
             <div>
               <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
-                <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
+                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
                   <li>C++</li>
                   <li>Visual Studios</li>
                   <li>Perforce</li>
@@ -413,9 +413,9 @@
           <div class="grid-container-centered">
             <div class="text-sm text-slate-300">
               <p class="">Specific tasks:</p>
-              <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2 pb-2">
+              <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2">
                 <li>Writing test code for IoT devices</li>
-                <ul class="list-disc marker:text-gPrimaryColor pl-10">
+                <ul class="list-disc marker:text-gPrimaryColor pl-5">
                   <li>Calibration techniques</li>
                   <li>Optimization</li>
                   <li>Process management</li>
@@ -428,7 +428,7 @@
             <div>
               <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
-                <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-2">
+                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
                   <li>C++</li>
                   <li>VS Code</li>
                   <li>Git</li>
