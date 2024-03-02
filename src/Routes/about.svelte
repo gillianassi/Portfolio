@@ -420,7 +420,7 @@
                   <li>Optimization</li>
                   <li>Process management</li>
                 </ul>
-                <li>Energy management van IoT-devices</li>
+                <li>Energy management of IoT-devices</li>
                 <li>Implementing new features for IoT devices</li>
                 <li>Documenting code</li>
               </ul>
