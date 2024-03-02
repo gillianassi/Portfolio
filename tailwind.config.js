@@ -9,7 +9,11 @@ export default {
         'gLightPrimaryColor' : "#fff1f2",
         'gBackgroundColor': "#10151c",
         'gSecondaryColor': "#cbc5cf"
-      }
+      },
+      screens: {
+        'widescreen': '2160px',
+        // => @media (min-width: 2160px) { ... }
+      },
     },
     fontFamily: {
       'changa': ['"Changa"', 'sans-serif'],

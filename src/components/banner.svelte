@@ -45,9 +45,9 @@
     <h2  class="font-mono lg:text-7xl sm:text-6xl text-5xl py-5 text-gSecondaryColor font-changa w-full text-center">Featured Work</h2>
     <div class="overflow-x-hidden relative">
         <IntersectionObserver {element} bind:intersecting threshold="{0.4}" once="{false}">
-            <div bind:this={element} class="transition-all carouselWidth relative hover_container items-center lg:h-96 sm:h-72 h-40 justify-around" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
+            <div bind:this={element} class="flex transition-all carouselWidth relative hover_container items-center lg:h-96 sm:h-72 h-40 justify-around" on:mouseenter="{() => setHovered(true)}" on:mouseleave="{() => setHovered(false)}">
                 {#if intersecting === true}
-                <div transition:fade class="transition-all h-full w-full flex gap-2">
+                <div transition:fade class="transition-all h-full w-full flex gap-2 max-w-[2160px] justify-center">
                     {#each featured as project, index}
                         <div 
                             in:fly="{{duration: 400, delay: 100 * index, x: 50, opacity: 0}}"
