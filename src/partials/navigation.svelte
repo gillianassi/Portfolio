@@ -137,7 +137,7 @@
 
     .nav-filled {
         background-image: linear-gradient(#252525, rgba(0, 0, 0, 0.9));
-        @apply   w-full justify-center text-gLightPrimaryColor gap-8 p-4 fixed border-b border-gray-200 ;
+        @apply   w-full justify-center text-gLightPrimaryColor gap-8 p-4 fixed border-b-4 border-black ;
     }
 
     .gillian-link::after {

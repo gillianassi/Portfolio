@@ -364,7 +364,7 @@
                 <li>Participate in peer reviews of designs and code</li>
               </ul>
             </div>
-            <div>
+            <div class="flex w-full">
               <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
@@ -392,8 +392,8 @@
                 <li>Develop and maintain render features driving the current and future titles of IOI.</li>
               </ul>
             </div>
-            <div>
-              <div class="text-sm pl-2 text-slate-300">
+            <div class=" flex w-full">
+              <div class="text-sm pl-2 text-slate-300 ">
                 <p class="">Used Technologies:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
                   <li>C++</li>
@@ -407,7 +407,7 @@
           </div>
         </div>
         <br>
-        <div class="pl-6 bg-zinc-900 rounded-lg">
+        <div class="pl-6 bg-zinc-900 rounded-lg ">
           <h1 class="Subtitle">Electronics Engineer Intern (R&D)</h1>
           <h2 class="text-xl font-changa  pb-2 text-slate-300">Shayp | 4 months</h2>
           <div class="grid-container-centered">
@@ -425,10 +425,10 @@
                 <li>Documenting code</li>
               </ul>
             </div>
-            <div>
+            <div class=" flex w-full">
               <div class="text-sm pl-2 text-slate-300">
                 <p class="">Used Technologies:</p>
-                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
+                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 ">
                   <li>C++</li>
                   <li>VS Code</li>
                   <li>Git</li>
