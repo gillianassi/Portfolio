@@ -35,7 +35,7 @@
                 Graphics Programmer
             </div>
     
-            <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl  text-gSecondaryColor font-changa">
+            <div class="text-center font-mono text-m sm:text-2xl lg:text-3xl  text-gSecondaryColor font-changa px-5">
                 VR developer and Graduated Electronics-ICT engineer
                 <br><br>
                 <!-- <div class="bg-purple-50/90 items-center justify-center rounded-lg p-4">
