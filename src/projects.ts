@@ -10,6 +10,7 @@ import GEngineMd from "./markdown/projects/GEngine.md";
 import DiffusePathTracerMd from "./markdown/projects/DiffusePathTracer.md";
 import WindwakerMd from "./markdown/projects/WindWakerRemake.md";
 import MetroAwakeningMd from "./markdown/projects/MetroAwakening.md";
+import LearnVulkanMd from "./markdown/projects/LearnVulkan.md";
 import DreamBrightMd from "./markdown/projects/DreamBright.md";
 import TreeUphMd from "./markdown/projects/TreeUmph.md";
 import NotForSaleMd from "./markdown/projects/NotForSale.md";
@@ -74,6 +75,15 @@ export const projects = [
         tags: ["C++", "Overlord", DiVisualstudio],
         desc: "Graphics Programming, Graphics Recreation",
         featured: true,
+      },
+      {
+        image:
+          "https://ik.imagekit.io/gillianassi/Tumbnails/vulcan-tip-tricks-850x480-1_jgWHWvsTlH.jpg?updatedAt=1719852795294",
+        title: "Learn Vulkan",
+        markdown: LearnVulkanMd,
+        tags: ["C++", DiVisualstudio],
+        desc: "Graphics Programming",
+        featured: false,
       },
       {
         image:
