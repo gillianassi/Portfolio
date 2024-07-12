@@ -20,7 +20,7 @@
     </div>
 </div>
 
-# Direct X 12 Introduction
+# Learn Vulkan
 
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
@@ -58,7 +58,7 @@
             </p>
         </div>
         <div class="justify-center">
-            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Vulkan/image_z-e3cvF-p.png?updatedAt=1719851814414" alt="Action Shot"  width="auto" />
+            <img class="rounded-3xl shadow-xl" src="https://ik.imagekit.io/gillianassi/Projects/Vulkan/VulkanHypno%20_ivonSWbYc?updatedAt=1720826697056" alt="Action Shot"  width="auto" />
         </div>
     </div>
 </div>
