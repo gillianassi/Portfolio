@@ -90,7 +90,7 @@
                                  
                                  <div class="absolute bottom-0 left-0 right-0  project-overlay">
                                     <div class="p-4 h-full w-full flex flex-col text-center gap-2 bg-gBackgroundColor/60">
-                                        <h4 class="font-changa text-gSecondaryColor h-auto text-xl">{project.title}</h4>
+                                        <h4 class="font-changa text-gSecondaryColor h-auto text-xl">{project.desc}</h4>
                                         
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                         
                         <div class="p-4 h-28 flex flex-col gap-2 bg-gBackgroundColor/80 justify-between ">
                             <h4 class="font-changa text-gSecondaryColor  text-s max-w-fit">
-                                {project.desc}
+                                {project.title}
                             </h4>
                             <div class=" text-gBackgroundColor flex gap-4 self-end">
                                 {#each project.tags as tag}
