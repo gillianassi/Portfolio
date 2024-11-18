@@ -58,7 +58,7 @@ export const projects = [
         banner:
           "https://ik.imagekit.io/gillianassi/Projects/Metro%20Awakening%20VR/VG/VGMetroAwakeningBanner(2)_6MwYrrpCx.png?updatedAt=1709248229049",
 
-        title: "Metro Awakening",
+        title: "Camera Visibility System",
         markdown: MetroAwakeningMd,
         tags: ["C++", "UE5", DiVisualstudio],
         desc: "Graphics Programming",

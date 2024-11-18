@@ -349,42 +349,71 @@
           </div>
         </div>
       </div>
-      <div class="bg-black min-w-full rounded-lg pl-6 pt-10 pb-5">
+      <div class="bg-black min-w-full rounded-lg pl-6 pr-6 pt-10 pb-5">
         <h1 class="title ">Experience</h1>
-        <div class="pl-6 bg-zinc-900 rounded-lg">
-          <h1 class="Subtitle">Junior Render Programmer</h1>
-          <h2 class="text-xl font-changa  pb-2 text-slate-300">Vertigo Games | Since August 2023 - now</h2>
-          <div class="grid-container-centered">
+        <div class="pl-6 bg-zinc-900 rounded-lg w-full">
+          <h1 class="Subtitle">Programmer</h1>
+          <h2 class="text-xl font-changa  pb-2 text-slate-300">Neopica | Since Oktober 2024 - now</h2>
+          <div class="grid-container-centered w-full">
             <div class="text-sm text-slate-300">
-              <p class="">Specific tasks:</p>
+              <p class=""><b>Specific tasks</b>:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2 text-slate-300">
-                <li>Work on UE5 Source code</li>
+                <li>Create rendering related gameplay features</li>
                 <li>Maintain code for multi-platform support</li>
-                <li>Optimize code and data structures.</li>
+                <li>Optimize code and data structures</li>
                 <li>Participate in peer reviews of designs and code</li>
               </ul>
             </div>
             <div class="flex w-full">
               <div class="text-sm pl-2 text-slate-300">
-                <p class="">Used Technologies:</p>
+                <p class=""><b>Used Technologies</b>:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
-                  <li>C++</li>
-                  <li>Visual Studios</li>
+                  <li>C++, HSLS</li>
+                  <li>Renderdoc</li>
                   <li>Unreal Engine 5</li>
                   <li>Perforce</li>
-                  <li>Renderdoc</li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <br>
-        <div class="pl-6 bg-zinc-900 rounded-lg">
+        <div class="pl-6 bg-zinc-900 rounded-lg w-full">
+          <h1 class="Subtitle">Junior Render Programmer</h1>
+          <h2 class="text-xl font-changa  pb-2 text-slate-300">Vertigo Games | 1 year</h2>
+          <div class="grid-container-centered w-full">
+            <div class="text-sm text-slate-300">
+              <p class=""><b>Specific tasks</b>:</p>
+              <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2 text-slate-300">
+                <li>Working on Metro Awakening VR</li>
+                <li>Developing a precomputed visibility system</li>
+                <li>Integrating and improving GPU light baking</li>
+                <li>Optimisations for low-end VR platforms</li>
+                <li>Platform-specific mobile PBR</li>
+                <li>Presenting new technologies and concepts to other disciplines in the studio</li>
+              </ul>
+            </div>
+            <div class="flex w-full">
+              <div class="text-sm pl-2 text-slate-300">
+                <p class=""><b>Used Technologies</b>:</p>
+                <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
+                  <li>C++, HSLS</li>
+                  <li>Renderdoc, Pix</li>
+                  <li>Quest 2 & 3, PSVR, PCVR</li>
+                  <li>Unreal Engine 5</li>
+                  <li>Perforce</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="pl-6 bg-zinc-900 rounded-lg w-full">
           <h1 class="Subtitle">Render Programmer Intern</h1>
           <h2 class="text-xl font-changa  pb-2 text-slate-300">IO Interactive | 4 months</h2>
-          <div class="grid-container-centered">
+          <div class="grid-container-centered w-full">
             <div class="text-sm text-slate-300">
-              <p class="">Specific tasks:</p>
+              <p class=""><b>Specific tasks</b>:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2">
                 <li>Work on the Glacier 2 render code</li>
                 <li>Creation of a diffuse path tracer</li>
@@ -394,25 +423,24 @@
             </div>
             <div class=" flex w-full">
               <div class="text-sm pl-2 text-slate-300 ">
-                <p class="">Used Technologies:</p>
+                <p class=""><b>Used Technologies</b>:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2">
-                  <li>C++</li>
-                  <li>Visual Studios</li>
+                  <li>C++, HLSL</li>
+                  <li>NVIDIA Nsight Graphics, Renderdoc</li>
+                  <li>Custom Engine (Glacier 2)</li>
                   <li>Perforce</li>
-                  <li>Renderdoc</li>
-                  <li>NVIDIA NSight Graphics </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
         <br>
-        <div class="pl-6 bg-zinc-900 rounded-lg ">
+        <div class="pl-6 bg-zinc-900 rounded-lg w-full">
           <h1 class="Subtitle">Electronics Engineer Intern (R&D)</h1>
           <h2 class="text-xl font-changa  pb-2 text-slate-300">Shayp | 4 months</h2>
-          <div class="grid-container-centered">
+          <div class="grid-container-centered w-full">
             <div class="text-sm text-slate-300">
-              <p class="">Specific tasks:</p>
+              <p class=""><b>Specific tasks</b>:</p>
               <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 pb-2">
                 <li>Writing test code for IoT devices</li>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5">
@@ -427,7 +455,7 @@
             </div>
             <div class=" flex w-full">
               <div class="text-sm pl-2 text-slate-300">
-                <p class="">Used Technologies:</p>
+                <p class=""><b>Used Technologies</b>:</p>
                 <ul class="list-disc marker:text-gPrimaryColor pl-5 pt-2 ">
                   <li>C++</li>
                   <li>VS Code</li>
