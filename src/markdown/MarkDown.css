@@ -38,6 +38,14 @@ img[alt$="><"] {
     @apply text-3xl py-2 text-gPrimaryColor font-changa w-full text-left;
 }
 
+.subtitle { 
+    @apply text-2xl py-2 text-gPrimaryColor font-changa w-full text-left;
+}
+
+.subsubtitle { 
+    @apply text-xl py-2 text-gPrimaryColor font-changa w-full text-left;
+}
+
 .grid-container{
     display: flex;
     flex-direction: column;

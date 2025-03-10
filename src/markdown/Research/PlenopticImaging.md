@@ -20,7 +20,7 @@
 
 # VR for subjective evaluations of plenoptic images
 
-<div  style="background-color:rgba(0, 0, 0, 0.2); text-align:center; vertical-align: middle; padding:40px 0;">
+<div  class="rounded-xl shadow-lg p-8 text-center" style="background-color:rgba(75, 0, 0, 0.1)">
     <div class="text-align: center">
         <b>!! Will be revisited in the future !!</b>
     </div>

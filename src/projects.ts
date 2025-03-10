@@ -19,6 +19,7 @@ import RayTracerMd from "./markdown/projects/RayTracer.md";
 import DirectX12Md from "./markdown/projects/DirectX12.md";
 // research
 import RegressionMd from "./markdown/Research/Regression.md";
+import CUDAProgrammingMd from "./markdown/Research/CUDAProgramming.md";
 import HandPoseDetectionMd from "./markdown/Research/GestureRecognition.md";
 import KeccakSpongeMD from "./markdown/Research/KeccakSponge.md";
 import PlenopticImagingMd from "./markdown/Research/PlenopticImaging.md";
@@ -151,7 +152,17 @@ export const projects = [
     title: "Research",
     icon: IoIosPaper,
     projects: [
-      
+      {
+        banner:
+          "https://ik.imagekit.io/gillianassi/Research/CUDA/CUDA_Tumbnail_pGur-50Toz.png?updatedAt=1741632219541",
+        image:
+          "https://ik.imagekit.io/gillianassi/Research/CUDA/CUDA_Tumbnail_pGur-50Toz.png?updatedAt=1741632219541",
+        title: "Programming Massively Parallel Processors",
+        markdown: CUDAProgrammingMd,
+        tags: ["C++", DiVisualstudio],
+        desc: "C++, CUDA",
+        featured: false,
+      },
       {
         banner:
           "https://ik.imagekit.io/gillianassi/Research/GestureRecognition/DemoVideo_-_frame_at_1m4s_EDx1lu4Oj.jpg?ik-sdk-version=javascript-1.4.3&updatedAt=1674939739407",
