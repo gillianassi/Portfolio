@@ -191,7 +191,7 @@ __global__ void BlockTranspose(float* A_elements, int A_width, int A_height) {
 </div>
 <div>
     <h1 class="title">Solutions Chapter 5</h1>
-    <p>Solutions coming soon!</p>
+    <p>Solutions coming very soon!</p>
 </div>
 <br>
 
