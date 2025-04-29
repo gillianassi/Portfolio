@@ -48,7 +48,7 @@
             <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/CUDAThreads_jG976Pr_r.png?updatedAt=1741643970860" alt="Action Shot"  width="auto" />
         </div>
         <div class="w-full">
-            <h1 class="title">CUDA Threads</h1>
+            <h1 class="title">CH4: CUDA Threads</h1>
             <p>
                 CUDA’s kernel execution configuration defines <b>grids and blocks</b>, with each thread identifying itself using <i>blockIdx</i> and <i>threadIdx</i>. Programmers must carefully structure threads and data to ensure efficient processing.<br> 
                 <br>
@@ -178,7 +178,7 @@ __global__ void BlockTranspose(float* A_elements, int A_width, int A_height) {
 <div id="markdownBody">
     <div class="grid-container grid-centered-container reversed-col-content">
         <div class="w-full">
-            <h1 class="title">CUDA Memories</h1>
+            <h1 class="title">CH5: CUDA Memories</h1>
             <p>
                 CUDA provides faster memory types compared to global memory, such as <b>registers, shared memory, and constant memory</b>. Efficient use of these requires algorithm redesign. 
                 <br><br>We explored tiled algorithms with matrix multiplication to optimize data locality and shared memory usage. However, <b>memory size limits affect thread execution</b>, making hardware awareness crucial.
@@ -191,7 +191,183 @@ __global__ void BlockTranspose(float* A_elements, int A_width, int A_height) {
 </div>
 <div>
     <h1 class="title">Solutions Chapter 5</h1>
-    <p>Solutions coming very soon!</p>
+    <div>
+        <h2 class="subtitle">Exercise 5.1</h2>
+        <p>
+            <i>Consider the matrix addition where each element of the output matrix is the sum of the corresponding elements of the two input matrices. Can one use shared memory to reduce the global memory bandwidth consumption? Hint: Analyze the elements accessed by each thread and see if there is any commonality between threads.</i><br>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+    </div>
+</div>
+
+```c
+C[i,j]=A[i,j]+B[i,j]
+```
+<br>
+<div>
+    <div>
+        <p>
+            Let's start by analysing the access pattern for a matrix addition:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li><b>Each thread</b> in a CUDA kernel <b>computes one element</b> of the output matrix.</li>
+            <li> To compute this, the <b>thread reads one element from each</b> of the two <b>input matrices</b>.</li>
+            <li>Since each thread works on a unique output element, there is <b>no overlap in elements accessed</b>.</li>
+        </ul>
+        <p>
+            In general, for memory we know that:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Accessing <b>shared memory</b> is <i>very fast</i> and <i>highly parallel</i>, but also <i>very small</i> (<i>16KB for the G80 and GT200</i>).</li>
+            <li><b>Global memory</b> is <i>slow</i> but <i>large</i> (<i>768MB on the G80 and 1024MB on the GT200</i>).</li>
+            <li><i><b>Shared memory</b> is useful when threads within a block can <b>reuse the same data to avoid global memory loads</b></i>.</li>
+        </ul>
+        <br>
+        <p>
+            With this information, we can easily see how <b>caching the input elements in shared memory provides no benefit</b> since threads access distinct elements during matrix additions. Using shared memory would actually <i>add an unnecessary copying overhead</i> step, where data is loaded from global memory into shared memory to only be used by one single thread.<br><br>
+            For optimizing Matrix additions, it is rather advised to focus on ensuring <b>coalesced</b> memory access to maximize global memory bandwidth efficiency.
+        </p>
+        <h2 class="subsubtitle">Conclusion</h2>
+        <p>
+            Shared memory is <b>not beneficial</b> in this case since we don't reuse input elements across threads.
+            <br><br>
+        </p>
+    </div>
+    <div>
+        <h2 class="subtitle">Exercise 5.2</h2>
+        <p><i>Draw the equivalent of Figure 5.4 for an 8×8 matrix multiplication with 2×2 tiling and 4×4 tiling. Verify that the reduction in global memory bandwidth is indeed proportional to the dimension size of the tiles.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+            Let's first start by understanding Figure 5.4 provided by the book:<br>
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/MatrixMultiplication_GlobalMemoryAccess_QvirlRAKu.png?updatedAt=1745913293597" alt="Figure 5.4: MatrixMultiplication_GlobalMemoryAccess"  width="auto" />
+        </div><br>
+        <p>
+            This figure is based on a 4×4 matrix multiplication and uses four 2×2 blocks to compute the Pd Matrix. It shows the global memory accesses done by all threads in block(0,0). The figure is intended to visualise how:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Each 2×2 tile is computed using <i>4 threads</i>.</li>
+            <li>Each thread <i>performs 4 multiply-add</i> operations</li>
+            <li><b>Threads in the same block access overlapping data</b>, which means <b>shared memory can reduce global memory loads by a factor of the tile dimension</b>. In this case, memory traffic can be cut in half.</li>
+        </ul><br>
+        <p>
+            We get the following representation of the global memory access performed by threads in block (0,0) by applying 2×2 tiling for an 8×8 Matrix in <i>Figure 5.A</i>:
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/GMA_2x2_h5OLgnI0s.png?updatedAt=1745932868555" alt="Figure 5.A: MatrixMultiplication_GlobalMemoryAccess_2x2"  width="auto" />
+        </div><br>
+        <p>
+            Similalry to <i>igure 5.4</i>, our Figure 5.A tells us the following:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Each <i>row of M</i> can be <i>reused across 2 threads</i>.</li>
+            <li>Each <i>column of N</i> can be <i>reused across 2 threads</i>.</li>
+            <li>This means that <i>each element</i> of M and N <i>is accessed twice per tile</i></li>
+            <li><b>Memory traffic can be cut in half</b> by using shared memory.</li>
+        </ul><br>
+        <p>
+            The following tables in <i>Figure 5.B</i> showcase the global memory access performed by threads in block (0,0) by applying 4×4 tiling for an 8×8 Matrix: 
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/GMA_4x4_0_sKtMysro2q.png?updatedAt=1745932868817" alt="Figure 5.B0: MatrixMultiplication_GlobalMemoryAccess_4x4_0"  width="auto" />
+        </div><br>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/GMA_4x4_1_oQi6k6M-8.png?updatedAt=1745932868554" alt="Figure 5.B1: MatrixMultiplication_GlobalMemoryAccess_4x4_1"  width="auto" />
+        </div><br>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/GMA_4x4_3_LrurqN4wKK.png?updatedAt=1745932868742" alt="Figure 5.B2: MatrixMultiplication_GlobalMemoryAccess_4x4_2"  width="auto" />
+        </div><br>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/GMA_4x4_2_G_JWmYg6-.png?updatedAt=1745932868546" alt="Figure 5.B3: MatrixMultiplication_GlobalMemoryAccess_4x4_3"  width="auto" />
+        </div><br>
+        <p>
+            From <i>figure 5.B</i> we can observe that:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Each <i>row of M</i> can be <i>reused across 4 threads</i>.</li>
+            <li>Each <i>column of N</i> can be <i>reused across 4 threads</i>.</li>
+            <li>This means that <i>each element</i> of M and N <i>is accessed four times per tile</i></li>
+            <li><b>Memory traffic can be reduced to a quarter</b> by using shared memory.</li>
+        </ul><br>
+        <h2 class="subsubtitle">Extra</h2>
+        <p>
+            Does that mean there are no limits to tiling? Obviously not. For starters, <b>shared memory is limited</b>. On older GPUs like the G80, you only get 16KB per Streaming Multiprocessor. If the tile dimension gets too big, your tile won't fit. Additionally, <b>too many threads can exceed register limits or reduce occupancy</b>. More threads lead to more registers per block which, in turn, lead to fewer blocks that can run in parallel.
+        </p>
+        <h2 class="subsubtitle">Conclusion</h2>
+        <p>
+            By seeing how <i>2×2 tiling</i> can introduce an <i>improvement of x2</i>, and <i>4×4 tiling</i> can yield an <i>improvement of x4</i>, we can conclude that <b>the reduction in global memory bandwidth is indeed proportional to the dimension size of the tiles</b>.
+            <br><br>
+        </p>
+    </div>
+    <div>
+        <h2 class="subtitle">Exercise 5.3</h2>
+        <p><i>What type of incorrect execution behavior can happen if one forgets to use __syncthreads() function in the kernel of Figure 5.7? Note that there are two calls to __syncthreads(), each for a different purpose.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+            The Kernel provided was as followed:
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/MatrixMulKernel_VBLlnYwjV.png?updatedAt=1745936827163" alt="Figure 5.7: MatrixMulKernel"  width="auto" />
+        </div><br>
+        <p>
+            The <i>__Syncthreads()</i> function is critical in ensuring propper synchronization between threads in a block when using shared memory. Removing them makes your code prone to data hazards, leading to unexpected behavior in the CUDA kernel.<br>
+            <br>
+            The first synchronisation in <b>line 10</b> ensures that all threads have <b>completed loading tiles of Md and Nd into the shared memory</b> before that data gets used.<br>
+            Not using this syncronisation can lead to the following:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Some threads might already start computing (<i>line 11</i>) and access Mds or Nds, while others might still be loading their part of the tiles into the shared memory.</li>
+            <li>This means that <b>partial- or uninitialized values might be read</b>, leading to incorrect results.</li>
+        </ul><br><br>
+        <p>
+            The second synchronization in <b>line 13</b> ensures that <b>all threads are finished using the current tiles of Mds and Nds before starting with the next itteration of the loop</b> <i>where they get overwritten with the next tile form global memory</i>.<br>
+            Not synchronizing could lead to the following:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Some threads might start overwriting the shared memory with new data, while others are still using the old data for computation</li>
+            <li>This introduces <b>race conditions</b>, where the <i>data being used in the computation might be corrupted</i>.</li>
+        </ul><br><br>
+        <h2 class="subsubtitle">Conclusion</h2>
+        <p>
+            If one forgets to use the <i>__Syncthreads()</i> function in the kernel of <i>Figure 5.7</i>, on might expect to <b>read partial- or uninitialized data</b>, accompanied by <b>race conditions</b> when overwriting data.
+            <br><br>
+        </p>
+    </div>
+    <div>
+        <h2 class="subtitle">Exercise 5.4</h2>
+        <p><i>Assuming that capacity were not an issue for registers or shared memory, give one case that it would be valuable to use shared memory instead of registers to hold values fetched from global memory. Explain your answer.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+            In general, shared memory is preferred over registers in scenarios where <b>data needs to be shared or reused across multiple threads within a block</b>.<br><br>
+            One example of this is matrix multiplication like we saw before. In this situation, threads within a block work together to compute a tile. Each thread <b>loads a portion into shared memory</b> and uses that memory to <b>compute a part ouf the output</b> matrix.<br>
+            If <b>registers</b> were used instead, this shared behaviour could not be benefited from since rigisters are <b>private to each thread</b>. It would require each thread to load all the required data on its own, leading to redundant global memory transactions and poor performance.<br>
+            <b>Shared data</b> on the other hand allows you to <b>reduce redundant global memory</b> by <i>reusing the data</i> and lets you <b>collectively load a tile into shared memory</b> for <i>computations</i>, improving overall efficiency.
+        </p>
+        <h2 class="subsubtitle">Conclusion</h2>
+        <p>
+            Shared memory can reduce global memory bandwith usage and leverages the high speed of shared memory to improve kernel speed in situations where <b>data sharing and reuse</b> amoung threads in the same block are required. This proves to be most usefull for block-level parallel tasks such as matrix multiplication, or tiled matrix transpose.
+            <br><br>
+        </p>
+    </div>
+</div>
+<div>
+    <div class="grid-container grid-centered-container">
+        <div class="justify-center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/PerformanceConsiderations_lem1SZEQg.png?updatedAt=1745960134082" alt="Figure 6.16: MeasuredPerformanceTechinques"  width="auto" />
+        </div>
+        <div class="w-full">
+            <h1 class="title">CH6: Performance Considerations</h1>
+            <p>
+                Chapter 6 shows us hoow optimizing matrix multiplication on GPUs involves several techniques like <b>tiling, loop unrolling, prefetching, and adjusting thread granularity</b>. Among these, <b>tile size</b> plays the biggest role. Larger tiles can <i>reduce memory bottlenecks</i>, making other optimizations more effective. By carefully combining these techniques, the performance can drastically be improved, though they must be <b>balanced</b> to avoid hardware limits.
+            </p>
+        </div>
+    </div>
+    <h1 class="title">Solutions Chapter 6</h1>
+    <p>Solutions coming soon!</p>
 </div>
 <br>
 
