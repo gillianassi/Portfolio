@@ -343,13 +343,13 @@ C[i,j]=A[i,j]+B[i,j]
         <h2 class="subsubtitle">Solution</h2>
         <p>
             In general, shared memory is preferred over registers in scenarios where <b>data needs to be shared or reused across multiple threads within a block</b>.<br><br>
-            One example of this is matrix multiplication like we saw before. In this situation, threads within a block work together to compute a tile. Each thread <b>loads a portion into shared memory</b> and uses that memory to <b>compute a part ouf the output</b> matrix.<br>
-            If <b>registers</b> were used instead, this shared behaviour could not be benefited from since rigisters are <b>private to each thread</b>. It would require each thread to load all the required data on its own, leading to redundant global memory transactions and poor performance.<br>
-            <b>Shared data</b> on the other hand allows you to <b>reduce redundant global memory</b> by <i>reusing the data</i> and lets you <b>collectively load a tile into shared memory</b> for <i>computations</i>, improving overall efficiency.
+            One example of this is matrix multiplication like we saw before. In this situation, threads within a block work together to compute a tile. Each thread <b>loads a portion of the input data into shared memory</b> and uses that memory to <b>compute a part of the output</b> matrix.<br>
+            If <b>registers</b> were used instead, this shared behaviour could not be benefited from since registers are <b>private to each thread</b>. It would require each thread to load all the required data on its own, leading to redundant global memory transactions and poor performance.<br>
+            <b>Shared data</b>, on the other hand, <b>reduces redundant global memory accesses</b> by allowing threads to collectively <i>load and reuse data for computations</i>, improving overall efficiency.
         </p>
         <h2 class="subsubtitle">Conclusion</h2>
         <p>
-            Shared memory can reduce global memory bandwith usage and leverages the high speed of shared memory to improve kernel speed in situations where <b>data sharing and reuse</b> amoung threads in the same block are required. This proves to be most usefull for block-level parallel tasks such as matrix multiplication, or tiled matrix transpose.
+            Shared memory can reduce global memory bandwidth usage and leverage its high speed to improve kernel performance in situations where <b>data sharing and reuse</b> among threads in the same block are required. This proves to be most useful for block-level parallel tasks such as matrix multiplication, or tiled matrix transpose.
             <br><br>
         </p>
     </div>
@@ -357,12 +357,12 @@ C[i,j]=A[i,j]+B[i,j]
 <div>
     <div class="grid-container grid-centered-container">
         <div class="justify-center">
-            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/PerformanceConsiderations_lem1SZEQg.png?updatedAt=1745960134082" alt="Figure 6.16: MeasuredPerformanceTechinques"  width="auto" />
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/PerformanceConsiderations_lem1SZEQg.png?updatedAt=1745960134082" alt="Figure 6.16: MeasuredPerformanceTechniques"  width="auto" />
         </div>
         <div class="w-full">
             <h1 class="title">CH6: Performance Considerations</h1>
             <p>
-                Chapter 6 shows us hoow optimizing matrix multiplication on GPUs involves several techniques like <b>tiling, loop unrolling, prefetching, and adjusting thread granularity</b>. Among these, <b>tile size</b> plays the biggest role. Larger tiles can <i>reduce memory bottlenecks</i>, making other optimizations more effective. By carefully combining these techniques, the performance can drastically be improved, though they must be <b>balanced</b> to avoid hardware limits.
+                Chapter 6 discusses how optimizing matrix multiplication on GPUs involves several techniques such as <b>tiling, loop unrolling, prefetching, and adjusting thread granularity</b>. Among these, <b>tile size</b> plays the biggest role. Larger tiles can <i>reduce memory bottlenecks</i>, making other optimizations more effective. By carefully combining these techniques, the performance can drastically be improved, though they must be <b>balanced</b> to avoid hardware limits.
             </p>
         </div>
     </div>
