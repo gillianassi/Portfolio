@@ -387,12 +387,12 @@ C[i,j]=A[i,j]+B[i,j]
             The most obvious approach is changing this kernel to what we have in <i>Figure 6.4</i>. However, since the question limits us to only changing <u>line 2 and 4</u>, we can also improve this by:
         </p>
         <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
-            <li>Doubling the index <i>t</i> to<b> halve the number of threads used</b>.</li>
+            <li>Doubling the index <i>t</i> to <b>halve the number of threads used</b>.</li>
             <li>Adjusting the loop condition to ensure the final value of <i>t + stride</i> <b>remains in bounds</b>. Since t is doubled, the highest valid stride is halved.</li>
             <li>Halving the block size from 512 to 256 in the configuration parameters.</li>
         </ul><br>
         <p>
-            This gives us the same ammount of computation with half the threads:<br>
+            This gives us the same amount of computation with half the threads:<br>
         </p>
     </div>
 </div>
@@ -419,7 +419,7 @@ dim3 dimBlock(256, 1, 1); // Half of 512 since we double the index t
             <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/Figure6_4_We81GgwEf.png?updatedAt=1745996064995" alt="Figure 6.4: SumReductionKernelLessDivergence"  width="auto" />
         </div><br>
         <p>
-            The main imprvement we can add to this is, similarly to the optimisation for 6.2, <b>halving the number of threads</b> in the configuration parameters. Since only the lower half of threadIdx.x values ever participate, we only need to launch half of it.<br>
+            The main improvement we can add to this is, similarly to the optimisation for 6.2, <b>halving the number of threads</b> in the configuration parameters. Since only the lower half of threadIdx.x values ever participate, we only need to launch half of it.<br>
         </p>
     </div>
 </div>
@@ -454,7 +454,7 @@ dim3 dimBlock(256, 1, 1);  // Launch only participating threads
         </p>
         <h2 class="subsubtitle">Solution</h2>
         <p>
-            As previously mentioned in the conclusion of the last exercise, the modified kernel written for Figure 6.2 introduces no additional arithmetic operations.
+            As previously mentioned in the conclusion of the last exercise, the modified kernel for <i>Figure 6.4</i> introduces no additional arithmetic operations, while the optimization for <i>Figure 6.2</i> introduces one.
             <br><br>
         </p>
         <h2 class="subtitle">Exercise 6.3</h2>
