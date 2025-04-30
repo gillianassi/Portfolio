@@ -367,8 +367,115 @@ C[i,j]=A[i,j]+B[i,j]
         </div>
     </div>
     <h1 class="title">Solutions Chapter 6</h1>
-    <p>Solutions coming soon!</p>
+    <div>
+        <h2 class="subtitle">Exercise 6.1</h2>
+        <p><i>The kernels in Figure 6.2 and 6.4 are wasteful in their use of threads; half of the threads in each block never execute. Modify the kernels to eliminate such waste. Give the relevant execute configuration parameter values at the kernel launch. Is there a cost in terms of extra arithmetic operation needed? Which resource limitation can be potentially addressed with such modification? Hints: Line 2 and/or Line 4 can be adjusted in each case, and the number of elements in the section may increase.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+            Let's start by taking a look at the kernel shown in <i>Figure 6.2</i>:
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/Figure6_2_vKhZpCAY2.png?updatedAt=1745996064997" alt="Figure 6.2: SimpleSumReductionKernel"  width="auto" />
+        </div><br>
+        <p>
+            The main issue with this kernel is how <b>only half of the threads are active</b> due to the modulo condition.<br>
+            For <i>stride = 1</i>, only threads where <i>t % 2 == 0</i> will be active. When <i>stride = 2</i>, only threads where <i>t % 4 == 0</i>, and so on...<br>
+            At this point you're <b>wasting threads</b>. If your block has 256 threads, the first step uses 128, then 64, 32,... etc.<br>
+            Since threads are executed in <b>warps</b> only a few threads in that warp can do useful work, leaving <b>hardware resources idle</b>.
+            <br><br>
+            The most obvious approach is changing this kernel to what we have in <i>Figure 6.4</i>. However, since the question limits us to only changing <u>line 2 and 4</u>, we can also improve this by:
+        </p>
+        <ul class="list-disc marker:text-gPrimaryColor pl-10 pt-4">
+            <li>Doubling the index <i>t</i> to<b> halve the number of threads used</b>.</li>
+            <li>Adjusting the loop condition to ensure the final value of <i>t + stride</i> <b>remains in bounds</b>. Since t is doubled, the highest valid stride is halved.</li>
+            <li>Halving the block size from 512 to 256 in the configuration parameters.</li>
+        </ul><br>
+        <p>
+            This gives us the same ammount of computation with half the threads:<br>
+        </p>
+    </div>
 </div>
+
+```c++
+dim3 dimBlock(256, 1, 1); // Half of 512 since we double the index t
+1. __shared__ float partialSum[];
+2. unsigned int t = 2 * threadIdx.x; 
+3. for (unsigned int stride = 1; 
+4.     stride <= blockDim.x / 2; stride *= 2)
+5. {
+6.     __syncthreads();
+7.     if (t % (2 * stride) == 0)
+8.         partialSum[t] += partialSum[t + stride];
+9. }  
+```
+<br>
+<div>
+    <div>
+        <p>
+            The kernel shown in <i>Figure 6.4</i> is the following:
+        </p>
+        <div class="center">
+            <img class="rounded-3xl shadow-xl"  src="https://ik.imagekit.io/gillianassi/Research/CUDA/Figure6_4_We81GgwEf.png?updatedAt=1745996064995" alt="Figure 6.4: SumReductionKernelLessDivergence"  width="auto" />
+        </div><br>
+        <p>
+            The main imprvement we can add to this is, similarly to the optimisation for 6.2, <b>halving the number of threads</b> in the configuration parameters. Since only the lower half of threadIdx.x values ever participate, we only need to launch half of it.<br>
+        </p>
+    </div>
+</div>
+
+```c++
+dim3 dimBlock(256, 1, 1);  // Launch only participating threads
+1. __shared__ float partialSum[];
+2. unsigned int t = threadIdx.x; 
+3. for (unsigned int stride = blockDim.x >> 1; stride > 0; stride >>= 1)
+4.     
+5. {
+6.     __syncthreads();
+7.     if (t < stride)
+8.         partialSum[t] += partialSum[t + stride];
+9. } 
+```
+<br>
+<div>
+    <div>
+        <h2 class="subsubtitle">Conclusion</h2>
+        <p>
+            For <b><i>Figure 6.2</i></b>, we introduce <b>one extra arithmetic operation</b> (a multiplication) per thread by computing <i>t = 2 * threadIdx.x</i> in order to skip unused thread indices.<br>
+            In <b><i>Figure 6.4</i></b>, <b>no extra arithmetic operations</b> are needed, since we simply launch fewer threads and the computation remains the same.<br>
+            <br>
+            For both kernels, reducing the number of threads per block can <b>reduce register and shared memory usage</b>, improving occupancy. It may also enable <b>more thread blocks to run concurrently on a streaming multiprocessor</b>, which can increase overall throughput. <br>
+            In <b><i>Figure 6.2</i></b>, the change also <b>reduces warp divergence</b> caused by conditional execution.
+            <br><br>
+        </p>
+        <h2 class="subtitle">Exercise 6.2</h2>
+        <p>
+            <i>Compare the modified kernels you wrote for Exercise 6.1. Which modification introduced fewer additional arithmetic operations?</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+            As previously mentioned in the conclusion of the last exercise, the modified kernel written for Figure 6.2 introduces no additional arithmetic operations.
+            <br><br>
+        </p>
+        <h2 class="subtitle">Exercise 6.3</h2>
+        <p>
+            <i>Write a complete kernel based on Exercise 6.1 by: (1) adding the statements that load a section of the input array from global memory to shared memory, (2) using blockIdx.x to allow multiple blocks to work on different sections of the input array, and (3) writing the reduction value for the section to a location according to the blockIdx.x so all blocks will deposit their section reduction value to the lower part of the input array in global memory.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+        </p>
+        <h2 class="subtitle">Exercise 6.4</h2>
+        <p>
+            <i>Design a reduction program based on the kernel you wrote for Exercise 6.3. The host code should: (1) transfer a large input array to the global memory, and (2) use a loop to repeatedly invoke the kernel you wrote for Exercise 6.3 with adjusted execution configuration parameter values so the reduction result for the input array will eventually be produced.</i>
+        </p>
+        <h2 class="subsubtitle">Solution</h2>
+        <p>
+        </p>
+    </div>
+</div>
+
+
+
 <br>
 
 # Credits
